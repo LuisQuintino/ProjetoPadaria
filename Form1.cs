@@ -41,7 +41,16 @@ namespace PADARIA
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            try
+            {
+                Application.Exit();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro ao finalizar o programa", "AVISO");
+                throw;
+            }
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
