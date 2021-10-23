@@ -29,14 +29,23 @@ namespace PADARIA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txtUsuario.Text == usuario && txtSenha.Text == senha)
+            try
             {
-                MessageBox.Show(" Usuário e Senha Corretas");
+                if(txtUsuario.Text == usuario && txtSenha.Text == senha)
+                    {
+                        MessageBox.Show(" Usuário e Senha Corretas");
+                    }
+                else
+                    {
+                        MessageBox.Show(" Usuário e Senha Incorretas");
+                    }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show(" Usuário e Senha Incorretas");
+
+                throw;
             }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
