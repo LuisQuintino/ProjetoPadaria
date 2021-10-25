@@ -56,7 +56,7 @@ namespace PADARIA
             }
             catch (Exception)
             {
-                MessageBox.Show("Ocorreu um erro ao finalizar o programa", "AVISO");
+                MessageBox.Show("Ocorreu um erro ao finalizar o programa", "MENSAGEM IMPORTANTE");
                 throw;
             }
             
