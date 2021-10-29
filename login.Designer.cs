@@ -31,13 +31,13 @@ namespace PANDOKS_V1._0
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txbSENHA = new System.Windows.Forms.TextBox();
-            this.txbLOGIN = new System.Windows.Forms.TextBox();
-            this.btnENTRAR = new System.Windows.Forms.Button();
             this.btnCANCELAR = new System.Windows.Forms.Button();
+            this.btnENTRAR = new System.Windows.Forms.Button();
+            this.txbLOGIN = new System.Windows.Forms.TextBox();
+            this.txbSENHA = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +58,68 @@ namespace PANDOKS_V1._0
             this.panel1.Size = new System.Drawing.Size(1232, 816);
             this.panel1.TabIndex = 0;
             // 
+            // btnCANCELAR
+            // 
+            this.btnCANCELAR.BackColor = System.Drawing.Color.Silver;
+            this.btnCANCELAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCANCELAR.Location = new System.Drawing.Point(991, 466);
+            this.btnCANCELAR.Name = "btnCANCELAR";
+            this.btnCANCELAR.Size = new System.Drawing.Size(200, 50);
+            this.btnCANCELAR.TabIndex = 7;
+            this.btnCANCELAR.Text = "Cancelar";
+            this.btnCANCELAR.UseVisualStyleBackColor = false;
+            this.btnCANCELAR.Click += new System.EventHandler(this.btnCANCELAR_Click);
+            // 
+            // btnENTRAR
+            // 
+            this.btnENTRAR.BackColor = System.Drawing.Color.Silver;
+            this.btnENTRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnENTRAR.Location = new System.Drawing.Point(777, 466);
+            this.btnENTRAR.Name = "btnENTRAR";
+            this.btnENTRAR.Size = new System.Drawing.Size(200, 50);
+            this.btnENTRAR.TabIndex = 6;
+            this.btnENTRAR.Text = "Entrar";
+            this.btnENTRAR.UseVisualStyleBackColor = false;
+            // 
+            // txbLOGIN
+            // 
+            this.txbLOGIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbLOGIN.Location = new System.Drawing.Point(777, 290);
+            this.txbLOGIN.Name = "txbLOGIN";
+            this.txbLOGIN.Size = new System.Drawing.Size(414, 47);
+            this.txbLOGIN.TabIndex = 5;
+            // 
+            // txbSENHA
+            // 
+            this.txbSENHA.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbSENHA.Location = new System.Drawing.Point(777, 373);
+            this.txbSENHA.Name = "txbSENHA";
+            this.txbSENHA.Size = new System.Drawing.Size(414, 47);
+            this.txbSENHA.TabIndex = 4;
+            this.txbSENHA.UseSystemPasswordChar = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Gainsboro;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(645, 373);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 39);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Senha:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Gainsboro;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(660, 290);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 39);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Login:";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -68,64 +130,6 @@ namespace PANDOKS_V1._0
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(281, 421);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 39);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Login:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(266, 504);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 39);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Senha:";
-            // 
-            // txbSENHA
-            // 
-            this.txbSENHA.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSENHA.Location = new System.Drawing.Point(398, 504);
-            this.txbSENHA.Name = "txbSENHA";
-            this.txbSENHA.Size = new System.Drawing.Size(414, 47);
-            this.txbSENHA.TabIndex = 4;
-            this.txbSENHA.UseSystemPasswordChar = true;
-            // 
-            // txbLOGIN
-            // 
-            this.txbLOGIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbLOGIN.Location = new System.Drawing.Point(398, 421);
-            this.txbLOGIN.Name = "txbLOGIN";
-            this.txbLOGIN.Size = new System.Drawing.Size(414, 47);
-            this.txbLOGIN.TabIndex = 5;
-            // 
-            // btnENTRAR
-            // 
-            this.btnENTRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnENTRAR.Location = new System.Drawing.Point(398, 597);
-            this.btnENTRAR.Name = "btnENTRAR";
-            this.btnENTRAR.Size = new System.Drawing.Size(200, 50);
-            this.btnENTRAR.TabIndex = 6;
-            this.btnENTRAR.Text = "Entrar";
-            this.btnENTRAR.UseVisualStyleBackColor = true;
-            // 
-            // btnCANCELAR
-            // 
-            this.btnCANCELAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCANCELAR.Location = new System.Drawing.Point(612, 597);
-            this.btnCANCELAR.Name = "btnCANCELAR";
-            this.btnCANCELAR.Size = new System.Drawing.Size(200, 50);
-            this.btnCANCELAR.TabIndex = 7;
-            this.btnCANCELAR.Text = "Cancelar";
-            this.btnCANCELAR.UseVisualStyleBackColor = true;
-            this.btnCANCELAR.Click += new System.EventHandler(this.btnCANCELAR_Click);
             // 
             // login
             // 
