@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PANDOKS_V1._0
 {
-    public partial class Form1 : Form
+    public partial class PanificSystem : Form
     {
-        public Form1()
+        public PanificSystem()
         {
             InitializeComponent();
         }
