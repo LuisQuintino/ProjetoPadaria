@@ -61,7 +61,7 @@ namespace PANDOKS_V1._0
             // 
             this.btnCANCELAR.BackColor = System.Drawing.Color.Wheat;
             this.btnCANCELAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCANCELAR.Location = new System.Drawing.Point(634, 625);
+            this.btnCANCELAR.Location = new System.Drawing.Point(634, 617);
             this.btnCANCELAR.Name = "btnCANCELAR";
             this.btnCANCELAR.Size = new System.Drawing.Size(170, 50);
             this.btnCANCELAR.TabIndex = 7;
@@ -73,7 +73,7 @@ namespace PANDOKS_V1._0
             // 
             this.btnENTRAR.BackColor = System.Drawing.Color.Wheat;
             this.btnENTRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnENTRAR.Location = new System.Drawing.Point(424, 625);
+            this.btnENTRAR.Location = new System.Drawing.Point(424, 617);
             this.btnENTRAR.Name = "btnENTRAR";
             this.btnENTRAR.Size = new System.Drawing.Size(170, 50);
             this.btnENTRAR.TabIndex = 6;
@@ -83,7 +83,7 @@ namespace PANDOKS_V1._0
             // txbLOGIN
             // 
             this.txbLOGIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbLOGIN.Location = new System.Drawing.Point(424, 456);
+            this.txbLOGIN.Location = new System.Drawing.Point(424, 422);
             this.txbLOGIN.Name = "txbLOGIN";
             this.txbLOGIN.Size = new System.Drawing.Size(380, 47);
             this.txbLOGIN.TabIndex = 5;
@@ -91,7 +91,7 @@ namespace PANDOKS_V1._0
             // txbSENHA
             // 
             this.txbSENHA.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSENHA.Location = new System.Drawing.Point(424, 540);
+            this.txbSENHA.Location = new System.Drawing.Point(424, 512);
             this.txbSENHA.Name = "txbSENHA";
             this.txbSENHA.Size = new System.Drawing.Size(380, 47);
             this.txbSENHA.TabIndex = 4;
@@ -102,7 +102,7 @@ namespace PANDOKS_V1._0
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Moccasin;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(266, 548);
+            this.label2.Location = new System.Drawing.Point(266, 520);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 39);
             this.label2.TabIndex = 2;
@@ -113,7 +113,7 @@ namespace PANDOKS_V1._0
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Moccasin;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(281, 464);
+            this.label1.Location = new System.Drawing.Point(281, 430);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 39);
             this.label1.TabIndex = 1;
@@ -135,7 +135,7 @@ namespace PANDOKS_V1._0
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1232, 816);
+            this.ClientSize = new System.Drawing.Size(1230, 680);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "login";

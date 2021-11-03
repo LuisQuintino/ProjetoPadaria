@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="janela_splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="janela_splash.resx">
       <DependentUpon>janela_splash.cs</DependentUpon>
@@ -100,6 +109,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Panific.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pani.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pani1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_to_cart_trolley_shopping_icon_192426.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_to_cart_trolley_shopping_icon_1924261.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_to_cart_trolley_shopping_icon_1924262.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_to_cart_trolley_shopping_icon_1924263.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-settings-male-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-settings-male-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash_counter_payment_icon_192435.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_application_addmale_useradd_insert_add_user_client_2312.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet_lock_locked_padlock_password_secure_security_icon_127100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deal_done_partnership_agreement_icon_192421.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
