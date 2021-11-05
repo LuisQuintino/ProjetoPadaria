@@ -21,5 +21,10 @@ namespace PANDOKS_V1._0
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

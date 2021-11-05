@@ -58,6 +58,12 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
     <Compile Include="janela_splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="janela_splash.resx">
       <DependentUpon>janela_splash.cs</DependentUpon>
@@ -148,6 +157,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\deal_done_partnership_agreement_icon_192421.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panific System %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panific System %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt_106581.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_closethesession_close_6317.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_closethesession_close_63171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addusergroup_1251.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if-food-c216-2427860_85697.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PanificSystemPadrão.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

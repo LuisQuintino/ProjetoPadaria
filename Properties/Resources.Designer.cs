@@ -103,6 +103,16 @@ namespace PANDOKS_V1._0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addusergroup_1251 {
+            get {
+                object obj = ResourceManager.GetObject("addusergroup_1251", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap business_application_addmale_useradd_insert_add_user_client_2312 {
             get {
                 object obj = ResourceManager.GetObject("business_application_addmale_useradd_insert_add_user_client_2312", resourceCulture);
@@ -133,6 +143,26 @@ namespace PANDOKS_V1._0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit_closethesession_close_6317 {
+            get {
+                object obj = ResourceManager.GetObject("exit_closethesession_close_6317", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exit_closethesession_close_63171 {
+            get {
+                object obj = ResourceManager.GetObject("exit_closethesession_close_63171", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_admin_settings_male_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-admin-settings-male-48", resourceCulture);
@@ -156,6 +186,26 @@ namespace PANDOKS_V1._0.Properties {
         internal static System.Drawing.Bitmap icons8_login_65 {
             get {
                 object obj = ResourceManager.GetObject("icons8-login-65", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_shutdown_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-shutdown-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_food_c216_2427860_85697 {
+            get {
+                object obj = ResourceManager.GetObject("if-food-c216-2427860_85697", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +246,46 @@ namespace PANDOKS_V1._0.Properties {
         internal static System.Drawing.Bitmap Panific {
             get {
                 object obj = ResourceManager.GetObject("Panific", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Panific_System__5_ {
+            get {
+                object obj = ResourceManager.GetObject("Panific System (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Panific_System__6_ {
+            get {
+                object obj = ResourceManager.GetObject("Panific System (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PanificSystemPadrão {
+            get {
+                object obj = ResourceManager.GetObject("PanificSystemPadrão", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap receipt_106581 {
+            get {
+                object obj = ResourceManager.GetObject("receipt_106581", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

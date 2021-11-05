@@ -38,6 +38,7 @@ namespace PANDOKS_V1._0
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@ namespace PANDOKS_V1._0
             this.cadastroToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1056, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1465, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,7 +78,7 @@ namespace PANDOKS_V1._0
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.Location = new System.Drawing.Point(94, 143);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 157);
+            this.button1.Size = new System.Drawing.Size(176, 168);
             this.button1.TabIndex = 1;
             this.button1.Text = "Cadastrar Produtos";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -92,9 +93,9 @@ namespace PANDOKS_V1._0
             this.button2.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.button2.Image = global::PANDOKS_V1._0.Properties.Resources.cash_counter_payment_icon_192435;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(435, 143);
+            this.button2.Location = new System.Drawing.Point(94, 548);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(176, 157);
+            this.button2.Size = new System.Drawing.Size(176, 168);
             this.button2.TabIndex = 2;
             this.button2.Text = "Caixa";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -109,9 +110,9 @@ namespace PANDOKS_V1._0
             this.button3.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.button3.Image = global::PANDOKS_V1._0.Properties.Resources.deal_done_partnership_agreement_icon_192421;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(786, 143);
+            this.button3.Location = new System.Drawing.Point(458, 143);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 157);
+            this.button3.Size = new System.Drawing.Size(176, 168);
             this.button3.TabIndex = 3;
             this.button3.Text = "Cadastrar Cliente";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -124,13 +125,13 @@ namespace PANDOKS_V1._0
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.button4.Image = global::PANDOKS_V1._0.Properties.Resources.internet_lock_locked_padlock_password_secure_security_icon_127100;
+            this.button4.Image = global::PANDOKS_V1._0.Properties.Resources.addusergroup_1251;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(94, 450);
+            this.button4.Location = new System.Drawing.Point(822, 143);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(176, 157);
+            this.button4.Size = new System.Drawing.Size(176, 168);
             this.button4.TabIndex = 4;
-            this.button4.Text = "Cadastrar Senhas";
+            this.button4.Text = "Cadastrar Usuários";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -141,13 +142,13 @@ namespace PANDOKS_V1._0
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.button5.Image = global::PANDOKS_V1._0.Properties.Resources.add_to_cart_trolley_shopping_icon_1924263;
+            this.button5.Image = global::PANDOKS_V1._0.Properties.Resources.receipt_106581;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(435, 450);
+            this.button5.Location = new System.Drawing.Point(1186, 143);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(176, 157);
+            this.button5.Size = new System.Drawing.Size(176, 168);
             this.button5.TabIndex = 5;
-            this.button5.Text = "Cadastrar Produtos";
+            this.button5.Text = "Cupom Fiscal";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.UseVisualStyleBackColor = false;
             // 
@@ -158,22 +159,41 @@ namespace PANDOKS_V1._0
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.button6.Image = global::PANDOKS_V1._0.Properties.Resources.add_to_cart_trolley_shopping_icon_1924263;
+            this.button6.Image = global::PANDOKS_V1._0.Properties.Resources.exit_closethesession_close_6317;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(786, 450);
+            this.button6.Location = new System.Drawing.Point(1186, 548);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(176, 157);
+            this.button6.Size = new System.Drawing.Size(176, 168);
             this.button6.TabIndex = 6;
-            this.button6.Text = "Cadastrar Produtos";
+            this.button6.Text = "Fechar";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.button7.Image = global::PANDOKS_V1._0.Properties.Resources.if_food_c216_2427860_85697;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button7.Location = new System.Drawing.Point(458, 548);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(176, 168);
+            this.button7.TabIndex = 7;
+            this.button7.Text = "Status de Produção";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Pani1;
-            this.ClientSize = new System.Drawing.Size(1056, 728);
+            this.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Panific_System__6_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1465, 728);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -181,9 +201,12 @@ namespace PANDOKS_V1._0
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu_Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -202,5 +225,6 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
