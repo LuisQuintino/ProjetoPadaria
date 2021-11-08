@@ -29,33 +29,50 @@ namespace PANDOKS_V1._0
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.mxtLOGIN = new System.Windows.Forms.MaskedTextBox();
             this.btnCANCELAR = new System.Windows.Forms.Button();
             this.btnENTRAR = new System.Windows.Forms.Button();
-            this.txbLOGIN = new System.Windows.Forms.TextBox();
             this.txbSENHA = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.colaboradorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database_padariaDataSet = new PANDOKS_V1._0.database_padariaDataSet();
+            this.colaboradorTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.colaboradorTableAdapter();
+            this.tableAdapterManager = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.mxtLOGIN);
             this.panel1.Controls.Add(this.btnCANCELAR);
             this.panel1.Controls.Add(this.btnENTRAR);
-            this.panel1.Controls.Add(this.txbLOGIN);
             this.panel1.Controls.Add(this.txbSENHA);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1232, 680);
+            this.panel1.Size = new System.Drawing.Size(1230, 680);
             this.panel1.TabIndex = 0;
+            // 
+            // mxtLOGIN
+            // 
+            this.mxtLOGIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mxtLOGIN.Location = new System.Drawing.Point(424, 427);
+            this.mxtLOGIN.Mask = "000.000.000-00";
+            this.mxtLOGIN.Name = "mxtLOGIN";
+            this.mxtLOGIN.Size = new System.Drawing.Size(380, 47);
+            this.mxtLOGIN.TabIndex = 8;
             // 
             // btnCANCELAR
             // 
@@ -79,14 +96,7 @@ namespace PANDOKS_V1._0
             this.btnENTRAR.TabIndex = 6;
             this.btnENTRAR.Text = "Entrar";
             this.btnENTRAR.UseVisualStyleBackColor = false;
-            // 
-            // txbLOGIN
-            // 
-            this.txbLOGIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbLOGIN.Location = new System.Drawing.Point(424, 422);
-            this.txbLOGIN.Name = "txbLOGIN";
-            this.txbLOGIN.Size = new System.Drawing.Size(380, 47);
-            this.txbLOGIN.TabIndex = 5;
+            this.btnENTRAR.Click += new System.EventHandler(this.btnENTRAR_Click);
             // 
             // txbSENHA
             // 
@@ -121,15 +131,43 @@ namespace PANDOKS_V1._0
             // 
             // pictureBox1
             // 
+            this.pictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.colaboradorBindingSource, "id_colaborador", true));
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1230, 678);
+            this.pictureBox1.Size = new System.Drawing.Size(1228, 678);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // colaboradorBindingSource
+            // 
+            this.colaboradorBindingSource.DataMember = "colaborador";
+            this.colaboradorBindingSource.DataSource = this.database_padariaDataSet;
+            // 
+            // database_padariaDataSet
+            // 
+            this.database_padariaDataSet.DataSetName = "database_padariaDataSet";
+            this.database_padariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // colaboradorTableAdapter
+            // 
+            this.colaboradorTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.cargoTableAdapter = null;
+            this.tableAdapterManager.clienteTableAdapter = null;
+            this.tableAdapterManager.colaboradorTableAdapter = this.colaboradorTableAdapter;
+            this.tableAdapterManager.pedido_produtoTableAdapter = null;
+            this.tableAdapterManager.pedidoTableAdapter = null;
+            this.tableAdapterManager.producaoTableAdapter = null;
+            this.tableAdapterManager.produtoTableAdapter = null;
+            this.tableAdapterManager.tipo_pedidoTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // login
             // 
@@ -141,9 +179,12 @@ namespace PANDOKS_V1._0
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -152,11 +193,15 @@ namespace PANDOKS_V1._0
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txbLOGIN;
         private System.Windows.Forms.TextBox txbSENHA;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCANCELAR;
         private System.Windows.Forms.Button btnENTRAR;
+        private database_padariaDataSet database_padariaDataSet;
+        private System.Windows.Forms.BindingSource colaboradorBindingSource;
+        private database_padariaDataSetTableAdapters.colaboradorTableAdapter colaboradorTableAdapter;
+        private database_padariaDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.MaskedTextBox mxtLOGIN;
     }
 }

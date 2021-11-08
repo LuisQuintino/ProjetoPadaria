@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PANDOKS_V1._0
 {
-    public partial class Menu : Form
+    public partial class MenuPrincipal : Form
     {
-        public Menu()
+        public MenuPrincipal()
         {
             InitializeComponent();
         }
@@ -25,6 +25,11 @@ namespace PANDOKS_V1._0
         private void button6_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

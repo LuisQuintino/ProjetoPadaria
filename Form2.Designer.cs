@@ -1,7 +1,7 @@
 ﻿
 namespace PANDOKS_V1._0
 {
-    partial class Menu
+    partial class MenuPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -168,6 +168,7 @@ namespace PANDOKS_V1._0
             this.button6.Text = "Fechar";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
             // button7
             // 
@@ -186,7 +187,7 @@ namespace PANDOKS_V1._0
             this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button7.UseVisualStyleBackColor = false;
             // 
-            // Menu
+            // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -203,7 +204,7 @@ namespace PANDOKS_V1._0
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Menu";
+            this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu_Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

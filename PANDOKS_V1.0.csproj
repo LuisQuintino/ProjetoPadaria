@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="database_padariaDataSet.cs">
+      <DependentUpon>database_padariaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="database_padariaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>database_padariaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +111,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="database_padariaDataSet.xsc">
+      <DependentUpon>database_padariaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="database_padariaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>database_padariaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="database_padariaDataSet.xss">
+      <DependentUpon>database_padariaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -184,6 +203,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PanificSystemPadrão.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="database_padaria.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

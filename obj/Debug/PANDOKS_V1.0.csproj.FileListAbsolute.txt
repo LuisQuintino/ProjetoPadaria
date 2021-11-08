@@ -23,3 +23,18 @@ C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1.0.pdb
 C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.PanificSystem.resources
 C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.Menu.resources
 C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.Form3.resources
+C:\Users\1513 IRON\Pictures\padaria+banco\bin\Debug\PANDOKS_V1.0.exe.config
+C:\Users\1513 IRON\Pictures\padaria+banco\bin\Debug\PANDOKS_V1.0.exe
+C:\Users\1513 IRON\Pictures\padaria+banco\bin\Debug\PANDOKS_V1.0.pdb
+C:\Users\1513 IRON\Pictures\padaria+banco\obj\Debug\PANDOKS_V1.0.csproj.AssemblyReference.cache
+C:\Users\1513 IRON\Pictures\padaria+banco\obj\Debug\PANDOKS_V1._0.PanificSystem.resources
+C:\Users\1513 IRON\Pictures\padaria+banco\obj\Debug\PANDOKS_V1._0.Form3.resources
+C:\Users\1513 IRON\Pictures\padaria+banco\obj\Debug\PANDOKS_V1._0.janela_splash.resources
+C:\Users\1513 IRON\Pictures\padaria+banco\obj\Debug\PANDOKS_V1._0.login.resources
+C:\Users\1513 IRON\Pictures\padaria+banco\obj\Debug\PANDOKS_V1._0.Properties.Resources.resources
+C:\Users\1513 IRON\Pictures\padaria+banco\obj\Debug\PANDOKS_V1.0.csproj.GenerateResource.cache
+C:\Users\1513 IRON\Pictures\padaria+banco\obj\Debug\PANDOKS_V1.0.csproj.CoreCompileInputs.cache
+C:\Users\1513 IRON\Pictures\padaria+banco\obj\Debug\PANDOKS_V1.0.exe
+C:\Users\1513 IRON\Pictures\padaria+banco\obj\Debug\PANDOKS_V1.0.pdb
+C:\Users\1513 IRON\Pictures\padaria+banco\bin\Debug\database_padaria.mdb
+C:\Users\1513 IRON\Pictures\padaria+banco\obj\Debug\PANDOKS_V1._0.MenuPrincipal.resources
