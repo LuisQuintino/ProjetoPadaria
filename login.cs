@@ -34,7 +34,7 @@ namespace PANDOKS_V1._0
 
         }
 
-        private void btnENTRAR_Click(object sender, EventArgs e)
+        private void btnENTRAR_Click_1(object sender, EventArgs e)
         {
             int result = colaboradorTableAdapter.FillByColaboradorLogin(database_padariaDataSet.colaborador, mxtLOGIN.Text, txbSENHA.Text);
             if (result == 1)

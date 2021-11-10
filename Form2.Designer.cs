@@ -39,6 +39,7 @@ namespace PANDOKS_V1._0
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +49,7 @@ namespace PANDOKS_V1._0
             this.cadastroToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1465, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1811, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -100,6 +101,7 @@ namespace PANDOKS_V1._0
             this.button2.Text = "Caixa";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -117,6 +119,7 @@ namespace PANDOKS_V1._0
             this.button3.Text = "Cadastrar Cliente";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -134,6 +137,7 @@ namespace PANDOKS_V1._0
             this.button4.Text = "Cadastrar Usuários";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -161,7 +165,7 @@ namespace PANDOKS_V1._0
             this.button6.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.button6.Image = global::PANDOKS_V1._0.Properties.Resources.exit_closethesession_close_6317;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(1186, 548);
+            this.button6.Location = new System.Drawing.Point(1550, 548);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(176, 168);
             this.button6.TabIndex = 6;
@@ -179,13 +183,30 @@ namespace PANDOKS_V1._0
             this.button7.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.button7.Image = global::PANDOKS_V1._0.Properties.Resources.if_food_c216_2427860_85697;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.Location = new System.Drawing.Point(458, 548);
+            this.button7.Location = new System.Drawing.Point(1550, 143);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(176, 168);
             this.button7.TabIndex = 7;
             this.button7.Text = "Status de Produção";
             this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button35
+            // 
+            this.button35.BackColor = System.Drawing.Color.Transparent;
+            this.button35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button35.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button35.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.button35.Image = global::PANDOKS_V1._0.Properties.Resources.power_closedown_close_exit_pode_1842;
+            this.button35.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button35.Location = new System.Drawing.Point(578, 209);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(47, 45);
+            this.button35.TabIndex = 32;
+            this.button35.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button35.UseVisualStyleBackColor = false;
             // 
             // MenuPrincipal
             // 
@@ -193,7 +214,8 @@ namespace PANDOKS_V1._0
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Panific_System__6_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1465, 728);
+            this.ClientSize = new System.Drawing.Size(1811, 755);
+            this.Controls.Add(this.button35);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -227,5 +249,6 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button35;
     }
 }

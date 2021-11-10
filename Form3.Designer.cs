@@ -29,7 +29,16 @@ namespace PANDOKS_V1._0
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Caixa = new System.Windows.Forms.Panel();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button23 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,7 +54,6 @@ namespace PANDOKS_V1._0
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -53,63 +61,168 @@ namespace PANDOKS_V1._0
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button23 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.panel1.SuspendLayout();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Caixa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // Caixa
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Panific_System__6_;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.listBox1);
-            this.panel1.Controls.Add(this.button23);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.button24);
-            this.panel1.Controls.Add(this.button22);
-            this.panel1.Controls.Add(this.button20);
-            this.panel1.Controls.Add(this.button21);
-            this.panel1.Controls.Add(this.button19);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.button18);
-            this.panel1.Controls.Add(this.button17);
-            this.panel1.Controls.Add(this.button16);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.button15);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button14);
-            this.panel1.Controls.Add(this.button13);
-            this.panel1.Controls.Add(this.button12);
-            this.panel1.Controls.Add(this.button11);
-            this.panel1.Controls.Add(this.button10);
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1446, 835);
-            this.panel1.TabIndex = 0;
+            this.Caixa.BackColor = System.Drawing.Color.Transparent;
+            this.Caixa.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Panific_System__6_;
+            this.Caixa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Caixa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Caixa.Controls.Add(this.label7);
+            this.Caixa.Controls.Add(this.button27);
+            this.Caixa.Controls.Add(this.button25);
+            this.Caixa.Controls.Add(this.button26);
+            this.Caixa.Controls.Add(this.listBox1);
+            this.Caixa.Controls.Add(this.button23);
+            this.Caixa.Controls.Add(this.label6);
+            this.Caixa.Controls.Add(this.button24);
+            this.Caixa.Controls.Add(this.button22);
+            this.Caixa.Controls.Add(this.button19);
+            this.Caixa.Controls.Add(this.pictureBox1);
+            this.Caixa.Controls.Add(this.label5);
+            this.Caixa.Controls.Add(this.label4);
+            this.Caixa.Controls.Add(this.label3);
+            this.Caixa.Controls.Add(this.button18);
+            this.Caixa.Controls.Add(this.button17);
+            this.Caixa.Controls.Add(this.button16);
+            this.Caixa.Controls.Add(this.label2);
+            this.Caixa.Controls.Add(this.button15);
+            this.Caixa.Controls.Add(this.label1);
+            this.Caixa.Controls.Add(this.button14);
+            this.Caixa.Controls.Add(this.button13);
+            this.Caixa.Controls.Add(this.button12);
+            this.Caixa.Controls.Add(this.button11);
+            this.Caixa.Controls.Add(this.button10);
+            this.Caixa.Controls.Add(this.button7);
+            this.Caixa.Controls.Add(this.button6);
+            this.Caixa.Controls.Add(this.button5);
+            this.Caixa.Controls.Add(this.button4);
+            this.Caixa.Controls.Add(this.button3);
+            this.Caixa.Controls.Add(this.button2);
+            this.Caixa.Controls.Add(this.button1);
+            this.Caixa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Caixa.ForeColor = System.Drawing.Color.White;
+            this.Caixa.Location = new System.Drawing.Point(0, 0);
+            this.Caixa.Name = "Caixa";
+            this.Caixa.Size = new System.Drawing.Size(1446, 835);
+            this.Caixa.TabIndex = 0;
+            // 
+            // button27
+            // 
+            this.button27.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button27.ForeColor = System.Drawing.Color.Black;
+            this.button27.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button27.Location = new System.Drawing.Point(791, 109);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(72, 68);
+            this.button27.TabIndex = 38;
+            this.button27.UseVisualStyleBackColor = false;
+            // 
+            // button25
+            // 
+            this.button25.BackColor = System.Drawing.Color.Transparent;
+            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.button25.Image = global::PANDOKS_V1._0.Properties.Resources.Home;
+            this.button25.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button25.Location = new System.Drawing.Point(1196, 11);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(60, 44);
+            this.button25.TabIndex = 37;
+            this.button25.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
+            // button26
+            // 
+            this.button26.BackColor = System.Drawing.Color.Transparent;
+            this.button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button26.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.button26.Image = global::PANDOKS_V1._0.Properties.Resources.voltar;
+            this.button26.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button26.Location = new System.Drawing.Point(1130, 11);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(60, 44);
+            this.button26.TabIndex = 36;
+            this.button26.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.Color.Wheat;
+            this.listBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(889, 109);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(529, 436);
+            this.listBox1.TabIndex = 35;
+            // 
+            // button23
+            // 
+            this.button23.BackColor = System.Drawing.Color.Black;
+            this.button23.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.button23.Location = new System.Drawing.Point(1288, 11);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(153, 44);
+            this.button23.TabIndex = 34;
+            this.button23.Text = "Sair (F12)";
+            this.button23.UseVisualStyleBackColor = false;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Black;
+            this.label6.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(3, 2);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(160, 30);
+            this.label6.TabIndex = 33;
+            this.label6.Text = "OPERADOR";
+            // 
+            // button24
+            // 
+            this.button24.BackColor = System.Drawing.Color.Black;
+            this.button24.ForeColor = System.Drawing.Color.White;
+            this.button24.Location = new System.Drawing.Point(-1, 35);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(173, 31);
+            this.button24.TabIndex = 32;
+            this.button24.Text = "button24";
+            this.button24.UseVisualStyleBackColor = false;
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.SeaGreen;
+            this.button22.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.button22.Location = new System.Drawing.Point(1174, 575);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(259, 56);
+            this.button22.TabIndex = 30;
+            this.button22.Text = "R$ TOTAL";
+            this.button22.UseVisualStyleBackColor = false;
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.Teal;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.button19.Location = new System.Drawing.Point(779, 629);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(285, 58);
+            this.button19.TabIndex = 26;
+            this.button19.Text = "Total Itens";
+            this.button19.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -227,7 +340,7 @@ namespace PANDOKS_V1._0
             this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button14.Location = new System.Drawing.Point(21, 109);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(842, 64);
+            this.button14.Size = new System.Drawing.Size(764, 68);
             this.button14.TabIndex = 13;
             this.button14.UseVisualStyleBackColor = false;
             // 
@@ -278,18 +391,6 @@ namespace PANDOKS_V1._0
             this.button10.Text = "R$ Desconto";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.Teal;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.button9.Location = new System.Drawing.Point(974, 575);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(183, 112);
-            this.button9.TabIndex = 8;
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.UseVisualStyleBackColor = false;
             // 
             // button7
             // 
@@ -374,123 +475,32 @@ namespace PANDOKS_V1._0
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // label7
             // 
-            this.button8.BackColor = System.Drawing.Color.Teal;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.button8.Location = new System.Drawing.Point(779, 575);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(183, 112);
-            this.button8.TabIndex = 25;
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.Teal;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.button19.Location = new System.Drawing.Point(779, 575);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(92, 112);
-            this.button19.TabIndex = 26;
-            this.button19.Text = "Total Itens";
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.Teal;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.button21.Location = new System.Drawing.Point(974, 575);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(92, 112);
-            this.button21.TabIndex = 28;
-            this.button21.Text = "Total Qtd";
-            this.button21.UseVisualStyleBackColor = false;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.Teal;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.button20.Location = new System.Drawing.Point(1065, 693);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(92, 60);
-            this.button20.TabIndex = 29;
-            this.button20.UseVisualStyleBackColor = false;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.Color.SeaGreen;
-            this.button22.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.button22.Location = new System.Drawing.Point(1174, 575);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(259, 56);
-            this.button22.TabIndex = 30;
-            this.button22.Text = "R$ TOTAL";
-            this.button22.UseVisualStyleBackColor = false;
-            // 
-            // button24
-            // 
-            this.button24.BackColor = System.Drawing.Color.Black;
-            this.button24.ForeColor = System.Drawing.Color.White;
-            this.button24.Location = new System.Drawing.Point(-1, 35);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(173, 31);
-            this.button24.TabIndex = 32;
-            this.button24.Text = "button24";
-            this.button24.UseVisualStyleBackColor = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Black;
-            this.label6.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(3, 2);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(160, 30);
-            this.label6.TabIndex = 33;
-            this.label6.Text = "OPERADOR";
-            // 
-            // button23
-            // 
-            this.button23.BackColor = System.Drawing.Color.Black;
-            this.button23.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.button23.Location = new System.Drawing.Point(1296, 11);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(145, 38);
-            this.button23.TabIndex = 34;
-            this.button23.Text = "Sair (F12)";
-            this.button23.UseVisualStyleBackColor = false;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
-            // 
-            // listBox1
-            // 
-            this.listBox1.BackColor = System.Drawing.Color.Wheat;
-            this.listBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(903, 109);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(530, 420);
-            this.listBox1.TabIndex = 35;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Black;
+            this.label7.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(594, 19);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(113, 30);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "17:03:52";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1446, 835);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Caixa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Caixa.ResumeLayout(false);
+            this.Caixa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -498,12 +508,11 @@ namespace PANDOKS_V1._0
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Caixa;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
@@ -522,14 +531,15 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button26;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Label label7;
     }
 }

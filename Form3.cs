@@ -37,5 +37,21 @@ namespace PANDOKS_V1._0
             Application.Exit();
             Close();
         }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.Show();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            this.label7.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
     }
 }

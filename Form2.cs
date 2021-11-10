@@ -31,5 +31,30 @@ namespace PANDOKS_V1._0
         {
             Application.Exit();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            StatusdeProdução Status = new StatusdeProdução();
+            Status.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 Caixa = new Form3();
+            Caixa.Show();
+            this.Visible = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form9 Funcionario = new Form9();
+            Funcionario.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form8 Cliente = new Form8();
+            Cliente.Show();
+        }
     }
 }
