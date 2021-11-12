@@ -62,5 +62,10 @@ namespace PANDOKS_V1._0
             login Inicio = new login();
             Inicio.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

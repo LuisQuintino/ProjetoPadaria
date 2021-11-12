@@ -45,5 +45,10 @@ namespace PANDOKS_V1._0
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

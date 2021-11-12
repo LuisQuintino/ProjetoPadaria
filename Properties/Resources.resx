@@ -118,94 +118,214 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="addusergroup_1251" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\addusergroup_1251.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-admin-settings-male-48 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-admin-settings-male-48 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add_to_cart_trolley_shopping_icon_1924261" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_to_cart_trolley_shopping_icon_1924261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Panific System (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Panific System (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Panific" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Panific.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if-food-c216-2427860_85697" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if-food-c216-2427860_85697.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add_to_cart_trolley_shopping_icon_1924262" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_to_cart_trolley_shopping_icon_1924262.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="business_application_addmale_useradd_insert_add_user_client_2312" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\business_application_addmale_useradd_insert_add_user_client_2312.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-shutdown-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-shutdown-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="internet_lock_locked_padlock_password_secure_security_icon_127100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\internet_lock_locked_padlock_password_secure_security_icon_127100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exit_closethesession_close_63171" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit_closethesession_close_63171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="power_closedown_close_exit_pode_1842" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\power_closedown_close_exit_pode_1842.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-admin-settings-male-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-admin-settings-male-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="croissant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\croissant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Save_37110 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Save_37110 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="voltar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\voltar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Torta de Creme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Torta de Creme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add_to_cart_trolley_shopping_icon_1924263" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_to_cart_trolley_shopping_icon_1924263.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pao-frances" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pao-frances.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save-as_37111 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save-as_37111 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kib" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kib.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder-Add256_24876" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Folder-Add256_24876.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pao-frances001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pao-frances001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-po-de-queijo-cheese-roll-bread-food-delicious-5b08d308a135921" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-po-de-queijo-cheese-roll-bread-food-delicious-5b08d308a13592.03913092152730496866031.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pani" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pani.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cash_counter_payment_icon_192435" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cash_counter_payment_icon_192435.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_to_cart_trolley_shopping_icon_1924262" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_to_cart_trolley_shopping_icon_1924262.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Panific System (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Panific System (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Save-as_37111 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save-as_37111 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cupcake-" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cupcake-.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Save_37110" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Save_37110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Design sem nome" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Design sem nome.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Panific System (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Panific System (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="receipt_106581" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\receipt_106581.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Coxinha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Coxinha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exit_closethesession_close_6317" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit_closethesession_close_6317.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-shutdown-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-shutdown-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bolo de cenoura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bolo de cenoura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pastel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pastel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-chocolate-cake-birthday-cake-black-forest-gateau-w-indian-sweets-5b0d24439f4f89.7050587015275879076526" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-chocolate-cake-birthday-cake-black-forest-gateau-w-indian-sweets-5b0d24439f4f89.7050587015275879076526.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calzone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Calzone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pao-frances0011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pao-frances0011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save-as_37111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save-as_37111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cash_counter_payment_icon_192435" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cash_counter_payment_icon_192435.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sanduiche" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sanduiche.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pão de banana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pão de banana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_to_cart_trolley_shopping_icon_1924263" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_to_cart_trolley_shopping_icon_1924263.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voltar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voltar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-chocolate-cake-birthday-cake-black-forest-gateau-w-indian-sweets-5b0d24439f4f89.7050587015275879076526 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-chocolate-cake-birthday-cake-black-forest-gateau-w-indian-sweets-5b0d24439f4f89.7050587015275879076526 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-cupcake-chocolate-cake-ganache-chocolate-brownie-m-chocolate-cupcakes-5a6c91d4206183.8008177915170646601326" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-cupcake-chocolate-cake-ganache-chocolate-brownie-m-chocolate-cupcakes-5a6c91d4206183.8008177915170646601326.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navigate-left256_24869" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\navigate-left256_24869.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Folder-Delete256_24851" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Folder-Delete256_24851.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pani1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pani1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Folder-Accept256_24860" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Folder-Accept256_24860.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="business_application_addmale_useradd_insert_add_user_client_2312" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business_application_addmale_useradd_insert_add_user_client_2312.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-po-de-queijo-cheese-roll-bread-food-delicious-5b08d308a13592.0391309215273049686603 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-po-de-queijo-cheese-roll-bread-food-delicious-5b08d308a13592.0391309215273049686603 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add_to_cart_trolley_shopping_icon_192426" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_to_cart_trolley_shopping_icon_192426.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PanificSystemPadrão" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PanificSystemPadrão.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-admin-settings-male-48 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-admin-settings-male-48 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Panific System (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Panific System (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pão de centeio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pão de centeio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Design sem nome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sem nome.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Empadão" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Empadão.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-login-65" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-login-65.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="deal_done_partnership_agreement_icon_192421" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\deal_done_partnership_agreement_icon_192421.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_to_cart_trolley_shopping_icon_1924261" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_to_cart_trolley_shopping_icon_1924261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Untitled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PanificSystemPadrão" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PanificSystemPadrão.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="internet_lock_locked_padlock_password_secure_security_icon_127100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\internet_lock_locked_padlock_password_secure_security_icon_127100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pizza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pizza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navigate-right256_24872" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\navigate-right256_24872.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="receipt_106581" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\receipt_106581.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-po-de-queijo-cheese-roll-bread-food-delicious-5b08d308a13592.0391309215273049686603" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-po-de-queijo-cheese-roll-bread-food-delicious-5b08d308a13592.0391309215273049686603.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-admin-settings-male-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-admin-settings-male-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit_closethesession_close_6317" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit_closethesession_close_6317.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-po-de-queijo-cheese-roll-bread-food-delicious-5b08d308a13592.0391309215273049686603 - Copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-po-de-queijo-cheese-roll-bread-food-delicious-5b08d308a13592.0391309215273049686603 - Copia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="undo256_24848" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\undo256_24848.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Torta de maçã" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Torta de maçã.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit_closethesession_close_63171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit_closethesession_close_63171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deal_done_partnership_agreement_icon_192421" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deal_done_partnership_agreement_icon_192421.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pão Sirio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pão Sirio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Start_37108" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Start_37108.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if-food-c216-2427860_85697" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if-food-c216-2427860_85697.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Panetone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Panetone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brownie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brownie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="power_closedown_close_exit_pode_1842" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\power_closedown_close_exit_pode_1842.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Start_37108 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Start_37108 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="addusergroup_1251" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addusergroup_1251.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enroladinho de Salsicha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enroladinho de Salsicha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

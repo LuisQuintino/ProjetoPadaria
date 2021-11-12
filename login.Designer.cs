@@ -73,20 +73,21 @@ namespace PANDOKS_V1._0
             // 
             // mxtLOGIN
             // 
-            this.mxtLOGIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mxtLOGIN.Font = new System.Drawing.Font("Arial", 28F);
             this.mxtLOGIN.Location = new System.Drawing.Point(706, 519);
             this.mxtLOGIN.Mask = "000\\.000\\.000-00";
             this.mxtLOGIN.Name = "mxtLOGIN";
-            this.mxtLOGIN.Size = new System.Drawing.Size(380, 47);
+            this.mxtLOGIN.Size = new System.Drawing.Size(380, 50);
             this.mxtLOGIN.TabIndex = 0;
+            this.mxtLOGIN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnCANCELAR
             // 
             this.btnCANCELAR.BackColor = System.Drawing.Color.Wheat;
-            this.btnCANCELAR.Font = new System.Drawing.Font("Forte", 27F, System.Drawing.FontStyle.Bold);
-            this.btnCANCELAR.Location = new System.Drawing.Point(916, 709);
+            this.btnCANCELAR.Font = new System.Drawing.Font("Arial", 28F);
+            this.btnCANCELAR.Location = new System.Drawing.Point(907, 709);
             this.btnCANCELAR.Name = "btnCANCELAR";
-            this.btnCANCELAR.Size = new System.Drawing.Size(170, 50);
+            this.btnCANCELAR.Size = new System.Drawing.Size(179, 50);
             this.btnCANCELAR.TabIndex = 3;
             this.btnCANCELAR.Text = "Cancelar";
             this.btnCANCELAR.UseVisualStyleBackColor = false;
@@ -95,7 +96,7 @@ namespace PANDOKS_V1._0
             // btnENTRAR
             // 
             this.btnENTRAR.BackColor = System.Drawing.Color.Wheat;
-            this.btnENTRAR.Font = new System.Drawing.Font("Forte", 28F, System.Drawing.FontStyle.Bold);
+            this.btnENTRAR.Font = new System.Drawing.Font("Arial", 28F);
             this.btnENTRAR.Location = new System.Drawing.Point(706, 709);
             this.btnENTRAR.Name = "btnENTRAR";
             this.btnENTRAR.Size = new System.Drawing.Size(170, 50);
@@ -106,21 +107,22 @@ namespace PANDOKS_V1._0
             // 
             // txbSENHA
             // 
-            this.txbSENHA.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbSENHA.Font = new System.Drawing.Font("Arial", 28F);
             this.txbSENHA.Location = new System.Drawing.Point(706, 604);
             this.txbSENHA.Name = "txbSENHA";
-            this.txbSENHA.Size = new System.Drawing.Size(380, 47);
+            this.txbSENHA.Size = new System.Drawing.Size(380, 50);
             this.txbSENHA.TabIndex = 1;
+            this.txbSENHA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txbSENHA.UseSystemPasswordChar = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Forte", 28F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Arial", 28F);
             this.label2.Location = new System.Drawing.Point(548, 612);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 41);
+            this.label2.Size = new System.Drawing.Size(149, 43);
             this.label2.TabIndex = 10;
             this.label2.Text = "Senha :";
             // 
@@ -128,10 +130,10 @@ namespace PANDOKS_V1._0
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Forte", 28F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Arial", 28F);
             this.label1.Location = new System.Drawing.Point(563, 522);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 41);
+            this.label1.Size = new System.Drawing.Size(134, 43);
             this.label1.TabIndex = 9;
             this.label1.Text = "Login :";
             // 
