@@ -55,11 +55,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>database_padariaDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="database_padariaDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>database_padariaDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,17 +177,6 @@
     <None Include="database_padariaDataSet.xss">
       <DependentUpon>database_padariaDataSet.xsd</DependentUpon>
     </None>
-    <None Include="database_padariaDataSet1.xsc">
-      <DependentUpon>database_padariaDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="database_padariaDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>database_padariaDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="database_padariaDataSet1.xss">
-      <DependentUpon>database_padariaDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -279,6 +263,7 @@
     <Content Include="database_padaria.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Untitled.png" />
     <None Include="Resources\power_closedown_close_exit_pode_1842.png" />
     <None Include="Resources\Save_37110 %281%29.png" />
     <None Include="Resources\Save_37110.png" />

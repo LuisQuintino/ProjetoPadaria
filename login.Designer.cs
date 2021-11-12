@@ -78,7 +78,7 @@ namespace PANDOKS_V1._0
             this.mxtLOGIN.Mask = "000\\.000\\.000-00";
             this.mxtLOGIN.Name = "mxtLOGIN";
             this.mxtLOGIN.Size = new System.Drawing.Size(380, 47);
-            this.mxtLOGIN.TabIndex = 14;
+            this.mxtLOGIN.TabIndex = 0;
             // 
             // btnCANCELAR
             // 
@@ -87,9 +87,10 @@ namespace PANDOKS_V1._0
             this.btnCANCELAR.Location = new System.Drawing.Point(916, 709);
             this.btnCANCELAR.Name = "btnCANCELAR";
             this.btnCANCELAR.Size = new System.Drawing.Size(170, 50);
-            this.btnCANCELAR.TabIndex = 13;
+            this.btnCANCELAR.TabIndex = 3;
             this.btnCANCELAR.Text = "Cancelar";
             this.btnCANCELAR.UseVisualStyleBackColor = false;
+            this.btnCANCELAR.Click += new System.EventHandler(this.btnCANCELAR_Click_1);
             // 
             // btnENTRAR
             // 
@@ -98,7 +99,7 @@ namespace PANDOKS_V1._0
             this.btnENTRAR.Location = new System.Drawing.Point(706, 709);
             this.btnENTRAR.Name = "btnENTRAR";
             this.btnENTRAR.Size = new System.Drawing.Size(170, 50);
-            this.btnENTRAR.TabIndex = 12;
+            this.btnENTRAR.TabIndex = 2;
             this.btnENTRAR.Text = "Entrar";
             this.btnENTRAR.UseVisualStyleBackColor = false;
             this.btnENTRAR.Click += new System.EventHandler(this.btnENTRAR_Click_1);
@@ -109,7 +110,7 @@ namespace PANDOKS_V1._0
             this.txbSENHA.Location = new System.Drawing.Point(706, 604);
             this.txbSENHA.Name = "txbSENHA";
             this.txbSENHA.Size = new System.Drawing.Size(380, 47);
-            this.txbSENHA.TabIndex = 11;
+            this.txbSENHA.TabIndex = 1;
             this.txbSENHA.UseSystemPasswordChar = true;
             // 
             // label2

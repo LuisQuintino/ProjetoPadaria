@@ -40,7 +40,7 @@ namespace PANDOKS_V1._0
 
         private void button26_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Dispose();
         }
 
         private void button25_Click(object sender, EventArgs e)

@@ -29,6 +29,7 @@ namespace PANDOKS_V1._0
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,6 +41,7 @@ namespace PANDOKS_V1._0
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,7 +136,7 @@ namespace PANDOKS_V1._0
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(176, 168);
             this.button4.TabIndex = 4;
-            this.button4.Text = "Cadastrar Usuários";
+            this.button4.Text = "Cadastrar Funcionário";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -152,7 +154,7 @@ namespace PANDOKS_V1._0
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(176, 168);
             this.button5.TabIndex = 5;
-            this.button5.Text = "Cupom Fiscal";
+            this.button5.Text = "Recibo Cliente";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.UseVisualStyleBackColor = false;
             // 
@@ -208,6 +210,24 @@ namespace PANDOKS_V1._0
             this.button35.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button35.UseVisualStyleBackColor = false;
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button8.Location = new System.Drawing.Point(1304, 548);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(176, 168);
+            this.button8.TabIndex = 33;
+            this.button8.Text = "Home";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,6 +235,7 @@ namespace PANDOKS_V1._0
             this.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Panific_System__6_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1811, 755);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.button35);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -250,5 +271,6 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button35;
+        private System.Windows.Forms.Button button8;
     }
 }

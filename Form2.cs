@@ -56,5 +56,11 @@ namespace PANDOKS_V1._0
             Form8 Cliente = new Form8();
             Cliente.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            login Inicio = new login();
+            Inicio.Show();
+        }
     }
 }

@@ -46,5 +46,10 @@ namespace PANDOKS_V1._0
             else
                 MessageBox.Show("Usuário e Senha Invalido", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void btnCANCELAR_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

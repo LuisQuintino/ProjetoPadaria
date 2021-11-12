@@ -16,5 +16,34 @@ namespace PANDOKS_V1._0
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void maskedTextBox6_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void Form9_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'database_padariaDataSet.colaborador' table. You can move, or remove it, as needed.
+            this.colaboradorTableAdapter.Fill(this.database_padariaDataSet.colaborador);
+
+        }
+
+        private void colaboradorBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.colaboradorBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.database_padariaDataSet);
+        }
+
+        private void nome_colaboradorTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
