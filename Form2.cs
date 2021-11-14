@@ -67,5 +67,12 @@ namespace PANDOKS_V1._0
         {
 
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            login inicio = new login();
+            inicio.Show();
+        }
     }
 }

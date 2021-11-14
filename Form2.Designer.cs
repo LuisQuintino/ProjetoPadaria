@@ -41,6 +41,7 @@ namespace PANDOKS_V1._0
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,7 +97,7 @@ namespace PANDOKS_V1._0
             this.button2.Font = new System.Drawing.Font("Arial", 24F);
             this.button2.Image = global::PANDOKS_V1._0.Properties.Resources.cash_counter_payment_icon_192435;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(94, 548);
+            this.button2.Location = new System.Drawing.Point(94, 544);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(195, 199);
             this.button2.TabIndex = 4;
@@ -167,7 +168,7 @@ namespace PANDOKS_V1._0
             this.button6.Font = new System.Drawing.Font("Arial", 24F);
             this.button6.Image = global::PANDOKS_V1._0.Properties.Resources.exit_closethesession_close_6317;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(1550, 548);
+            this.button6.Location = new System.Drawing.Point(1550, 544);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(195, 199);
             this.button6.TabIndex = 7;
@@ -203,7 +204,7 @@ namespace PANDOKS_V1._0
             this.button8.Font = new System.Drawing.Font("Arial", 24F);
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button8.Location = new System.Drawing.Point(1186, 548);
+            this.button8.Location = new System.Drawing.Point(822, 544);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(195, 199);
             this.button8.TabIndex = 5;
@@ -212,6 +213,24 @@ namespace PANDOKS_V1._0
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Transparent;
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Arial", 24F);
+            this.button9.Image = global::PANDOKS_V1._0.Properties.Resources.exit_closethesession_close_6317;
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button9.Location = new System.Drawing.Point(1186, 544);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(195, 199);
+            this.button9.TabIndex = 8;
+            this.button9.Text = " Logout";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,6 +238,7 @@ namespace PANDOKS_V1._0
             this.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Panific_System__6_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1811, 755);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -254,5 +274,6 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }

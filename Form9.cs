@@ -29,6 +29,8 @@ namespace PANDOKS_V1._0
 
         private void Form9_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'database_padariaDataSet.cargo'. Você pode movê-la ou removê-la conforme necessário.
+            this.cargoTableAdapter.Fill(this.database_padariaDataSet.cargo);
             // TODO: This line of code loads data into the 'database_padariaDataSet.colaborador' table. You can move, or remove it, as needed.
             this.colaboradorTableAdapter.Fill(this.database_padariaDataSet.colaborador);
 

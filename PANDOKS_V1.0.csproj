@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cadastrarprodutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastrarprodutos.Designer.cs">
+      <DependentUpon>Cadastrarprodutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="database_padariaDataSet.cs">
       <DependentUpon>database_padariaDataSet.xsd</DependentUpon>
     </Compile>
@@ -123,6 +129,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cadastrarprodutos.resx">
+      <DependentUpon>Cadastrarprodutos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

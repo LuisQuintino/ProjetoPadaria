@@ -41,7 +41,9 @@ namespace PANDOKS_V1._0
             System.Windows.Forms.Label senha_colaboradorLabel;
             System.Windows.Forms.Label id_cargoLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form9));
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.colaboradorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database_padariaDataSet = new PANDOKS_V1._0.database_padariaDataSet();
             this.label5 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -59,18 +61,17 @@ namespace PANDOKS_V1._0
             this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btnnovo = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cargoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.id_colaboradorTextBox = new System.Windows.Forms.TextBox();
-            this.colaboradorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.database_padariaDataSet = new PANDOKS_V1._0.database_padariaDataSet();
             this.nome_colaboradorTextBox = new System.Windows.Forms.TextBox();
             this.cpf_colaboradorTextBox = new System.Windows.Forms.TextBox();
             this.nsc_colaboradorDateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -94,12 +95,6 @@ namespace PANDOKS_V1._0
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.colaboradorBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.colaboradorTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.colaboradorTableAdapter();
-            this.tableAdapterManager = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager();
-            this.btnsalvar = new System.Windows.Forms.Button();
-            this.btnproximo = new System.Windows.Forms.Button();
-            this.btnanterior = new System.Windows.Forms.Button();
-            this.btndeletar = new System.Windows.Forms.Button();
             this.colaboradorDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -111,6 +106,14 @@ namespace PANDOKS_V1._0
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colaboradorTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.colaboradorTableAdapter();
+            this.tableAdapterManager = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager();
+            this.btnsalvar = new System.Windows.Forms.Button();
+            this.btnproximo = new System.Windows.Forms.Button();
+            this.btnanterior = new System.Windows.Forms.Button();
+            this.btndeletar = new System.Windows.Forms.Button();
+            this.cargoTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.cargoTableAdapter();
+            this.cargocolaboradorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             id_colaboradorLabel = new System.Windows.Forms.Label();
             nome_colaboradorLabel = new System.Windows.Forms.Label();
             cpf_colaboradorLabel = new System.Windows.Forms.Label();
@@ -121,124 +124,137 @@ namespace PANDOKS_V1._0
             dt_demissaoLabel = new System.Windows.Forms.Label();
             senha_colaboradorLabel = new System.Windows.Forms.Label();
             id_cargoLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cargoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingNavigator)).BeginInit();
             this.colaboradorBindingNavigator.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cargocolaboradorBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // id_colaboradorLabel
             // 
             id_colaboradorLabel.AutoSize = true;
-            id_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            id_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             id_colaboradorLabel.Location = new System.Drawing.Point(676, 155);
             id_colaboradorLabel.Name = "id_colaboradorLabel";
-            id_colaboradorLabel.Size = new System.Drawing.Size(231, 37);
+            id_colaboradorLabel.Size = new System.Drawing.Size(113, 20);
             id_colaboradorLabel.TabIndex = 47;
             id_colaboradorLabel.Text = "id colaborador:";
             // 
             // nome_colaboradorLabel
             // 
             nome_colaboradorLabel.AutoSize = true;
-            nome_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nome_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             nome_colaboradorLabel.Location = new System.Drawing.Point(621, 191);
             nome_colaboradorLabel.Name = "nome_colaboradorLabel";
-            nome_colaboradorLabel.Size = new System.Drawing.Size(286, 37);
+            nome_colaboradorLabel.Size = new System.Drawing.Size(141, 20);
             nome_colaboradorLabel.TabIndex = 49;
             nome_colaboradorLabel.Text = "nome colaborador:";
             // 
             // cpf_colaboradorLabel
             // 
             cpf_colaboradorLabel.AutoSize = true;
-            cpf_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            cpf_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             cpf_colaboradorLabel.Location = new System.Drawing.Point(658, 223);
             cpf_colaboradorLabel.Name = "cpf_colaboradorLabel";
-            cpf_colaboradorLabel.Size = new System.Drawing.Size(249, 37);
+            cpf_colaboradorLabel.Size = new System.Drawing.Size(123, 20);
             cpf_colaboradorLabel.TabIndex = 51;
             cpf_colaboradorLabel.Text = "cpf colaborador:";
             // 
             // nsc_colaboradorLabel
             // 
             nsc_colaboradorLabel.AutoSize = true;
-            nsc_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nsc_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             nsc_colaboradorLabel.Location = new System.Drawing.Point(651, 254);
             nsc_colaboradorLabel.Name = "nsc_colaboradorLabel";
-            nsc_colaboradorLabel.Size = new System.Drawing.Size(256, 37);
+            nsc_colaboradorLabel.Size = new System.Drawing.Size(126, 20);
             nsc_colaboradorLabel.TabIndex = 53;
             nsc_colaboradorLabel.Text = "nsc colaborador:";
             // 
             // fone_colaboradorLabel
             // 
             fone_colaboradorLabel.AutoSize = true;
-            fone_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            fone_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             fone_colaboradorLabel.Location = new System.Drawing.Point(639, 287);
             fone_colaboradorLabel.Name = "fone_colaboradorLabel";
-            fone_colaboradorLabel.Size = new System.Drawing.Size(268, 37);
+            fone_colaboradorLabel.Size = new System.Drawing.Size(133, 20);
             fone_colaboradorLabel.TabIndex = 55;
             fone_colaboradorLabel.Text = "fone colaborador:";
             // 
             // salario_colaboradorLabel
             // 
             salario_colaboradorLabel.AutoSize = true;
-            salario_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            salario_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             salario_colaboradorLabel.Location = new System.Drawing.Point(606, 319);
             salario_colaboradorLabel.Name = "salario_colaboradorLabel";
-            salario_colaboradorLabel.Size = new System.Drawing.Size(301, 37);
+            salario_colaboradorLabel.Size = new System.Drawing.Size(147, 20);
             salario_colaboradorLabel.TabIndex = 57;
             salario_colaboradorLabel.Text = "salario colaborador:";
             // 
             // dt_admissaoLabel
             // 
             dt_admissaoLabel.AutoSize = true;
-            dt_admissaoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dt_admissaoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dt_admissaoLabel.Location = new System.Drawing.Point(707, 351);
             dt_admissaoLabel.Name = "dt_admissaoLabel";
-            dt_admissaoLabel.Size = new System.Drawing.Size(200, 37);
+            dt_admissaoLabel.Size = new System.Drawing.Size(99, 20);
             dt_admissaoLabel.TabIndex = 59;
             dt_admissaoLabel.Text = "dt admissao:";
             // 
             // dt_demissaoLabel
             // 
             dt_demissaoLabel.AutoSize = true;
-            dt_demissaoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dt_demissaoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dt_demissaoLabel.Location = new System.Drawing.Point(707, 382);
             dt_demissaoLabel.Name = "dt_demissaoLabel";
-            dt_demissaoLabel.Size = new System.Drawing.Size(199, 37);
+            dt_demissaoLabel.Size = new System.Drawing.Size(99, 20);
             dt_demissaoLabel.TabIndex = 61;
             dt_demissaoLabel.Text = "dt demissao:";
             // 
             // senha_colaboradorLabel
             // 
             senha_colaboradorLabel.AutoSize = true;
-            senha_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            senha_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             senha_colaboradorLabel.Location = new System.Drawing.Point(613, 415);
             senha_colaboradorLabel.Name = "senha_colaboradorLabel";
-            senha_colaboradorLabel.Size = new System.Drawing.Size(293, 37);
+            senha_colaboradorLabel.Size = new System.Drawing.Size(145, 20);
             senha_colaboradorLabel.TabIndex = 63;
             senha_colaboradorLabel.Text = "senha colaborador:";
             // 
             // id_cargoLabel
             // 
             id_cargoLabel.AutoSize = true;
-            id_cargoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            id_cargoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             id_cargoLabel.Location = new System.Drawing.Point(766, 443);
             id_cargoLabel.Name = "id_cargoLabel";
-            id_cargoLabel.Size = new System.Drawing.Size(141, 37);
+            id_cargoLabel.Size = new System.Drawing.Size(69, 20);
             id_cargoLabel.TabIndex = 65;
             id_cargoLabel.Text = "id cargo:";
             // 
-            // textBox2
+            // txtEmail
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial", 24F);
-            this.textBox2.Location = new System.Drawing.Point(145, 358);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(416, 44);
-            this.textBox2.TabIndex = 31;
+            this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource, "salario_colaborador", true));
+            this.txtEmail.Font = new System.Drawing.Font("Arial", 24F);
+            this.txtEmail.Location = new System.Drawing.Point(145, 358);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(416, 44);
+            this.txtEmail.TabIndex = 31;
+            // 
+            // colaboradorBindingSource
+            // 
+            this.colaboradorBindingSource.DataMember = "colaborador";
+            this.colaboradorBindingSource.DataSource = this.database_padariaDataSet;
+            // 
+            // database_padariaDataSet
+            // 
+            this.database_padariaDataSet.DataSetName = "database_padariaDataSet";
+            this.database_padariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label5
             // 
@@ -274,6 +290,7 @@ namespace PANDOKS_V1._0
             // 
             // maskedTextBox3
             // 
+            this.maskedTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource, "nsc_colaborador", true));
             this.maskedTextBox3.Font = new System.Drawing.Font("Arial", 24F);
             this.maskedTextBox3.Location = new System.Drawing.Point(365, 219);
             this.maskedTextBox3.Mask = "00/00/0000";
@@ -296,6 +313,7 @@ namespace PANDOKS_V1._0
             // 
             // maskedTextBox2
             // 
+            this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource, "cpf_colaborador", true));
             this.maskedTextBox2.Font = new System.Drawing.Font("Arial", 24F);
             this.maskedTextBox2.Location = new System.Drawing.Point(145, 147);
             this.maskedTextBox2.Mask = "000\\.000\\.000-00";
@@ -329,6 +347,7 @@ namespace PANDOKS_V1._0
             // 
             // textBox1
             // 
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource, "nome_colaborador", true));
             this.textBox1.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.textBox1.Location = new System.Drawing.Point(145, 75);
             this.textBox1.Name = "textBox1";
@@ -392,6 +411,7 @@ namespace PANDOKS_V1._0
             // 
             // maskedTextBox6
             // 
+            this.maskedTextBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource, "salario_colaborador", true));
             this.maskedTextBox6.Font = new System.Drawing.Font("Arial", 24F);
             this.maskedTextBox6.Location = new System.Drawing.Point(181, 594);
             this.maskedTextBox6.Mask = "$";
@@ -427,15 +447,6 @@ namespace PANDOKS_V1._0
             this.btnnovo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnnovo.UseVisualStyleBackColor = false;
             this.btnnovo.Click += new System.EventHandler(this.btnnovo_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 24F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(181, 671);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(172, 44);
-            this.comboBox1.TabIndex = 42;
             // 
             // pictureBox1
             // 
@@ -478,7 +489,9 @@ namespace PANDOKS_V1._0
             // 
             // tabPage1
             // 
+            this.tabPage1.AutoScroll = true;
             this.tabPage1.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
+            this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.textBox4);
             this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.textBox3);
@@ -507,7 +520,6 @@ namespace PANDOKS_V1._0
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.maskedTextBox2);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label10);
@@ -519,7 +531,7 @@ namespace PANDOKS_V1._0
             this.tabPage1.Controls.Add(this.maskedTextBox5);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.txtEmail);
             this.tabPage1.Controls.Add(this.maskedTextBox4);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -530,6 +542,23 @@ namespace PANDOKS_V1._0
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Cadastro";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.cargoBindingSource;
+            this.comboBox1.DisplayMember = "nome_cargo";
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(168, 673);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 45);
+            this.comboBox1.TabIndex = 71;
+            this.comboBox1.ValueMember = "nome_cargo";
+            // 
+            // cargoBindingSource
+            // 
+            this.cargoBindingSource.DataMember = "cargo";
+            this.cargoBindingSource.DataSource = this.database_padariaDataSet;
             // 
             // textBox4
             // 
@@ -572,102 +601,92 @@ namespace PANDOKS_V1._0
             // id_colaboradorTextBox
             // 
             this.id_colaboradorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource, "id_colaborador", true));
-            this.id_colaboradorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_colaboradorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_colaboradorTextBox.Location = new System.Drawing.Point(919, 152);
             this.id_colaboradorTextBox.Name = "id_colaboradorTextBox";
-            this.id_colaboradorTextBox.Size = new System.Drawing.Size(200, 44);
+            this.id_colaboradorTextBox.Size = new System.Drawing.Size(200, 26);
             this.id_colaboradorTextBox.TabIndex = 48;
-            // 
-            // colaboradorBindingSource
-            // 
-            this.colaboradorBindingSource.DataMember = "colaborador";
-            this.colaboradorBindingSource.DataSource = this.database_padariaDataSet;
-            // 
-            // database_padariaDataSet
-            // 
-            this.database_padariaDataSet.DataSetName = "database_padariaDataSet";
-            this.database_padariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // nome_colaboradorTextBox
             // 
             this.nome_colaboradorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource, "nome_colaborador", true));
-            this.nome_colaboradorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nome_colaboradorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nome_colaboradorTextBox.Location = new System.Drawing.Point(919, 184);
             this.nome_colaboradorTextBox.Name = "nome_colaboradorTextBox";
-            this.nome_colaboradorTextBox.Size = new System.Drawing.Size(200, 44);
+            this.nome_colaboradorTextBox.Size = new System.Drawing.Size(200, 26);
             this.nome_colaboradorTextBox.TabIndex = 50;
             this.nome_colaboradorTextBox.TextChanged += new System.EventHandler(this.nome_colaboradorTextBox_TextChanged);
             // 
             // cpf_colaboradorTextBox
             // 
             this.cpf_colaboradorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource, "cpf_colaborador", true));
-            this.cpf_colaboradorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cpf_colaboradorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cpf_colaboradorTextBox.Location = new System.Drawing.Point(919, 216);
             this.cpf_colaboradorTextBox.Name = "cpf_colaboradorTextBox";
-            this.cpf_colaboradorTextBox.Size = new System.Drawing.Size(200, 44);
+            this.cpf_colaboradorTextBox.Size = new System.Drawing.Size(200, 26);
             this.cpf_colaboradorTextBox.TabIndex = 52;
             // 
             // nsc_colaboradorDateTimePicker
             // 
             this.nsc_colaboradorDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.colaboradorBindingSource, "nsc_colaborador", true));
-            this.nsc_colaboradorDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nsc_colaboradorDateTimePicker.Location = new System.Drawing.Point(919, 248);
+            this.nsc_colaboradorDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nsc_colaboradorDateTimePicker.Location = new System.Drawing.Point(724, 516);
             this.nsc_colaboradorDateTimePicker.Name = "nsc_colaboradorDateTimePicker";
-            this.nsc_colaboradorDateTimePicker.Size = new System.Drawing.Size(200, 44);
+            this.nsc_colaboradorDateTimePicker.Size = new System.Drawing.Size(200, 26);
             this.nsc_colaboradorDateTimePicker.TabIndex = 54;
             // 
             // fone_colaboradorTextBox
             // 
             this.fone_colaboradorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource, "fone_colaborador", true));
-            this.fone_colaboradorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fone_colaboradorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fone_colaboradorTextBox.Location = new System.Drawing.Point(919, 280);
             this.fone_colaboradorTextBox.Name = "fone_colaboradorTextBox";
-            this.fone_colaboradorTextBox.Size = new System.Drawing.Size(200, 44);
+            this.fone_colaboradorTextBox.Size = new System.Drawing.Size(200, 26);
             this.fone_colaboradorTextBox.TabIndex = 56;
             // 
             // salario_colaboradorTextBox
             // 
             this.salario_colaboradorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource, "salario_colaborador", true));
-            this.salario_colaboradorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salario_colaboradorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salario_colaboradorTextBox.Location = new System.Drawing.Point(919, 312);
             this.salario_colaboradorTextBox.Name = "salario_colaboradorTextBox";
-            this.salario_colaboradorTextBox.Size = new System.Drawing.Size(200, 44);
+            this.salario_colaboradorTextBox.Size = new System.Drawing.Size(200, 26);
             this.salario_colaboradorTextBox.TabIndex = 58;
             // 
             // dt_admissaoDateTimePicker
             // 
             this.dt_admissaoDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.colaboradorBindingSource, "dt_admissao", true));
-            this.dt_admissaoDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_admissaoDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_admissaoDateTimePicker.Location = new System.Drawing.Point(919, 344);
             this.dt_admissaoDateTimePicker.Name = "dt_admissaoDateTimePicker";
-            this.dt_admissaoDateTimePicker.Size = new System.Drawing.Size(200, 44);
+            this.dt_admissaoDateTimePicker.Size = new System.Drawing.Size(200, 26);
             this.dt_admissaoDateTimePicker.TabIndex = 60;
             // 
             // dt_demissaoDateTimePicker
             // 
             this.dt_demissaoDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.colaboradorBindingSource, "dt_demissao", true));
-            this.dt_demissaoDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_demissaoDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_demissaoDateTimePicker.Location = new System.Drawing.Point(919, 376);
             this.dt_demissaoDateTimePicker.Name = "dt_demissaoDateTimePicker";
-            this.dt_demissaoDateTimePicker.Size = new System.Drawing.Size(200, 44);
+            this.dt_demissaoDateTimePicker.Size = new System.Drawing.Size(200, 26);
             this.dt_demissaoDateTimePicker.TabIndex = 62;
             // 
             // senha_colaboradorTextBox
             // 
             this.senha_colaboradorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource, "senha_colaborador", true));
-            this.senha_colaboradorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.senha_colaboradorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.senha_colaboradorTextBox.Location = new System.Drawing.Point(919, 408);
             this.senha_colaboradorTextBox.Name = "senha_colaboradorTextBox";
-            this.senha_colaboradorTextBox.Size = new System.Drawing.Size(200, 44);
+            this.senha_colaboradorTextBox.Size = new System.Drawing.Size(200, 26);
             this.senha_colaboradorTextBox.TabIndex = 64;
             // 
             // id_cargoTextBox
             // 
             this.id_cargoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource, "id_cargo", true));
-            this.id_cargoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_cargoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_cargoTextBox.Location = new System.Drawing.Point(919, 440);
             this.id_cargoTextBox.Name = "id_cargoTextBox";
-            this.id_cargoTextBox.Size = new System.Drawing.Size(200, 44);
+            this.id_cargoTextBox.Size = new System.Drawing.Size(200, 26);
             this.id_cargoTextBox.TabIndex = 66;
             // 
             // colaboradorBindingNavigator
@@ -808,6 +827,87 @@ namespace PANDOKS_V1._0
             this.tabPage2.Text = "Consulta";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // colaboradorDataGridView
+            // 
+            this.colaboradorDataGridView.AutoGenerateColumns = false;
+            this.colaboradorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.colaboradorDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10});
+            this.colaboradorDataGridView.DataSource = this.colaboradorBindingSource;
+            this.colaboradorDataGridView.Location = new System.Drawing.Point(3, 6);
+            this.colaboradorDataGridView.Name = "colaboradorDataGridView";
+            this.colaboradorDataGridView.Size = new System.Drawing.Size(684, 457);
+            this.colaboradorDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_colaborador";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id_colaborador";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "nome_colaborador";
+            this.dataGridViewTextBoxColumn2.HeaderText = "nome_colaborador";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "cpf_colaborador";
+            this.dataGridViewTextBoxColumn3.HeaderText = "cpf_colaborador";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "nsc_colaborador";
+            this.dataGridViewTextBoxColumn4.HeaderText = "nsc_colaborador";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "fone_colaborador";
+            this.dataGridViewTextBoxColumn5.HeaderText = "fone_colaborador";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "salario_colaborador";
+            this.dataGridViewTextBoxColumn6.HeaderText = "salario_colaborador";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "dt_admissao";
+            this.dataGridViewTextBoxColumn7.HeaderText = "dt_admissao";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "dt_demissao";
+            this.dataGridViewTextBoxColumn8.HeaderText = "dt_demissao";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "senha_colaborador";
+            this.dataGridViewTextBoxColumn9.HeaderText = "senha_colaborador";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "id_cargo";
+            this.dataGridViewTextBoxColumn10.HeaderText = "id_cargo";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
             // colaboradorTableAdapter
             // 
             this.colaboradorTableAdapter.ClearBeforeFill = true;
@@ -893,86 +993,14 @@ namespace PANDOKS_V1._0
             this.btndeletar.UseVisualStyleBackColor = false;
             this.btndeletar.Click += new System.EventHandler(this.btndeletar_Click);
             // 
-            // colaboradorDataGridView
+            // cargoTableAdapter
             // 
-            this.colaboradorDataGridView.AutoGenerateColumns = false;
-            this.colaboradorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.colaboradorDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
-            this.colaboradorDataGridView.DataSource = this.colaboradorBindingSource;
-            this.colaboradorDataGridView.Location = new System.Drawing.Point(3, 6);
-            this.colaboradorDataGridView.Name = "colaboradorDataGridView";
-            this.colaboradorDataGridView.Size = new System.Drawing.Size(684, 457);
-            this.colaboradorDataGridView.TabIndex = 0;
+            this.cargoTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn1
+            // cargocolaboradorBindingSource
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_colaborador";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id_colaborador";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "nome_colaborador";
-            this.dataGridViewTextBoxColumn2.HeaderText = "nome_colaborador";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "cpf_colaborador";
-            this.dataGridViewTextBoxColumn3.HeaderText = "cpf_colaborador";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "nsc_colaborador";
-            this.dataGridViewTextBoxColumn4.HeaderText = "nsc_colaborador";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "fone_colaborador";
-            this.dataGridViewTextBoxColumn5.HeaderText = "fone_colaborador";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "salario_colaborador";
-            this.dataGridViewTextBoxColumn6.HeaderText = "salario_colaborador";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "dt_admissao";
-            this.dataGridViewTextBoxColumn7.HeaderText = "dt_admissao";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "dt_demissao";
-            this.dataGridViewTextBoxColumn8.HeaderText = "dt_demissao";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "senha_colaborador";
-            this.dataGridViewTextBoxColumn9.HeaderText = "senha_colaborador";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "id_cargo";
-            this.dataGridViewTextBoxColumn10.HeaderText = "id_cargo";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.cargocolaboradorBindingSource.DataMember = "cargocolaborador";
+            this.cargocolaboradorBindingSource.DataSource = this.cargoBindingSource;
             // 
             // Form9
             // 
@@ -992,23 +1020,25 @@ namespace PANDOKS_V1._0
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form9";
             this.Load += new System.EventHandler(this.Form9_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cargoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingNavigator)).EndInit();
             this.colaboradorBindingNavigator.ResumeLayout(false);
             this.colaboradorBindingNavigator.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cargocolaboradorBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label4;
@@ -1026,7 +1056,6 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.MaskedTextBox maskedTextBox6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnnovo;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabControl tabControl1;
@@ -1078,5 +1107,9 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.BindingSource cargoBindingSource;
+        private database_padariaDataSetTableAdapters.cargoTableAdapter cargoTableAdapter;
+        private System.Windows.Forms.BindingSource cargocolaboradorBindingSource;
     }
 }
