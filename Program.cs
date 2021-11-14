@@ -16,7 +16,8 @@ namespace PANDOKS_V1._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form9());
+            Application.Run(new Cadastrocolaborador());
+            // Application.Run(new login());
         }
     }
 }

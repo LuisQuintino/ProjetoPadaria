@@ -19,6 +19,7 @@ namespace PANDOKS_V1._0
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            login tela = new login();
             if(progressBar1.Value < 100)
             {
                 progressBar1.Value += 2;
@@ -26,7 +27,6 @@ namespace PANDOKS_V1._0
             else
             {
                 timer1.Enabled = false;
-                login tela = new login();
                 tela.Show();
                 this.Visible = false;
             }

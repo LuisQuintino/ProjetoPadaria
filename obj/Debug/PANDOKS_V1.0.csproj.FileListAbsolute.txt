@@ -73,13 +73,7 @@ C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\bin\Debug\PANDOKS_V1.0
 C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1.0.csproj.AssemblyReference.cache
 C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.PanificSystem.resources
 C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.MenuPrincipal.resources
-C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.Form3.resources
 C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.StatusdeProdução.resources
-C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.Form5.resources
-C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.Form6.resources
-C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.Form7.resources
-C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.Form8.resources
-C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.Form9.resources
 C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.janela_splash.resources
 C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.login.resources
 C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.Properties.Resources.resources
@@ -88,3 +82,9 @@ C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1.0
 C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1.0.exe
 C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1.0.pdb
 C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.Cadastrarprodutos.resources
+C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.TelaCaixa.resources
+C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.StatusPao.resources
+C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.Statuspaoqueijo.resources
+C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.BoloChocolate.resources
+C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.CadastroCliente.resources
+C:\Users\luis\Documents\Visual Studio 2019\ProjetoPadaria\obj\Debug\PANDOKS_V1._0.Cadastrocolaborador.resources
