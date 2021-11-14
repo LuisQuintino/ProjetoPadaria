@@ -29,6 +29,15 @@ namespace PANDOKS_V1._0
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form8));
+            System.Windows.Forms.Label id_clienteLabel;
+            System.Windows.Forms.Label nome_clienteLabel;
+            System.Windows.Forms.Label cpf_clienteLabel;
+            System.Windows.Forms.Label nsc_clienteLabel;
+            System.Windows.Forms.Label fone_clienteLabel;
+            System.Windows.Forms.Label email_clienteLabel;
+            System.Windows.Forms.Label senha_clienteLabel;
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,6 +54,41 @@ namespace PANDOKS_V1._0
             this.button2 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.database_padariaDataSet = new PANDOKS_V1._0.database_padariaDataSet();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clienteTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.clienteTableAdapter();
+            this.tableAdapterManager = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager();
+            this.clienteBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.clienteBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.id_clienteTextBox = new System.Windows.Forms.TextBox();
+            this.nome_clienteTextBox = new System.Windows.Forms.TextBox();
+            this.cpf_clienteTextBox = new System.Windows.Forms.TextBox();
+            this.nsc_clienteDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.fone_clienteTextBox = new System.Windows.Forms.TextBox();
+            this.email_clienteTextBox = new System.Windows.Forms.TextBox();
+            this.senha_clienteTextBox = new System.Windows.Forms.TextBox();
+            id_clienteLabel = new System.Windows.Forms.Label();
+            nome_clienteLabel = new System.Windows.Forms.Label();
+            cpf_clienteLabel = new System.Windows.Forms.Label();
+            nsc_clienteLabel = new System.Windows.Forms.Label();
+            fone_clienteLabel = new System.Windows.Forms.Label();
+            email_clienteLabel = new System.Windows.Forms.Label();
+            senha_clienteLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingNavigator)).BeginInit();
+            this.clienteBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -219,12 +263,297 @@ namespace PANDOKS_V1._0
             this.textBox4.Size = new System.Drawing.Size(271, 44);
             this.textBox4.TabIndex = 71;
             // 
+            // database_padariaDataSet
+            // 
+            this.database_padariaDataSet.DataSetName = "database_padariaDataSet";
+            this.database_padariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "cliente";
+            this.clienteBindingSource.DataSource = this.database_padariaDataSet;
+            // 
+            // clienteTableAdapter
+            // 
+            this.clienteTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.cargoTableAdapter = null;
+            this.tableAdapterManager.clienteTableAdapter = this.clienteTableAdapter;
+            this.tableAdapterManager.colaboradorTableAdapter = null;
+            this.tableAdapterManager.pedido_produtoTableAdapter = null;
+            this.tableAdapterManager.pedidoTableAdapter = null;
+            this.tableAdapterManager.producaoTableAdapter = null;
+            this.tableAdapterManager.produtoTableAdapter = null;
+            this.tableAdapterManager.tipo_pedidoTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // clienteBindingNavigator
+            // 
+            this.clienteBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.clienteBindingNavigator.BindingSource = this.clienteBindingSource;
+            this.clienteBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.clienteBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.clienteBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.clienteBindingNavigatorSaveItem});
+            this.clienteBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.clienteBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.clienteBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.clienteBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.clienteBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.clienteBindingNavigator.Name = "clienteBindingNavigator";
+            this.clienteBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.clienteBindingNavigator.Size = new System.Drawing.Size(1219, 25);
+            this.clienteBindingNavigator.TabIndex = 72;
+            this.clienteBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Posição";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 15);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Text = "Mover próximo";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Text = "Mover último";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorDeleteItem.Text = "Excluir";
+            // 
+            // clienteBindingNavigatorSaveItem
+            // 
+            this.clienteBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.clienteBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("clienteBindingNavigatorSaveItem.Image")));
+            this.clienteBindingNavigatorSaveItem.Name = "clienteBindingNavigatorSaveItem";
+            this.clienteBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.clienteBindingNavigatorSaveItem.Text = "Salvar Dados";
+            this.clienteBindingNavigatorSaveItem.Click += new System.EventHandler(this.clienteBindingNavigatorSaveItem_Click);
+            // 
+            // id_clienteLabel
+            // 
+            id_clienteLabel.AutoSize = true;
+            id_clienteLabel.Location = new System.Drawing.Point(641, 184);
+            id_clienteLabel.Name = "id_clienteLabel";
+            id_clienteLabel.Size = new System.Drawing.Size(52, 13);
+            id_clienteLabel.TabIndex = 72;
+            id_clienteLabel.Text = "id cliente:";
+            // 
+            // id_clienteTextBox
+            // 
+            this.id_clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "id_cliente", true));
+            this.id_clienteTextBox.Location = new System.Drawing.Point(720, 181);
+            this.id_clienteTextBox.Name = "id_clienteTextBox";
+            this.id_clienteTextBox.Size = new System.Drawing.Size(200, 20);
+            this.id_clienteTextBox.TabIndex = 73;
+            // 
+            // nome_clienteLabel
+            // 
+            nome_clienteLabel.AutoSize = true;
+            nome_clienteLabel.Location = new System.Drawing.Point(641, 210);
+            nome_clienteLabel.Name = "nome_clienteLabel";
+            nome_clienteLabel.Size = new System.Drawing.Size(70, 13);
+            nome_clienteLabel.TabIndex = 74;
+            nome_clienteLabel.Text = "nome cliente:";
+            // 
+            // nome_clienteTextBox
+            // 
+            this.nome_clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "nome_cliente", true));
+            this.nome_clienteTextBox.Location = new System.Drawing.Point(720, 207);
+            this.nome_clienteTextBox.Name = "nome_clienteTextBox";
+            this.nome_clienteTextBox.Size = new System.Drawing.Size(200, 20);
+            this.nome_clienteTextBox.TabIndex = 75;
+            // 
+            // cpf_clienteLabel
+            // 
+            cpf_clienteLabel.AutoSize = true;
+            cpf_clienteLabel.Location = new System.Drawing.Point(641, 236);
+            cpf_clienteLabel.Name = "cpf_clienteLabel";
+            cpf_clienteLabel.Size = new System.Drawing.Size(59, 13);
+            cpf_clienteLabel.TabIndex = 76;
+            cpf_clienteLabel.Text = "cpf cliente:";
+            // 
+            // cpf_clienteTextBox
+            // 
+            this.cpf_clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "cpf_cliente", true));
+            this.cpf_clienteTextBox.Location = new System.Drawing.Point(720, 233);
+            this.cpf_clienteTextBox.Name = "cpf_clienteTextBox";
+            this.cpf_clienteTextBox.Size = new System.Drawing.Size(200, 20);
+            this.cpf_clienteTextBox.TabIndex = 77;
+            // 
+            // nsc_clienteLabel
+            // 
+            nsc_clienteLabel.AutoSize = true;
+            nsc_clienteLabel.Location = new System.Drawing.Point(641, 263);
+            nsc_clienteLabel.Name = "nsc_clienteLabel";
+            nsc_clienteLabel.Size = new System.Drawing.Size(61, 13);
+            nsc_clienteLabel.TabIndex = 78;
+            nsc_clienteLabel.Text = "nsc cliente:";
+            // 
+            // nsc_clienteDateTimePicker
+            // 
+            this.nsc_clienteDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.clienteBindingSource, "nsc_cliente", true));
+            this.nsc_clienteDateTimePicker.Location = new System.Drawing.Point(720, 259);
+            this.nsc_clienteDateTimePicker.Name = "nsc_clienteDateTimePicker";
+            this.nsc_clienteDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.nsc_clienteDateTimePicker.TabIndex = 79;
+            // 
+            // fone_clienteLabel
+            // 
+            fone_clienteLabel.AutoSize = true;
+            fone_clienteLabel.Location = new System.Drawing.Point(641, 288);
+            fone_clienteLabel.Name = "fone_clienteLabel";
+            fone_clienteLabel.Size = new System.Drawing.Size(65, 13);
+            fone_clienteLabel.TabIndex = 80;
+            fone_clienteLabel.Text = "fone cliente:";
+            // 
+            // fone_clienteTextBox
+            // 
+            this.fone_clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "fone_cliente", true));
+            this.fone_clienteTextBox.Location = new System.Drawing.Point(720, 285);
+            this.fone_clienteTextBox.Name = "fone_clienteTextBox";
+            this.fone_clienteTextBox.Size = new System.Drawing.Size(200, 20);
+            this.fone_clienteTextBox.TabIndex = 81;
+            // 
+            // email_clienteLabel
+            // 
+            email_clienteLabel.AutoSize = true;
+            email_clienteLabel.Location = new System.Drawing.Point(641, 314);
+            email_clienteLabel.Name = "email_clienteLabel";
+            email_clienteLabel.Size = new System.Drawing.Size(68, 13);
+            email_clienteLabel.TabIndex = 82;
+            email_clienteLabel.Text = "email cliente:";
+            // 
+            // email_clienteTextBox
+            // 
+            this.email_clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "email_cliente", true));
+            this.email_clienteTextBox.Location = new System.Drawing.Point(720, 311);
+            this.email_clienteTextBox.Name = "email_clienteTextBox";
+            this.email_clienteTextBox.Size = new System.Drawing.Size(200, 20);
+            this.email_clienteTextBox.TabIndex = 83;
+            // 
+            // senha_clienteLabel
+            // 
+            senha_clienteLabel.AutoSize = true;
+            senha_clienteLabel.Location = new System.Drawing.Point(641, 340);
+            senha_clienteLabel.Name = "senha_clienteLabel";
+            senha_clienteLabel.Size = new System.Drawing.Size(73, 13);
+            senha_clienteLabel.TabIndex = 84;
+            senha_clienteLabel.Text = "senha cliente:";
+            // 
+            // senha_clienteTextBox
+            // 
+            this.senha_clienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "senha_cliente", true));
+            this.senha_clienteTextBox.Location = new System.Drawing.Point(720, 337);
+            this.senha_clienteTextBox.Name = "senha_clienteTextBox";
+            this.senha_clienteTextBox.Size = new System.Drawing.Size(200, 20);
+            this.senha_clienteTextBox.TabIndex = 85;
+            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
-            this.ClientSize = new System.Drawing.Size(592, 752);
+            this.ClientSize = new System.Drawing.Size(1219, 752);
+            this.Controls.Add(id_clienteLabel);
+            this.Controls.Add(this.id_clienteTextBox);
+            this.Controls.Add(nome_clienteLabel);
+            this.Controls.Add(this.nome_clienteTextBox);
+            this.Controls.Add(cpf_clienteLabel);
+            this.Controls.Add(this.cpf_clienteTextBox);
+            this.Controls.Add(nsc_clienteLabel);
+            this.Controls.Add(this.nsc_clienteDateTimePicker);
+            this.Controls.Add(fone_clienteLabel);
+            this.Controls.Add(this.fone_clienteTextBox);
+            this.Controls.Add(email_clienteLabel);
+            this.Controls.Add(this.email_clienteTextBox);
+            this.Controls.Add(senha_clienteLabel);
+            this.Controls.Add(this.senha_clienteTextBox);
+            this.Controls.Add(this.clienteBindingNavigator);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button3);
@@ -244,6 +573,12 @@ namespace PANDOKS_V1._0
             this.Name = "Form8";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form8";
+            this.Load += new System.EventHandler(this.Form8_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingNavigator)).EndInit();
+            this.clienteBindingNavigator.ResumeLayout(false);
+            this.clienteBindingNavigator.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,5 +602,29 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox4;
+        private database_padariaDataSet database_padariaDataSet;
+        private System.Windows.Forms.BindingSource clienteBindingSource;
+        private database_padariaDataSetTableAdapters.clienteTableAdapter clienteTableAdapter;
+        private database_padariaDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingNavigator clienteBindingNavigator;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton clienteBindingNavigatorSaveItem;
+        private System.Windows.Forms.TextBox id_clienteTextBox;
+        private System.Windows.Forms.TextBox nome_clienteTextBox;
+        private System.Windows.Forms.TextBox cpf_clienteTextBox;
+        private System.Windows.Forms.DateTimePicker nsc_clienteDateTimePicker;
+        private System.Windows.Forms.TextBox fone_clienteTextBox;
+        private System.Windows.Forms.TextBox email_clienteTextBox;
+        private System.Windows.Forms.TextBox senha_clienteTextBox;
     }
 }

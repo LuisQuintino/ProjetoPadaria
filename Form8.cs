@@ -21,5 +21,20 @@ namespace PANDOKS_V1._0
         {
             this.Dispose();
         }
+
+        private void clienteBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.clienteBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.database_padariaDataSet);
+
+        }
+
+        private void Form8_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'database_padariaDataSet.cliente'. Você pode movê-la ou removê-la conforme necessário.
+            this.clienteTableAdapter.Fill(this.database_padariaDataSet.cliente);
+
+        }
     }
 }

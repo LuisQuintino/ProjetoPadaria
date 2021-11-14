@@ -50,5 +50,32 @@ namespace PANDOKS_V1._0
         {
 
         }
+
+        private void btnanterior_Click(object sender, EventArgs e)
+        {
+            colaboradorBindingSource.MovePrevious();
+        }
+
+        private void btnproximo_Click(object sender, EventArgs e)
+        {
+            colaboradorBindingSource.MoveNext();
+        }
+
+        private void btndeletar_Click(object sender, EventArgs e)
+        {
+            colaboradorBindingSource.RemoveCurrent();
+        }
+
+        private void btnsalvar_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.colaboradorBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.database_padariaDataSet);
+        }
+
+        private void btnnovo_Click(object sender, EventArgs e)
+        {
+            colaboradorBindingSource.AddNew();
+        }
     }
 }
