@@ -44,6 +44,8 @@ namespace PANDOKS_V1._0
         private void button26_Click(object sender, EventArgs e)
         {
             this.Dispose();
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.Show();
         }
 
         private void button25_Click(object sender, EventArgs e)
@@ -142,6 +144,14 @@ namespace PANDOKS_V1._0
             txtValorUnit.Text = "";
             txtValorFinal.Text = "";
             textBox1.Text = "";
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                btnadcproduto_Click(sender, e);
+            }
         }
 
         private void btnadcproduto_Click(object sender, EventArgs e)

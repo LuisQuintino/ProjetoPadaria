@@ -114,6 +114,7 @@ namespace PANDOKS_V1._0
             this.txbSENHA.TabIndex = 1;
             this.txbSENHA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txbSENHA.UseSystemPasswordChar = true;
+            this.txbSENHA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbSENHA_KeyPress);
             // 
             // label2
             // 

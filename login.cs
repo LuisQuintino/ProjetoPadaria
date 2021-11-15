@@ -51,5 +51,13 @@ namespace PANDOKS_V1._0
         {
             Application.Exit();
         }
+
+        private void txbSENHA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                btnENTRAR_Click_1(sender, e);
+            }
+        }
     }
 }

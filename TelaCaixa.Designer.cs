@@ -201,6 +201,7 @@ namespace PANDOKS_V1._0
             this.textBox1.Size = new System.Drawing.Size(761, 62);
             this.textBox1.TabIndex = 40;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label7
             // 
