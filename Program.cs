@@ -16,7 +16,7 @@ namespace PANDOKS_V1._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Cadastrocolaborador());
+            Application.Run(new TelaCaixa());
             // Application.Run(new login());
         }
     }

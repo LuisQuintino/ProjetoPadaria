@@ -29,12 +29,22 @@ namespace PANDOKS_V1._0
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCaixa));
             this.Caixa = new System.Windows.Forms.Panel();
+            this.txtValorFinal = new System.Windows.Forms.TextBox();
+            this.txtnmproduto = new System.Windows.Forms.TextBox();
+            this.produtoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database_padariaDataSet = new PANDOKS_V1._0.database_padariaDataSet();
+            this.txtValorTotal = new System.Windows.Forms.TextBox();
+            this.txtValorUnit = new System.Windows.Forms.TextBox();
+            this.txtQtd = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button27 = new System.Windows.Forms.Button();
+            this.btnadcproduto = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbcupom = new System.Windows.Forms.ListBox();
             this.button23 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button24 = new System.Windows.Forms.Button();
@@ -44,16 +54,10 @@ namespace PANDOKS_V1._0
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button15 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.btnfecharvenda = new System.Windows.Forms.Button();
+            this.txtcancelarvenda = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.conspreco = new System.Windows.Forms.Button();
             this.pesqproduto = new System.Windows.Forms.Button();
@@ -62,8 +66,27 @@ namespace PANDOKS_V1._0
             this.quantdinheiro = new System.Windows.Forms.Button();
             this.fecharcaixa = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.produtoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.produtoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.produtoTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.produtoTableAdapter();
+            this.tableAdapterManager = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager();
             this.Caixa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingNavigator)).BeginInit();
+            this.produtoBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
             // Caixa
@@ -72,11 +95,17 @@ namespace PANDOKS_V1._0
             this.Caixa.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Panific_System__6_;
             this.Caixa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Caixa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Caixa.Controls.Add(this.txtValorFinal);
+            this.Caixa.Controls.Add(this.txtnmproduto);
+            this.Caixa.Controls.Add(this.txtValorTotal);
+            this.Caixa.Controls.Add(this.txtValorUnit);
+            this.Caixa.Controls.Add(this.txtQtd);
+            this.Caixa.Controls.Add(this.textBox1);
             this.Caixa.Controls.Add(this.label7);
-            this.Caixa.Controls.Add(this.button27);
+            this.Caixa.Controls.Add(this.btnadcproduto);
             this.Caixa.Controls.Add(this.button25);
             this.Caixa.Controls.Add(this.button26);
-            this.Caixa.Controls.Add(this.listBox1);
+            this.Caixa.Controls.Add(this.lbcupom);
             this.Caixa.Controls.Add(this.button23);
             this.Caixa.Controls.Add(this.label6);
             this.Caixa.Controls.Add(this.button24);
@@ -86,16 +115,10 @@ namespace PANDOKS_V1._0
             this.Caixa.Controls.Add(this.label5);
             this.Caixa.Controls.Add(this.label4);
             this.Caixa.Controls.Add(this.label3);
-            this.Caixa.Controls.Add(this.button18);
-            this.Caixa.Controls.Add(this.button17);
-            this.Caixa.Controls.Add(this.button16);
             this.Caixa.Controls.Add(this.label2);
-            this.Caixa.Controls.Add(this.button15);
             this.Caixa.Controls.Add(this.label1);
-            this.Caixa.Controls.Add(this.button14);
-            this.Caixa.Controls.Add(this.button13);
-            this.Caixa.Controls.Add(this.button12);
-            this.Caixa.Controls.Add(this.button11);
+            this.Caixa.Controls.Add(this.btnfecharvenda);
+            this.Caixa.Controls.Add(this.txtcancelarvenda);
             this.Caixa.Controls.Add(this.button10);
             this.Caixa.Controls.Add(this.conspreco);
             this.Caixa.Controls.Add(this.pesqproduto);
@@ -108,8 +131,76 @@ namespace PANDOKS_V1._0
             this.Caixa.ForeColor = System.Drawing.Color.White;
             this.Caixa.Location = new System.Drawing.Point(0, 0);
             this.Caixa.Name = "Caixa";
-            this.Caixa.Size = new System.Drawing.Size(1446, 835);
+            this.Caixa.Size = new System.Drawing.Size(1467, 836);
             this.Caixa.TabIndex = 0;
+            // 
+            // txtValorFinal
+            // 
+            this.txtValorFinal.BackColor = System.Drawing.Color.SeaGreen;
+            this.txtValorFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorFinal.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtValorFinal.Location = new System.Drawing.Point(1174, 637);
+            this.txtValorFinal.Name = "txtValorFinal";
+            this.txtValorFinal.Size = new System.Drawing.Size(259, 116);
+            this.txtValorFinal.TabIndex = 45;
+            this.txtValorFinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtnmproduto
+            // 
+            this.txtnmproduto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "nome_produto", true));
+            this.txtnmproduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnmproduto.Location = new System.Drawing.Point(24, 483);
+            this.txtnmproduto.Name = "txtnmproduto";
+            this.txtnmproduto.Size = new System.Drawing.Size(496, 62);
+            this.txtnmproduto.TabIndex = 44;
+            this.txtnmproduto.TextChanged += new System.EventHandler(this.txtnmproduto_TextChanged);
+            // 
+            // produtoBindingSource
+            // 
+            this.produtoBindingSource.DataMember = "produto";
+            this.produtoBindingSource.DataSource = this.database_padariaDataSet;
+            // 
+            // database_padariaDataSet
+            // 
+            this.database_padariaDataSet.DataSetName = "database_padariaDataSet";
+            this.database_padariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // txtValorTotal
+            // 
+            this.txtValorTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorTotal.Location = new System.Drawing.Point(538, 480);
+            this.txtValorTotal.Name = "txtValorTotal";
+            this.txtValorTotal.Size = new System.Drawing.Size(325, 62);
+            this.txtValorTotal.TabIndex = 43;
+            this.txtValorTotal.TextChanged += new System.EventHandler(this.txtValorTotal_TextChanged);
+            // 
+            // txtValorUnit
+            // 
+            this.txtValorUnit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "preco_produto", true));
+            this.txtValorUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorUnit.Location = new System.Drawing.Point(538, 366);
+            this.txtValorUnit.Name = "txtValorUnit";
+            this.txtValorUnit.Size = new System.Drawing.Size(325, 62);
+            this.txtValorUnit.TabIndex = 42;
+            this.txtValorUnit.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // txtQtd
+            // 
+            this.txtQtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQtd.Location = new System.Drawing.Point(538, 242);
+            this.txtQtd.Name = "txtQtd";
+            this.txtQtd.Size = new System.Drawing.Size(325, 62);
+            this.txtQtd.TabIndex = 41;
+            this.txtQtd.TextChanged += new System.EventHandler(this.txtQtd_TextChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(24, 115);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(761, 62);
+            this.textBox1.TabIndex = 40;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label7
             // 
@@ -124,16 +215,17 @@ namespace PANDOKS_V1._0
             this.label7.Text = "17:03:52";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // button27
+            // btnadcproduto
             // 
-            this.button27.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button27.ForeColor = System.Drawing.Color.Black;
-            this.button27.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button27.Location = new System.Drawing.Point(791, 109);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(72, 68);
-            this.button27.TabIndex = 38;
-            this.button27.UseVisualStyleBackColor = false;
+            this.btnadcproduto.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnadcproduto.ForeColor = System.Drawing.Color.Black;
+            this.btnadcproduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnadcproduto.Location = new System.Drawing.Point(791, 115);
+            this.btnadcproduto.Name = "btnadcproduto";
+            this.btnadcproduto.Size = new System.Drawing.Size(72, 68);
+            this.btnadcproduto.TabIndex = 38;
+            this.btnadcproduto.UseVisualStyleBackColor = false;
+            this.btnadcproduto.Click += new System.EventHandler(this.btnadcproduto_Click);
             // 
             // button25
             // 
@@ -169,16 +261,16 @@ namespace PANDOKS_V1._0
             this.button26.UseVisualStyleBackColor = false;
             this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
-            // listBox1
+            // lbcupom
             // 
-            this.listBox1.BackColor = System.Drawing.Color.Wheat;
-            this.listBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(889, 109);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(529, 436);
-            this.listBox1.TabIndex = 35;
+            this.lbcupom.BackColor = System.Drawing.Color.Wheat;
+            this.lbcupom.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbcupom.FormattingEnabled = true;
+            this.lbcupom.ItemHeight = 16;
+            this.lbcupom.Location = new System.Drawing.Point(889, 109);
+            this.lbcupom.Name = "lbcupom";
+            this.lbcupom.Size = new System.Drawing.Size(529, 436);
+            this.lbcupom.TabIndex = 35;
             // 
             // button23
             // 
@@ -280,60 +372,16 @@ namespace PANDOKS_V1._0
             this.label3.TabIndex = 20;
             this.label3.Text = "Quantidade";
             // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button18.ForeColor = System.Drawing.Color.Black;
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button18.Location = new System.Drawing.Point(538, 478);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(325, 64);
-            this.button18.TabIndex = 19;
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button17.ForeColor = System.Drawing.Color.Black;
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button17.Location = new System.Drawing.Point(538, 364);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(325, 64);
-            this.button17.TabIndex = 18;
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button16.ForeColor = System.Drawing.Color.Black;
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button16.Location = new System.Drawing.Point(538, 242);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(325, 64);
-            this.button16.TabIndex = 17;
-            this.button16.UseVisualStyleBackColor = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(16, 445);
+            this.label2.Location = new System.Drawing.Point(19, 445);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(317, 30);
+            this.label2.Size = new System.Drawing.Size(234, 30);
             this.label2.TabIndex = 16;
-            this.label2.Text = "Quantidade  em Estoque";
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button15.ForeColor = System.Drawing.Color.Black;
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button15.Location = new System.Drawing.Point(21, 478);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(509, 64);
-            this.button15.TabIndex = 15;
-            this.button15.UseVisualStyleBackColor = false;
+            this.label2.Text = "Nome do produto";
             // 
             // label1
             // 
@@ -346,51 +394,30 @@ namespace PANDOKS_V1._0
             this.label1.TabIndex = 14;
             this.label1.Text = "Código de Barras";
             // 
-            // button14
+            // btnfecharvenda
             // 
-            this.button14.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button14.ForeColor = System.Drawing.Color.Black;
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button14.Location = new System.Drawing.Point(21, 109);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(764, 68);
-            this.button14.TabIndex = 13;
-            this.button14.UseVisualStyleBackColor = false;
+            this.btnfecharvenda.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnfecharvenda.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.btnfecharvenda.Location = new System.Drawing.Point(1174, 759);
+            this.btnfecharvenda.Name = "btnfecharvenda";
+            this.btnfecharvenda.Size = new System.Drawing.Size(259, 55);
+            this.btnfecharvenda.TabIndex = 12;
+            this.btnfecharvenda.Text = "Fechar Venda (F10)";
+            this.btnfecharvenda.UseVisualStyleBackColor = false;
+            this.btnfecharvenda.Click += new System.EventHandler(this.btnfecharvenda_Click);
             // 
-            // button13
+            // txtcancelarvenda
             // 
-            this.button13.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button13.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.button13.Location = new System.Drawing.Point(1174, 759);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(259, 55);
-            this.button13.TabIndex = 12;
-            this.button13.Text = "Fechar Venda (F10)";
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.SeaGreen;
-            this.button12.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.button12.Location = new System.Drawing.Point(1174, 575);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(259, 178);
-            this.button12.TabIndex = 11;
-            this.button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.Red;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Forte", 14F, System.Drawing.FontStyle.Bold);
-            this.button11.Location = new System.Drawing.Point(779, 759);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(378, 55);
-            this.button11.TabIndex = 10;
-            this.button11.Text = "CANCELAR VENDA (F11)";
-            this.button11.UseVisualStyleBackColor = false;
+            this.txtcancelarvenda.BackColor = System.Drawing.Color.Red;
+            this.txtcancelarvenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtcancelarvenda.Font = new System.Drawing.Font("Forte", 14F, System.Drawing.FontStyle.Bold);
+            this.txtcancelarvenda.Location = new System.Drawing.Point(779, 759);
+            this.txtcancelarvenda.Name = "txtcancelarvenda";
+            this.txtcancelarvenda.Size = new System.Drawing.Size(378, 55);
+            this.txtcancelarvenda.TabIndex = 10;
+            this.txtcancelarvenda.Text = "CANCELAR VENDA (F11)";
+            this.txtcancelarvenda.UseVisualStyleBackColor = false;
+            this.txtcancelarvenda.Click += new System.EventHandler(this.txtcancelarvenda_Click);
             // 
             // button10
             // 
@@ -488,11 +515,154 @@ namespace PANDOKS_V1._0
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // produtoBindingNavigator
+            // 
+            this.produtoBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.produtoBindingNavigator.BindingSource = this.produtoBindingSource;
+            this.produtoBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.produtoBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.produtoBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.produtoBindingNavigatorSaveItem});
+            this.produtoBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.produtoBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.produtoBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.produtoBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.produtoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.produtoBindingNavigator.Name = "produtoBindingNavigator";
+            this.produtoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.produtoBindingNavigator.Size = new System.Drawing.Size(1467, 25);
+            this.produtoBindingNavigator.TabIndex = 1;
+            this.produtoBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Excluir";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Posição";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Mover próximo";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Mover último";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // produtoBindingNavigatorSaveItem
+            // 
+            this.produtoBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.produtoBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("produtoBindingNavigatorSaveItem.Image")));
+            this.produtoBindingNavigatorSaveItem.Name = "produtoBindingNavigatorSaveItem";
+            this.produtoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.produtoBindingNavigatorSaveItem.Text = "Salvar Dados";
+            this.produtoBindingNavigatorSaveItem.Click += new System.EventHandler(this.produtoBindingNavigatorSaveItem_Click);
+            // 
+            // produtoTableAdapter
+            // 
+            this.produtoTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.cargoTableAdapter = null;
+            this.tableAdapterManager.clienteTableAdapter = null;
+            this.tableAdapterManager.colaboradorTableAdapter = null;
+            this.tableAdapterManager.pedido_produtoTableAdapter = null;
+            this.tableAdapterManager.pedidoTableAdapter = null;
+            this.tableAdapterManager.producaoTableAdapter = null;
+            this.tableAdapterManager.produtoTableAdapter = this.produtoTableAdapter;
+            this.tableAdapterManager.tipo_pedidoTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // TelaCaixa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1446, 835);
+            this.ClientSize = new System.Drawing.Size(1467, 836);
+            this.Controls.Add(this.produtoBindingNavigator);
             this.Controls.Add(this.Caixa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TelaCaixa";
@@ -501,17 +671,22 @@ namespace PANDOKS_V1._0
             this.Load += new System.EventHandler(this.Form3_Load);
             this.Caixa.ResumeLayout(false);
             this.Caixa.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingNavigator)).EndInit();
+            this.produtoBindingNavigator.ResumeLayout(false);
+            this.produtoBindingNavigator.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel Caixa;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btnfecharvenda;
+        private System.Windows.Forms.Button txtcancelarvenda;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button conspreco;
         private System.Windows.Forms.Button pesqproduto;
@@ -521,16 +696,11 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.Button fecharcaixa;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button14;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button24;
@@ -538,8 +708,31 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.ListBox lbcupom;
+        private System.Windows.Forms.Button btnadcproduto;
         private System.Windows.Forms.Label label7;
+        private database_padariaDataSet database_padariaDataSet;
+        private System.Windows.Forms.BindingSource produtoBindingSource;
+        private database_padariaDataSetTableAdapters.produtoTableAdapter produtoTableAdapter;
+        private database_padariaDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingNavigator produtoBindingNavigator;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton produtoBindingNavigatorSaveItem;
+        private System.Windows.Forms.TextBox txtnmproduto;
+        private System.Windows.Forms.TextBox txtValorTotal;
+        private System.Windows.Forms.TextBox txtValorUnit;
+        private System.Windows.Forms.TextBox txtQtd;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtValorFinal;
     }
 }
