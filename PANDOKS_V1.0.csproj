@@ -272,6 +272,7 @@
     <Content Include="database_padaria.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\CLIENTES_2.png" />
     <None Include="Resources\Enroladinho de Salsicha.png" />
     <None Include="Resources\Pão de centeio.png" />
     <None Include="Resources\Sanduiche.png" />

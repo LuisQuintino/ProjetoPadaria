@@ -268,7 +268,7 @@ namespace PANDOKS_V1._0
             this.btnnovo.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.btnnovo.Image = global::PANDOKS_V1._0.Properties.Resources.Folder_Add256_24876;
             this.btnnovo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnnovo.Location = new System.Drawing.Point(622, 427);
+            this.btnnovo.Location = new System.Drawing.Point(618, 412);
             this.btnnovo.Name = "btnnovo";
             this.btnnovo.Size = new System.Drawing.Size(109, 62);
             this.btnnovo.TabIndex = 41;
@@ -296,7 +296,7 @@ namespace PANDOKS_V1._0
             this.button1.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.button1.Image = global::PANDOKS_V1._0.Properties.Resources.undo256_24848;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(1197, 427);
+            this.button1.Location = new System.Drawing.Point(1193, 412);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 62);
             this.button1.TabIndex = 44;
@@ -309,7 +309,7 @@ namespace PANDOKS_V1._0
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -341,10 +341,10 @@ namespace PANDOKS_V1._0
             this.tabPage1.Controls.Add(this.maskedTextBox4);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 46);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(604, 692);
+            this.tabPage1.Size = new System.Drawing.Size(604, 671);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Cadastro";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -423,11 +423,11 @@ namespace PANDOKS_V1._0
             this.tabPage2.AutoScroll = true;
             this.tabPage2.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
             this.tabPage2.Controls.Add(this.colaboradorDataGridView);
-            this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage2.Location = new System.Drawing.Point(4, 46);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(604, 692);
+            this.tabPage2.Size = new System.Drawing.Size(604, 671);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consulta";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -448,9 +448,10 @@ namespace PANDOKS_V1._0
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10});
             this.colaboradorDataGridView.DataSource = this.colaboradorBindingSource;
-            this.colaboradorDataGridView.Location = new System.Drawing.Point(8, 6);
+            this.colaboradorDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colaboradorDataGridView.Location = new System.Drawing.Point(3, 3);
             this.colaboradorDataGridView.Name = "colaboradorDataGridView";
-            this.colaboradorDataGridView.Size = new System.Drawing.Size(590, 678);
+            this.colaboradorDataGridView.Size = new System.Drawing.Size(598, 665);
             this.colaboradorDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -539,7 +540,7 @@ namespace PANDOKS_V1._0
             this.btnsalvar.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.btnsalvar.Image = global::PANDOKS_V1._0.Properties.Resources.Folder_Accept256_24860;
             this.btnsalvar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnsalvar.Location = new System.Drawing.Point(737, 427);
+            this.btnsalvar.Location = new System.Drawing.Point(733, 412);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(109, 62);
             this.btnsalvar.TabIndex = 46;
@@ -556,7 +557,7 @@ namespace PANDOKS_V1._0
             this.btnproximo.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.btnproximo.Image = global::PANDOKS_V1._0.Properties.Resources.navigate_right256_24872;
             this.btnproximo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnproximo.Location = new System.Drawing.Point(1082, 427);
+            this.btnproximo.Location = new System.Drawing.Point(1078, 412);
             this.btnproximo.Name = "btnproximo";
             this.btnproximo.Size = new System.Drawing.Size(109, 62);
             this.btnproximo.TabIndex = 47;
@@ -573,7 +574,7 @@ namespace PANDOKS_V1._0
             this.btnanterior.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.btnanterior.Image = global::PANDOKS_V1._0.Properties.Resources.navigate_left256_24869;
             this.btnanterior.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnanterior.Location = new System.Drawing.Point(967, 427);
+            this.btnanterior.Location = new System.Drawing.Point(963, 412);
             this.btnanterior.Name = "btnanterior";
             this.btnanterior.Size = new System.Drawing.Size(109, 62);
             this.btnanterior.TabIndex = 48;
@@ -590,7 +591,7 @@ namespace PANDOKS_V1._0
             this.btndeletar.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.btndeletar.Image = global::PANDOKS_V1._0.Properties.Resources.Folder_Delete256_24851;
             this.btndeletar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btndeletar.Location = new System.Drawing.Point(852, 427);
+            this.btndeletar.Location = new System.Drawing.Point(848, 412);
             this.btndeletar.Name = "btndeletar";
             this.btndeletar.Size = new System.Drawing.Size(109, 62);
             this.btndeletar.TabIndex = 49;
@@ -630,6 +631,7 @@ namespace PANDOKS_V1._0
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnnovo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Cadastrocolaborador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form9";

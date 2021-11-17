@@ -130,6 +130,9 @@
   <data name="Torta de Creme" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Torta de Creme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Enroladinho de Salsicha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enroladinho de Salsicha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pao-frances" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pao-frances.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,8 +193,8 @@
   <data name="pao-frances0011" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pao-frances0011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Save-as_37111" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Save-as_37111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pão de centeio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pão de centeio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cash_counter_payment_icon_192435" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cash_counter_payment_icon_192435.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,6 +229,9 @@
   <data name="Pani1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pani1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="navigate-right256_24872" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\navigate-right256_24872.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Folder-Accept256_24860" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Folder-Accept256_24860.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -241,23 +247,17 @@
   <data name="icons8-admin-settings-male-48 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-admin-settings-male-48 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Panific System (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Panific System (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pão de centeio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pão de centeio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Design sem nome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Design sem nome.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Empadão" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Empadão.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-login-65" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-login-65.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add_to_cart_trolley_shopping_icon_1924261" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_to_cart_trolley_shopping_icon_1924261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Torta de maçã" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Torta de maçã.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Untitled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,8 +271,8 @@
   <data name="Pizza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pizza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="navigate-right256_24872" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\navigate-right256_24872.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Panific System (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Panific System (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="receipt_106581" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\receipt_106581.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,8 +292,8 @@
   <data name="undo256_24848" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\undo256_24848.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Torta de maçã" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Torta de maçã.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Empadão" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Empadão.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exit_closethesession_close_63171" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit_closethesession_close_63171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -303,6 +303,9 @@
   </data>
   <data name="Pão Sirio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pão Sirio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="power_closedown_close_exit_pode_1842" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\power_closedown_close_exit_pode_1842.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Start_37108" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Start_37108.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -316,8 +319,8 @@
   <data name="Brownie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Brownie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="power_closedown_close_exit_pode_1842" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\power_closedown_close_exit_pode_1842.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Save-as_37111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save-as_37111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Start_37108 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Start_37108 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,7 +328,7 @@
   <data name="addusergroup_1251" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\addusergroup_1251.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Enroladinho de Salsicha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Enroladinho de Salsicha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CLIENTES_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CLIENTES_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
