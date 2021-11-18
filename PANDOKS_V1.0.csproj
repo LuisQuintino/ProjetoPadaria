@@ -33,7 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
@@ -61,6 +63,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>database_padariaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="database_padarianovoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>database_padarianovoDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +79,12 @@
     </Compile>
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PesquisarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesquisarProduto.Designer.cs">
+      <DependentUpon>PesquisarProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaCaixa.cs">
       <SubType>Form</SubType>
@@ -138,6 +151,9 @@
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PesquisarProduto.resx">
+      <DependentUpon>PesquisarProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TelaCaixa.resx">
       <DependentUpon>TelaCaixa.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +201,17 @@
     </None>
     <None Include="database_padariaDataSet.xss">
       <DependentUpon>database_padariaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="database_padarianovoDataSet.xsc">
+      <DependentUpon>database_padarianovoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="database_padarianovoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>database_padarianovoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="database_padarianovoDataSet.xss">
+      <DependentUpon>database_padarianovoDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -270,6 +297,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="database_padaria.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="database_padarianovo.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\CLIENTES_2.png" />

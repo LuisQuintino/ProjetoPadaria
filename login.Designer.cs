@@ -40,8 +40,14 @@ namespace PANDOKS_V1._0
             this.txbSENHA = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.database_padarianovoDataSet = new PANDOKS_V1._0.database_padarianovoDataSet();
+            this.colaboradorBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.colaboradorTableAdapter1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.colaboradorTableAdapter();
+            this.tableAdapterManager1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // colaboradorBindingSource
@@ -138,6 +144,33 @@ namespace PANDOKS_V1._0
             this.label1.TabIndex = 9;
             this.label1.Text = "Login :";
             // 
+            // database_padarianovoDataSet
+            // 
+            this.database_padarianovoDataSet.DataSetName = "database_padarianovoDataSet";
+            this.database_padarianovoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // colaboradorBindingSource1
+            // 
+            this.colaboradorBindingSource1.DataMember = "colaborador";
+            this.colaboradorBindingSource1.DataSource = this.database_padarianovoDataSet;
+            // 
+            // colaboradorTableAdapter1
+            // 
+            this.colaboradorTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager1
+            // 
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.cargoTableAdapter = null;
+            this.tableAdapterManager1.clienteTableAdapter = null;
+            this.tableAdapterManager1.colaboradorTableAdapter = this.colaboradorTableAdapter1;
+            this.tableAdapterManager1.pedido_produtoTableAdapter = null;
+            this.tableAdapterManager1.pedidoTableAdapter = null;
+            this.tableAdapterManager1.producaoTableAdapter = null;
+            this.tableAdapterManager1.produtoTableAdapter = null;
+            this.tableAdapterManager1.tipo_pedidoTableAdapter = null;
+            this.tableAdapterManager1.UpdateOrder = PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +191,8 @@ namespace PANDOKS_V1._0
             this.Load += new System.EventHandler(this.login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,5 +209,9 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.TextBox txbSENHA;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private database_padarianovoDataSet database_padarianovoDataSet;
+        private System.Windows.Forms.BindingSource colaboradorBindingSource1;
+        private database_padarianovoDataSetTableAdapters.colaboradorTableAdapter colaboradorTableAdapter1;
+        private database_padarianovoDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
     }
 }

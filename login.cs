@@ -29,6 +29,8 @@ namespace PANDOKS_V1._0
 
         private void login_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'database_padarianovoDataSet.colaborador'. Você pode movê-la ou removê-la conforme necessário.
+            this.colaboradorTableAdapter1.Fill(this.database_padarianovoDataSet.colaborador);
             // TODO: This line of code loads data into the 'database_padariaDataSet.colaborador' table. You can move, or remove it, as needed.
             this.colaboradorTableAdapter.Fill(this.database_padariaDataSet.colaborador);
 
@@ -36,7 +38,7 @@ namespace PANDOKS_V1._0
 
         private void btnENTRAR_Click_1(object sender, EventArgs e)
         {
-            int result = colaboradorTableAdapter.FillByColaboradorLogin(database_padariaDataSet.colaborador, mxtLOGIN.Text, txbSENHA.Text);
+            int result = colaboradorTableAdapter1.FillByLogin(database_padarianovoDataSet.colaborador, mxtLOGIN.Text, txbSENHA.Text);
             if (result == 1)
             {
                 MenuPrincipal menu = new MenuPrincipal();

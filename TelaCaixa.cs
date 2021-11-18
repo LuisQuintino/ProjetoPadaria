@@ -20,6 +20,8 @@ namespace PANDOKS_V1._0
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'database_padarianovoDataSet.produto'. Você pode movê-la ou removê-la conforme necessário.
+            this.produtoTableAdapter1.Fill(this.database_padarianovoDataSet.produto);
             // TODO: esta linha de código carrega dados na tabela 'database_padariaDataSet.produto'. Você pode movê-la ou removê-la conforme necessário.
             this.produtoTableAdapter.Fill(this.database_padariaDataSet.produto);
 
@@ -78,7 +80,8 @@ namespace PANDOKS_V1._0
                 }
                 else
                 {
-                    this.produtoTableAdapter.FillByIdProduto(this.database_padariaDataSet.produto, Convert.ToInt32(textBox1.Text));
+                    //this.produtoTableAdapter.FillByIdProduto(this.database_padariaDataSet.produto, Convert.ToInt32(textBox1.Text));
+                    this.produtoTableAdapter1.FillByIdProduto(this.database_padarianovoDataSet.produto, Convert.ToInt32(textBox1.Text));
                 }
                 
 
@@ -86,7 +89,6 @@ namespace PANDOKS_V1._0
             catch (Exception)
             {
                 MessageBox.Show("Insira um código de barras válido", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                throw;
             }
             
         }
@@ -152,6 +154,17 @@ namespace PANDOKS_V1._0
             {
                 btnadcproduto_Click(sender, e);
             }
+        }
+
+        private void cancelaritem_Click(object sender, EventArgs e)
+        {
+            lbcupom.Items.Remove(lbcupom.SelectedItem);
+        }
+
+        private void pesqproduto_Click(object sender, EventArgs e)
+        {
+            PesquisarProduto pesq = new PesquisarProduto();
+            pesq.Show();
         }
 
         private void btnadcproduto_Click(object sender, EventArgs e)

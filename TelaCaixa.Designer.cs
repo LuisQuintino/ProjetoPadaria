@@ -34,8 +34,8 @@ namespace PANDOKS_V1._0
             this.Caixa = new System.Windows.Forms.Panel();
             this.txtValorFinal = new System.Windows.Forms.TextBox();
             this.txtnmproduto = new System.Windows.Forms.TextBox();
-            this.produtoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.database_padariaDataSet = new PANDOKS_V1._0.database_padariaDataSet();
+            this.produtoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.database_padarianovoDataSet = new PANDOKS_V1._0.database_padarianovoDataSet();
             this.txtValorTotal = new System.Windows.Forms.TextBox();
             this.txtValorUnit = new System.Windows.Forms.TextBox();
             this.txtQtd = new System.Windows.Forms.TextBox();
@@ -66,6 +66,8 @@ namespace PANDOKS_V1._0
             this.quantdinheiro = new System.Windows.Forms.Button();
             this.fecharcaixa = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.produtoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database_padariaDataSet = new PANDOKS_V1._0.database_padariaDataSet();
             this.produtoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -81,10 +83,14 @@ namespace PANDOKS_V1._0
             this.produtoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.produtoTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.produtoTableAdapter();
             this.tableAdapterManager = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager();
+            this.produtoTableAdapter1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.produtoTableAdapter();
+            this.tableAdapterManager1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager();
             this.Caixa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingNavigator)).BeginInit();
             this.produtoBindingNavigator.SuspendLayout();
             this.SuspendLayout();
@@ -147,7 +153,7 @@ namespace PANDOKS_V1._0
             // 
             // txtnmproduto
             // 
-            this.txtnmproduto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "nome_produto", true));
+            this.txtnmproduto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource1, "nome_produto", true));
             this.txtnmproduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnmproduto.Location = new System.Drawing.Point(24, 483);
             this.txtnmproduto.Name = "txtnmproduto";
@@ -155,15 +161,15 @@ namespace PANDOKS_V1._0
             this.txtnmproduto.TabIndex = 44;
             this.txtnmproduto.TextChanged += new System.EventHandler(this.txtnmproduto_TextChanged);
             // 
-            // produtoBindingSource
+            // produtoBindingSource1
             // 
-            this.produtoBindingSource.DataMember = "produto";
-            this.produtoBindingSource.DataSource = this.database_padariaDataSet;
+            this.produtoBindingSource1.DataMember = "produto";
+            this.produtoBindingSource1.DataSource = this.database_padarianovoDataSet;
             // 
-            // database_padariaDataSet
+            // database_padarianovoDataSet
             // 
-            this.database_padariaDataSet.DataSetName = "database_padariaDataSet";
-            this.database_padariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.database_padarianovoDataSet.DataSetName = "database_padarianovoDataSet";
+            this.database_padarianovoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtValorTotal
             // 
@@ -176,7 +182,7 @@ namespace PANDOKS_V1._0
             // 
             // txtValorUnit
             // 
-            this.txtValorUnit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "preco_produto", true));
+            this.txtValorUnit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource1, "valor_produto", true));
             this.txtValorUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValorUnit.Location = new System.Drawing.Point(538, 366);
             this.txtValorUnit.Name = "txtValorUnit";
@@ -456,6 +462,7 @@ namespace PANDOKS_V1._0
             this.pesqproduto.TabIndex = 5;
             this.pesqproduto.Text = "Pesquisar Produto (F9)";
             this.pesqproduto.UseVisualStyleBackColor = false;
+            this.pesqproduto.Click += new System.EventHandler(this.pesqproduto_Click);
             // 
             // cancelaritem
             // 
@@ -468,6 +475,7 @@ namespace PANDOKS_V1._0
             this.cancelaritem.TabIndex = 4;
             this.cancelaritem.Text = "Cancelar Item (F8)";
             this.cancelaritem.UseVisualStyleBackColor = false;
+            this.cancelaritem.Click += new System.EventHandler(this.cancelaritem_Click);
             // 
             // alteraritem
             // 
@@ -515,6 +523,16 @@ namespace PANDOKS_V1._0
             this.button1.Size = new System.Drawing.Size(1446, 67);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // produtoBindingSource
+            // 
+            this.produtoBindingSource.DataMember = "produto";
+            this.produtoBindingSource.DataSource = this.database_padariaDataSet;
+            // 
+            // database_padariaDataSet
+            // 
+            this.database_padariaDataSet.DataSetName = "database_padariaDataSet";
+            this.database_padariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // produtoBindingNavigator
             // 
@@ -658,6 +676,23 @@ namespace PANDOKS_V1._0
             this.tableAdapterManager.tipo_pedidoTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // produtoTableAdapter1
+            // 
+            this.produtoTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager1
+            // 
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.cargoTableAdapter = null;
+            this.tableAdapterManager1.clienteTableAdapter = null;
+            this.tableAdapterManager1.colaboradorTableAdapter = null;
+            this.tableAdapterManager1.pedido_produtoTableAdapter = null;
+            this.tableAdapterManager1.pedidoTableAdapter = null;
+            this.tableAdapterManager1.producaoTableAdapter = null;
+            this.tableAdapterManager1.produtoTableAdapter = this.produtoTableAdapter1;
+            this.tableAdapterManager1.tipo_pedidoTableAdapter = null;
+            this.tableAdapterManager1.UpdateOrder = PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // TelaCaixa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -672,9 +707,11 @@ namespace PANDOKS_V1._0
             this.Load += new System.EventHandler(this.Form3_Load);
             this.Caixa.ResumeLayout(false);
             this.Caixa.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingNavigator)).EndInit();
             this.produtoBindingNavigator.ResumeLayout(false);
             this.produtoBindingNavigator.PerformLayout();
@@ -735,5 +772,9 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.TextBox txtQtd;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox txtValorFinal;
+        private database_padarianovoDataSet database_padarianovoDataSet;
+        private System.Windows.Forms.BindingSource produtoBindingSource1;
+        private database_padarianovoDataSetTableAdapters.produtoTableAdapter produtoTableAdapter1;
+        private database_padarianovoDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
     }
 }

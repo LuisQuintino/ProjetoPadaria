@@ -29,6 +29,10 @@ namespace PANDOKS_V1._0
 
         private void Form9_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'database_padarianovoDataSet.cargo'. Você pode movê-la ou removê-la conforme necessário.
+            this.cargoTableAdapter1.Fill(this.database_padarianovoDataSet.cargo);
+            // TODO: esta linha de código carrega dados na tabela 'database_padarianovoDataSet.colaborador'. Você pode movê-la ou removê-la conforme necessário.
+            this.colaboradorTableAdapter1.Fill(this.database_padarianovoDataSet.colaborador);
             // TODO: esta linha de código carrega dados na tabela 'database_padariaDataSet.cliente'. Você pode movê-la ou removê-la conforme necessário.
             this.clienteTableAdapter.Fill(this.database_padariaDataSet.cliente);
             // TODO: esta linha de código carrega dados na tabela 'database_padariaDataSet.cargo'. Você pode movê-la ou removê-la conforme necessário.
@@ -57,17 +61,17 @@ namespace PANDOKS_V1._0
 
         private void btnanterior_Click(object sender, EventArgs e)
         {
-            colaboradorBindingSource.MovePrevious();
+            colaboradorBindingSource1.MovePrevious();
         }
 
         private void btnproximo_Click(object sender, EventArgs e)
         {
-            colaboradorBindingSource.MoveNext();
+            colaboradorBindingSource1.MoveNext();
         }
 
         private void btndeletar_Click(object sender, EventArgs e)
         {
-            colaboradorBindingSource.RemoveCurrent();
+            colaboradorBindingSource1.RemoveCurrent();
         }
 
         private void btnsalvar_Click(object sender, EventArgs e)
@@ -77,8 +81,8 @@ namespace PANDOKS_V1._0
                 if ( txtsenha.Text == txtconfirmarsenha.Text)
                 {
                     this.Validate();
-                    this.colaboradorBindingSource.EndEdit();
-                    this.tableAdapterManager.UpdateAll(this.database_padariaDataSet);
+                    this.colaboradorBindingSource1.EndEdit();
+                    colaboradorTableAdapter1.Update(database_padarianovoDataSet);
                 } else
                 {
                     MessageBox.Show("As senhas não coincidem", "Aviso");
@@ -95,7 +99,7 @@ namespace PANDOKS_V1._0
 
         private void btnnovo_Click(object sender, EventArgs e)
         {
-            colaboradorBindingSource.AddNew();
+            colaboradorBindingSource1.AddNew();
         }
 
         private void maskedTextBox6_MaskInputRejected_1(object sender, MaskInputRejectedEventArgs e)
@@ -107,7 +111,7 @@ namespace PANDOKS_V1._0
         {
             if (e.KeyChar == 32)
             {
-                colaboradorBindingSource.MoveNext();
+                colaboradorBindingSource1.MoveNext();
             }
         }
     }

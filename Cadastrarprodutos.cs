@@ -20,6 +20,8 @@ namespace PANDOKS_V1._0
 
         private void Cadastrarprodutos_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'database_padarianovoDataSet.produto'. Você pode movê-la ou removê-la conforme necessário.
+            this.produtoTableAdapter1.Fill(this.database_padarianovoDataSet.produto);
             // TODO: esta linha de código carrega dados na tabela 'database_padariaDataSet.produto'. Você pode movê-la ou removê-la conforme necessário.
             this.produtoTableAdapter.Fill(this.database_padariaDataSet.produto);
 
