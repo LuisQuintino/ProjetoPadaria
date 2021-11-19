@@ -95,6 +95,7 @@ namespace PANDOKS_V1._0
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
+            txtValorUnit.ReadOnly = true;
             if (textBox1.Text == "")
             {
                 txtValorUnit.Text = "0";
@@ -177,7 +178,7 @@ namespace PANDOKS_V1._0
                 valorunit = float.Parse(txtValorUnit.Text);
                 valortotal += ( valorunit * qtd);
                 valorunittotal = (valorunit * qtd);
-                txtValorTotal.Text = valortotal.ToString();
+                txtValorTotal.Text = valorunittotal.ToString();
                 lbcupom.Items.Add("* " + txtnmproduto.Text + " Quantidade -> " + txtQtd.Text + "; Valor unitario total ->" + valorunittotal.ToString());
             }
             else
@@ -186,7 +187,7 @@ namespace PANDOKS_V1._0
                 valorunit = float.Parse(txtValorUnit.Text);
                 valortotal += (valorunit * qtd);
                 valorunittotal = (valorunit * qtd);
-                txtValorTotal.Text = valortotal.ToString();
+                txtValorTotal.Text = valorunittotal.ToString();
                 lbcupom.Items.Add("* " + txtnmproduto.Text + " Quantidade -> " + txtQtd.Text + "; Valor unitario total ->" + valorunittotal.ToString());
             }
         }

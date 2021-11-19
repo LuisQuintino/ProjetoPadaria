@@ -143,11 +143,11 @@ namespace PANDOKS_V1._0
             // txtValorFinal
             // 
             this.txtValorFinal.BackColor = System.Drawing.Color.SeaGreen;
-            this.txtValorFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorFinal.Font = new System.Drawing.Font("Arial", 64F);
             this.txtValorFinal.ForeColor = System.Drawing.SystemColors.Window;
             this.txtValorFinal.Location = new System.Drawing.Point(1174, 637);
             this.txtValorFinal.Name = "txtValorFinal";
-            this.txtValorFinal.Size = new System.Drawing.Size(259, 116);
+            this.txtValorFinal.Size = new System.Drawing.Size(259, 106);
             this.txtValorFinal.TabIndex = 45;
             this.txtValorFinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -202,7 +202,7 @@ namespace PANDOKS_V1._0
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(24, 115);
+            this.textBox1.Location = new System.Drawing.Point(24, 140);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(761, 62);
             this.textBox1.TabIndex = 40;
@@ -213,11 +213,11 @@ namespace PANDOKS_V1._0
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Black;
-            this.label7.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.label7.Font = new System.Drawing.Font("Arial", 24F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(594, 19);
+            this.label7.Location = new System.Drawing.Point(597, 41);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 30);
+            this.label7.Size = new System.Drawing.Size(141, 36);
             this.label7.TabIndex = 39;
             this.label7.Text = "17:03:52";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -227,23 +227,23 @@ namespace PANDOKS_V1._0
             this.btnadcproduto.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnadcproduto.ForeColor = System.Drawing.Color.Black;
             this.btnadcproduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnadcproduto.Location = new System.Drawing.Point(791, 115);
+            this.btnadcproduto.Location = new System.Drawing.Point(791, 140);
             this.btnadcproduto.Name = "btnadcproduto";
-            this.btnadcproduto.Size = new System.Drawing.Size(72, 68);
+            this.btnadcproduto.Size = new System.Drawing.Size(72, 62);
             this.btnadcproduto.TabIndex = 38;
             this.btnadcproduto.UseVisualStyleBackColor = false;
             this.btnadcproduto.Click += new System.EventHandler(this.btnadcproduto_Click);
             // 
             // button25
             // 
-            this.button25.BackColor = System.Drawing.Color.Transparent;
+            this.button25.BackColor = System.Drawing.Color.White;
             this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button25.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.button25.Image = global::PANDOKS_V1._0.Properties.Resources.Home;
             this.button25.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button25.Location = new System.Drawing.Point(1196, 11);
+            this.button25.Location = new System.Drawing.Point(1155, 27);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(60, 44);
             this.button25.TabIndex = 37;
@@ -253,14 +253,14 @@ namespace PANDOKS_V1._0
             // 
             // button26
             // 
-            this.button26.BackColor = System.Drawing.Color.Transparent;
+            this.button26.BackColor = System.Drawing.Color.White;
             this.button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button26.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.button26.Image = global::PANDOKS_V1._0.Properties.Resources.voltar;
             this.button26.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button26.Location = new System.Drawing.Point(1130, 11);
+            this.button26.Location = new System.Drawing.Point(1089, 27);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(60, 44);
             this.button26.TabIndex = 36;
@@ -282,10 +282,10 @@ namespace PANDOKS_V1._0
             // button23
             // 
             this.button23.BackColor = System.Drawing.Color.Black;
-            this.button23.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.button23.Location = new System.Drawing.Point(1288, 11);
+            this.button23.Font = new System.Drawing.Font("Arial", 24F);
+            this.button23.Location = new System.Drawing.Point(1260, 27);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(153, 44);
+            this.button23.Size = new System.Drawing.Size(173, 44);
             this.button23.TabIndex = 34;
             this.button23.Text = "Sair (F12)";
             this.button23.UseVisualStyleBackColor = false;
@@ -295,10 +295,10 @@ namespace PANDOKS_V1._0
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Black;
-            this.label6.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(3, 2);
+            this.label6.Font = new System.Drawing.Font("Arial", 18F);
+            this.label6.Location = new System.Drawing.Point(3, 24);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(160, 30);
+            this.label6.Size = new System.Drawing.Size(148, 27);
             this.label6.TabIndex = 33;
             this.label6.Text = "OPERADOR";
             // 
@@ -306,7 +306,7 @@ namespace PANDOKS_V1._0
             // 
             this.button24.BackColor = System.Drawing.Color.Black;
             this.button24.ForeColor = System.Drawing.Color.White;
-            this.button24.Location = new System.Drawing.Point(-1, 35);
+            this.button24.Location = new System.Drawing.Point(3, 55);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(173, 31);
             this.button24.TabIndex = 32;
@@ -316,7 +316,7 @@ namespace PANDOKS_V1._0
             // button22
             // 
             this.button22.BackColor = System.Drawing.Color.SeaGreen;
-            this.button22.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.button22.Font = new System.Drawing.Font("Arial", 24F);
             this.button22.Location = new System.Drawing.Point(1174, 575);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(259, 56);
@@ -328,7 +328,7 @@ namespace PANDOKS_V1._0
             // 
             this.button19.BackColor = System.Drawing.Color.Teal;
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.button19.Font = new System.Drawing.Font("Arial", 24F);
             this.button19.Location = new System.Drawing.Point(779, 629);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(285, 58);
@@ -349,62 +349,62 @@ namespace PANDOKS_V1._0
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.label5.Font = new System.Drawing.Font("Arial", 24F);
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(533, 445);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(203, 30);
+            this.label5.Size = new System.Drawing.Size(209, 36);
             this.label5.TabIndex = 22;
             this.label5.Text = "R$ Valor Total";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.label4.Font = new System.Drawing.Font("Arial", 24F);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(533, 331);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(235, 30);
+            this.label4.Size = new System.Drawing.Size(254, 36);
             this.label4.TabIndex = 21;
             this.label4.Text = "R$ Valor Unitário";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Arial", 24F);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(533, 209);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(157, 30);
+            this.label3.Size = new System.Drawing.Size(177, 36);
             this.label3.TabIndex = 20;
             this.label3.Text = "Quantidade";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Arial", 24F);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(19, 445);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(234, 30);
+            this.label2.Size = new System.Drawing.Size(257, 36);
             this.label2.TabIndex = 16;
             this.label2.Text = "Nome do produto";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Arial", 24F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(19, 76);
+            this.label1.Location = new System.Drawing.Point(19, 101);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 30);
+            this.label1.Size = new System.Drawing.Size(258, 36);
             this.label1.TabIndex = 14;
             this.label1.Text = "Código de Barras";
             // 
             // btnfecharvenda
             // 
             this.btnfecharvenda.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnfecharvenda.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.btnfecharvenda.Font = new System.Drawing.Font("Arial", 24F);
             this.btnfecharvenda.Location = new System.Drawing.Point(1174, 759);
             this.btnfecharvenda.Name = "btnfecharvenda";
             this.btnfecharvenda.Size = new System.Drawing.Size(259, 55);
@@ -417,7 +417,7 @@ namespace PANDOKS_V1._0
             // 
             this.txtcancelarvenda.BackColor = System.Drawing.Color.Red;
             this.txtcancelarvenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtcancelarvenda.Font = new System.Drawing.Font("Forte", 14F, System.Drawing.FontStyle.Bold);
+            this.txtcancelarvenda.Font = new System.Drawing.Font("Arial", 24F);
             this.txtcancelarvenda.Location = new System.Drawing.Point(779, 759);
             this.txtcancelarvenda.Name = "txtcancelarvenda";
             this.txtcancelarvenda.Size = new System.Drawing.Size(378, 55);
@@ -430,7 +430,7 @@ namespace PANDOKS_V1._0
             // 
             this.button10.BackColor = System.Drawing.Color.Teal;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.button10.Font = new System.Drawing.Font("Arial", 24F);
             this.button10.Location = new System.Drawing.Point(779, 693);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(378, 60);
@@ -443,7 +443,7 @@ namespace PANDOKS_V1._0
             // 
             this.conspreco.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.conspreco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.conspreco.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.conspreco.Font = new System.Drawing.Font("Arial", 24F);
             this.conspreco.Location = new System.Drawing.Point(529, 575);
             this.conspreco.Name = "conspreco";
             this.conspreco.Size = new System.Drawing.Size(219, 112);
@@ -455,7 +455,7 @@ namespace PANDOKS_V1._0
             // 
             this.pesqproduto.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.pesqproduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pesqproduto.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.pesqproduto.Font = new System.Drawing.Font("Arial", 24F);
             this.pesqproduto.Location = new System.Drawing.Point(529, 702);
             this.pesqproduto.Name = "pesqproduto";
             this.pesqproduto.Size = new System.Drawing.Size(219, 112);
@@ -468,7 +468,7 @@ namespace PANDOKS_V1._0
             // 
             this.cancelaritem.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.cancelaritem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelaritem.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.cancelaritem.Font = new System.Drawing.Font("Arial", 24F);
             this.cancelaritem.Location = new System.Drawing.Point(276, 702);
             this.cancelaritem.Name = "cancelaritem";
             this.cancelaritem.Size = new System.Drawing.Size(219, 112);
@@ -481,7 +481,7 @@ namespace PANDOKS_V1._0
             // 
             this.alteraritem.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.alteraritem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.alteraritem.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.alteraritem.Font = new System.Drawing.Font("Arial", 24F);
             this.alteraritem.Location = new System.Drawing.Point(276, 575);
             this.alteraritem.Name = "alteraritem";
             this.alteraritem.Size = new System.Drawing.Size(219, 112);
@@ -493,7 +493,7 @@ namespace PANDOKS_V1._0
             // 
             this.quantdinheiro.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.quantdinheiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.quantdinheiro.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.quantdinheiro.Font = new System.Drawing.Font("Arial", 24F);
             this.quantdinheiro.Location = new System.Drawing.Point(24, 702);
             this.quantdinheiro.Name = "quantdinheiro";
             this.quantdinheiro.Size = new System.Drawing.Size(219, 112);
@@ -505,7 +505,7 @@ namespace PANDOKS_V1._0
             // 
             this.fecharcaixa.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.fecharcaixa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fecharcaixa.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.fecharcaixa.Font = new System.Drawing.Font("Arial", 24F);
             this.fecharcaixa.Location = new System.Drawing.Point(24, 575);
             this.fecharcaixa.Name = "fecharcaixa";
             this.fecharcaixa.Size = new System.Drawing.Size(219, 112);
@@ -520,7 +520,7 @@ namespace PANDOKS_V1._0
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(-1, -1);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(1446, 67);
+            this.button1.Size = new System.Drawing.Size(1446, 90);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             // 
