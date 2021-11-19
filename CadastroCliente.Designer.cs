@@ -35,6 +35,8 @@ namespace PANDOKS_V1._0
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.clienteBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database_padariaDataSet = new PANDOKS_V1._0.database_padariaDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -49,6 +51,8 @@ namespace PANDOKS_V1._0
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.clienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.database_padarianovoDataSet = new PANDOKS_V1._0.database_padarianovoDataSet();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -62,15 +66,6 @@ namespace PANDOKS_V1._0
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.clienteDataGridView = new System.Windows.Forms.DataGridView();
-            this.btndeletar = new System.Windows.Forms.Button();
-            this.btnanterior = new System.Windows.Forms.Button();
-            this.btnproximo = new System.Windows.Forms.Button();
-            this.btnsalvar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnnovo = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.database_padariaDataSet = new PANDOKS_V1._0.database_padariaDataSet();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,23 +73,28 @@ namespace PANDOKS_V1._0
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btndeletar = new System.Windows.Forms.Button();
+            this.btnanterior = new System.Windows.Forms.Button();
+            this.btnproximo = new System.Windows.Forms.Button();
+            this.btnsalvar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnnovo = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.clienteTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.clienteTableAdapter();
             this.tableAdapterManager = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager();
-            this.database_padarianovoDataSet = new PANDOKS_V1._0.database_padarianovoDataSet();
-            this.clienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.clienteTableAdapter1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.clienteTableAdapter();
             this.tableAdapterManager1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingNavigator)).BeginInit();
             this.clienteBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -102,7 +102,7 @@ namespace PANDOKS_V1._0
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -128,10 +128,10 @@ namespace PANDOKS_V1._0
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 46);
+            this.tabPage1.Location = new System.Drawing.Point(4, 45);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(603, 710);
+            this.tabPage1.Size = new System.Drawing.Size(603, 711);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Cadastro";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -174,6 +174,16 @@ namespace PANDOKS_V1._0
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "cliente";
+            this.clienteBindingSource.DataSource = this.database_padariaDataSet;
+            // 
+            // database_padariaDataSet
+            // 
+            this.database_padariaDataSet.DataSetName = "database_padariaDataSet";
+            this.database_padariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -218,6 +228,7 @@ namespace PANDOKS_V1._0
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posição";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -287,6 +298,16 @@ namespace PANDOKS_V1._0
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(416, 44);
             this.textBox3.TabIndex = 83;
+            // 
+            // clienteBindingSource1
+            // 
+            this.clienteBindingSource1.DataMember = "cliente";
+            this.clienteBindingSource1.DataSource = this.database_padarianovoDataSet;
+            // 
+            // database_padarianovoDataSet
+            // 
+            this.database_padarianovoDataSet.DataSetName = "database_padarianovoDataSet";
+            this.database_padarianovoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox2
             // 
@@ -412,10 +433,10 @@ namespace PANDOKS_V1._0
             this.tabPage2.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
             this.tabPage2.Controls.Add(this.clienteDataGridView);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 46);
+            this.tabPage2.Location = new System.Drawing.Point(4, 45);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(603, 710);
+            this.tabPage2.Size = new System.Drawing.Size(603, 711);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consulta";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -436,8 +457,50 @@ namespace PANDOKS_V1._0
             this.clienteDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.clienteDataGridView.Location = new System.Drawing.Point(3, 3);
             this.clienteDataGridView.Name = "clienteDataGridView";
-            this.clienteDataGridView.Size = new System.Drawing.Size(597, 704);
+            this.clienteDataGridView.Size = new System.Drawing.Size(597, 705);
             this.clienteDataGridView.TabIndex = 80;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_cliente";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id_cliente";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "nome_cliente";
+            this.dataGridViewTextBoxColumn2.HeaderText = "nome_cliente";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "cpf_cliente";
+            this.dataGridViewTextBoxColumn3.HeaderText = "cpf_cliente";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "nsc_cliente";
+            this.dataGridViewTextBoxColumn4.HeaderText = "nsc_cliente";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "fone_cliente";
+            this.dataGridViewTextBoxColumn5.HeaderText = "fone_cliente";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "email_cliente";
+            this.dataGridViewTextBoxColumn6.HeaderText = "email_cliente";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "senha_cliente";
+            this.dataGridViewTextBoxColumn7.HeaderText = "senha_cliente";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
             // btndeletar
             // 
@@ -552,58 +615,6 @@ namespace PANDOKS_V1._0
             this.pictureBox1.TabIndex = 80;
             this.pictureBox1.TabStop = false;
             // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataMember = "cliente";
-            this.clienteBindingSource.DataSource = this.database_padariaDataSet;
-            // 
-            // database_padariaDataSet
-            // 
-            this.database_padariaDataSet.DataSetName = "database_padariaDataSet";
-            this.database_padariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_cliente";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id_cliente";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "nome_cliente";
-            this.dataGridViewTextBoxColumn2.HeaderText = "nome_cliente";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "cpf_cliente";
-            this.dataGridViewTextBoxColumn3.HeaderText = "cpf_cliente";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "nsc_cliente";
-            this.dataGridViewTextBoxColumn4.HeaderText = "nsc_cliente";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "fone_cliente";
-            this.dataGridViewTextBoxColumn5.HeaderText = "fone_cliente";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "email_cliente";
-            this.dataGridViewTextBoxColumn6.HeaderText = "email_cliente";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "senha_cliente";
-            this.dataGridViewTextBoxColumn7.HeaderText = "senha_cliente";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
             // clienteTableAdapter
             // 
             this.clienteTableAdapter.ClearBeforeFill = true;
@@ -620,16 +631,6 @@ namespace PANDOKS_V1._0
             this.tableAdapterManager.produtoTableAdapter = null;
             this.tableAdapterManager.tipo_pedidoTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // database_padarianovoDataSet
-            // 
-            this.database_padarianovoDataSet.DataSetName = "database_padarianovoDataSet";
-            this.database_padarianovoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clienteBindingSource1
-            // 
-            this.clienteBindingSource1.DataMember = "cliente";
-            this.clienteBindingSource1.DataSource = this.database_padarianovoDataSet;
             // 
             // clienteTableAdapter1
             // 
@@ -673,13 +674,13 @@ namespace PANDOKS_V1._0
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingNavigator)).EndInit();
             this.clienteBindingNavigator.ResumeLayout(false);
             this.clienteBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }

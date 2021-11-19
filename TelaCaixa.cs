@@ -13,6 +13,8 @@ namespace PANDOKS_V1._0
     public partial class TelaCaixa : Form
     {
         float valortotal = 0, valorunittotal = 0;
+        Timer t = new Timer();
+        
         public TelaCaixa()
         {
             InitializeComponent();
@@ -24,7 +26,10 @@ namespace PANDOKS_V1._0
             this.produtoTableAdapter1.Fill(this.database_padarianovoDataSet.produto);
             // TODO: esta linha de código carrega dados na tabela 'database_padariaDataSet.produto'. Você pode movê-la ou removê-la conforme necessário.
             this.produtoTableAdapter.Fill(this.database_padariaDataSet.produto);
-
+            lbcupom.Items.Add("CNPJ\n\n");
+            t.Interval = 1000;
+            t.Tick += new EventHandler(this.t_Tick);
+            t.Start();
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -58,7 +63,51 @@ namespace PANDOKS_V1._0
 
         private void label7_Click(object sender, EventArgs e)
         {
-            this.label7.Text = DateTime.Now.ToString("HH:mm:ss");
+            
+           //this.label7.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+        private void t_Tick(object sender, EventArgs e)
+        {
+            //get current time
+            int hh = DateTime.Now.Hour;
+            int mm = DateTime.Now.Minute;
+            int ss = DateTime.Now.Second;
+
+            //time
+            string time = "";
+
+            //padding leading zero
+            if (hh < 10)
+            {
+                time += "0" + hh;
+            }
+            else
+            {
+                time += hh;
+            }
+            time += ":";
+
+            if (mm < 10)
+            {
+                time += "0" + mm;
+            }
+            else
+            {
+                time += mm;
+            }
+            time += ":";
+
+            if (ss < 10)
+            {
+                time += "0" + ss;
+            }
+            else
+            {
+                time += ss;
+            }
+
+            //update label
+            label7.Text = time;
         }
 
         private void produtoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -134,7 +183,7 @@ namespace PANDOKS_V1._0
 
         private void btnfecharvenda_Click(object sender, EventArgs e)
         {
-            txtValorFinal.Text = txtValorTotal.Text;
+            txtValorFinal.Text = Convert.ToString(valortotal);
             lbcupom.Items.Add("A sua compra fechou em R$" + txtValorTotal.Text + " Reais");
         }
 

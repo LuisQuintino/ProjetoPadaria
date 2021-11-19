@@ -99,7 +99,7 @@ namespace PANDOKS_V1._0
             this.button2.Location = new System.Drawing.Point(94, 544);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(195, 199);
-            this.button2.TabIndex = 4;
+            this.button2.TabIndex = 5;
             this.button2.Text = "Caixa";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
@@ -167,7 +167,7 @@ namespace PANDOKS_V1._0
             this.button6.Font = new System.Drawing.Font("Arial", 24F);
             this.button6.Image = global::PANDOKS_V1._0.Properties.Resources.exit_closethesession_close_6317;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(1550, 544);
+            this.button6.Location = new System.Drawing.Point(822, 544);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(195, 199);
             this.button6.TabIndex = 7;
@@ -188,7 +188,7 @@ namespace PANDOKS_V1._0
             this.button7.Location = new System.Drawing.Point(1550, 143);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(195, 199);
-            this.button7.TabIndex = 6;
+            this.button7.TabIndex = 4;
             this.button7.Text = "Status de Produção";
             this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button7.UseVisualStyleBackColor = false;
@@ -203,10 +203,10 @@ namespace PANDOKS_V1._0
             this.button8.Font = new System.Drawing.Font("Arial", 24F);
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button8.Location = new System.Drawing.Point(1186, 544);
+            this.button8.Location = new System.Drawing.Point(458, 544);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(195, 199);
-            this.button8.TabIndex = 5;
+            this.button8.TabIndex = 6;
             this.button8.Text = "Home";
             this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button8.UseVisualStyleBackColor = false;

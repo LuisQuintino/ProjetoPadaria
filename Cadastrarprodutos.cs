@@ -27,26 +27,6 @@ namespace PANDOKS_V1._0
 
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            if ( Convert.ToInt32(id_produtoTextBox.Text) > 0)
-            {
-                openFileDialog1.ShowDialog();
-                Bitmap bmp = new Bitmap(openFileDialog1.FileName);
-                Bitmap bmp2 = new Bitmap(bmp, pictureBox1.Size);
-                pictureBox1.Image = bmp2;
-                pictureBox1.Image.Save(Application.StartupPath.ToString() + "\\imagensprodutos\\" + id_produtoTextBox.Text + ".png", System.Drawing.Imaging.ImageFormat.Png);
-                img_produtoTextBox.Text = Application.StartupPath.ToString() + "\\imagensprodutos\\" + id_produtoTextBox.Text + ".png";
-                this.Validate();
-                this.produtoBindingSource.EndEdit();
-                this.tableAdapterManager.UpdateAll(this.database_padariaDataSet);
-            }
-            else
-            {
-                MessageBox.Show("Salve primeiro o produto para depois inserir a imagem", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-        }
-
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
 
@@ -60,24 +40,9 @@ namespace PANDOKS_V1._0
 
         }
 
-        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        private void id_produtoTextBox_TextChanged(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(id_produtoTextBox.Text) > 0)
-            {
-                openFileDialog1.ShowDialog();
-                Bitmap bmp = new Bitmap(openFileDialog1.FileName);
-                Bitmap bmp2 = new Bitmap(bmp, pictureBox1.Size);
-                pictureBox1.Image = bmp2;
-                pictureBox1.Image.Save(Application.StartupPath.ToString() + "\\imagensprodutos\\" + id_produtoTextBox.Text + ".jpeg", System.Drawing.Imaging.ImageFormat.Jpeg);
-                img_produtoTextBox.Text = Application.StartupPath.ToString() + "\\imagensprodutos\\" + id_produtoTextBox.Text + ".jpeg";
-                this.Validate();
-                this.produtoBindingSource.EndEdit();
-                this.tableAdapterManager.UpdateAll(this.database_padariaDataSet);
-            }
-            else
-            {
-                MessageBox.Show("Salve primeiro o produto para depois inserir a imagem", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
+            id_produtoTextBox.ReadOnly = true;
         }
     }
 }

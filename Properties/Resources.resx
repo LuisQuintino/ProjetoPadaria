@@ -142,8 +142,8 @@
   <data name="Kib" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kib.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Folder-Add256_24876" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Folder-Add256_24876.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CLIENTES_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CLIENTES_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pao-frances001" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pao-frances001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,14 +172,17 @@
   <data name="Panific System (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Panific System (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3440920-bag-basket-cart-ecommerce-shop-shopping-store_107540" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3440920-bag-basket-cart-ecommerce-shop-shopping-store_107540.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Coxinha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Coxinha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-shutdown-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-shutdown-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Bolo de cenoura" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bolo de cenoura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Torta de maçã" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Torta de maçã.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pastel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pastel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,6 +235,9 @@
   <data name="navigate-right256_24872" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\navigate-right256_24872.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Bolo de cenoura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bolo de cenoura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Folder-Accept256_24860" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Folder-Accept256_24860.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -256,8 +262,8 @@
   <data name="add_to_cart_trolley_shopping_icon_1924261" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_to_cart_trolley_shopping_icon_1924261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Torta de maçã" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Torta de maçã.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Folder-Add256_24876" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Folder-Add256_24876.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Untitled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -328,7 +334,7 @@
   <data name="addusergroup_1251" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\addusergroup_1251.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CLIENTES_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CLIENTES_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3440920-bag-basket-cart-ecommerce-shop-shopping-store_107540 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3440920-bag-basket-cart-ecommerce-shop-shopping-store_107540 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -302,6 +302,8 @@
     <Content Include="database_padarianovo.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\3440920-bag-basket-cart-ecommerce-shop-shopping-store_107540 %281%29.png" />
+    <None Include="Resources\3440920-bag-basket-cart-ecommerce-shop-shopping-store_107540.png" />
     <None Include="Resources\CLIENTES_2.png" />
     <None Include="Resources\Enroladinho de Salsicha.png" />
     <None Include="Resources\Pão de centeio.png" />

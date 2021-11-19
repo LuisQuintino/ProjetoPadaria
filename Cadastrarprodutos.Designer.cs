@@ -30,77 +30,52 @@ namespace PANDOKS_V1._0
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label id_produtoLabel;
-            System.Windows.Forms.Label nome_produtoLabel;
             System.Windows.Forms.Label valor_produtoLabel;
-            System.Windows.Forms.Label img_produtoLabel;
-            this.tabProduto = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            System.Windows.Forms.Label nome_produtoLabel;
+            System.Windows.Forms.Label id_produtoLabel;
+            this.produtoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.database_padarianovoDataSet = new PANDOKS_V1._0.database_padarianovoDataSet();
             this.produtoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database_padariaDataSet = new PANDOKS_V1._0.database_padariaDataSet();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.img_produtoTextBox = new System.Windows.Forms.TextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.produtoTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.produtoTableAdapter();
             this.tableAdapterManager = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.database_padarianovoDataSet = new PANDOKS_V1._0.database_padarianovoDataSet();
-            this.produtoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.produtoTableAdapter1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.produtoTableAdapter();
             this.tableAdapterManager1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager();
-            this.id_produtoTextBox = new System.Windows.Forms.TextBox();
-            this.nome_produtoTextBox = new System.Windows.Forms.TextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.valor_produtoTextBox = new System.Windows.Forms.TextBox();
-            this.img_produtoTextBox1 = new System.Windows.Forms.TextBox();
-            id_produtoLabel = new System.Windows.Forms.Label();
-            nome_produtoLabel = new System.Windows.Forms.Label();
+            this.nome_produtoTextBox = new System.Windows.Forms.TextBox();
+            this.id_produtoTextBox = new System.Windows.Forms.TextBox();
+            this.tabProduto = new System.Windows.Forms.TabControl();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btndeletar = new System.Windows.Forms.Button();
+            this.btnanterior = new System.Windows.Forms.Button();
+            this.btnproximo = new System.Windows.Forms.Button();
+            this.btnsalvar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnnovo = new System.Windows.Forms.Button();
             valor_produtoLabel = new System.Windows.Forms.Label();
-            img_produtoLabel = new System.Windows.Forms.Label();
-            this.tabProduto.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            nome_produtoLabel = new System.Windows.Forms.Label();
+            id_produtoLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabProduto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabProduto
+            // produtoBindingSource1
             // 
-            this.tabProduto.Controls.Add(this.tabPage1);
-            this.tabProduto.Controls.Add(this.tabPage2);
-            this.tabProduto.Controls.Add(this.tabPage3);
-            this.tabProduto.Location = new System.Drawing.Point(12, 12);
-            this.tabProduto.Name = "tabProduto";
-            this.tabProduto.SelectedIndex = 0;
-            this.tabProduto.Size = new System.Drawing.Size(412, 426);
-            this.tabProduto.TabIndex = 0;
+            this.produtoBindingSource1.DataMember = "produto";
+            this.produtoBindingSource1.DataSource = this.database_padarianovoDataSet;
             // 
-            // tabPage1
+            // database_padarianovoDataSet
             // 
-            this.tabPage1.AutoScroll = true;
-            this.tabPage1.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
-            this.tabPage1.Controls.Add(id_produtoLabel);
-            this.tabPage1.Controls.Add(this.id_produtoTextBox);
-            this.tabPage1.Controls.Add(nome_produtoLabel);
-            this.tabPage1.Controls.Add(this.nome_produtoTextBox);
-            this.tabPage1.Controls.Add(valor_produtoLabel);
-            this.tabPage1.Controls.Add(this.valor_produtoTextBox);
-            this.tabPage1.Controls.Add(img_produtoLabel);
-            this.tabPage1.Controls.Add(this.img_produtoTextBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(404, 400);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Cadastrar";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.database_padarianovoDataSet.DataSetName = "database_padarianovoDataSet";
+            this.database_padarianovoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // produtoBindingSource
             // 
@@ -111,76 +86,6 @@ namespace PANDOKS_V1._0
             // 
             this.database_padariaDataSet.DataSetName = "database_padariaDataSet";
             this.database_padariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
-            this.tabPage2.Controls.Add(this.toolStrip1);
-            this.tabPage2.Controls.Add(this.pictureBox1);
-            this.tabPage2.Controls.Add(this.img_produtoTextBox);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(404, 400);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Imagem";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripButton2});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 3);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(398, 25);
-            this.toolStrip1.TabIndex = 13;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::PANDOKS_V1._0.Properties.Resources.Save_37110__1_;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::PANDOKS_V1._0.Properties.Resources.Folder_Delete256_24851;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton2.Text = "toolStripButton2";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(392, 327);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // img_produtoTextBox
-            // 
-            this.img_produtoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "img_produto", true));
-            this.img_produtoTextBox.Location = new System.Drawing.Point(3, 364);
-            this.img_produtoTextBox.Name = "img_produtoTextBox";
-            this.img_produtoTextBox.Size = new System.Drawing.Size(395, 20);
-            this.img_produtoTextBox.TabIndex = 11;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(404, 400);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Consulta";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // produtoTableAdapter
             // 
@@ -203,16 +108,6 @@ namespace PANDOKS_V1._0
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // database_padarianovoDataSet
-            // 
-            this.database_padarianovoDataSet.DataSetName = "database_padarianovoDataSet";
-            this.database_padarianovoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // produtoBindingSource1
-            // 
-            this.produtoBindingSource1.DataMember = "produto";
-            this.produtoBindingSource1.DataSource = this.database_padarianovoDataSet;
-            // 
             // produtoTableAdapter1
             // 
             this.produtoTableAdapter1.ClearBeforeFill = true;
@@ -230,123 +125,256 @@ namespace PANDOKS_V1._0
             this.tableAdapterManager1.tipo_pedidoTableAdapter = null;
             this.tableAdapterManager1.UpdateOrder = PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // id_produtoLabel
+            // tabPage3
             // 
-            id_produtoLabel.AutoSize = true;
-            id_produtoLabel.Location = new System.Drawing.Point(26, 68);
-            id_produtoLabel.Name = "id_produtoLabel";
-            id_produtoLabel.Size = new System.Drawing.Size(57, 13);
-            id_produtoLabel.TabIndex = 0;
-            id_produtoLabel.Text = "id produto:";
+            this.tabPage3.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
+            this.tabPage3.Location = new System.Drawing.Point(4, 45);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(595, 661);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Consulta";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // id_produtoTextBox
+            // tabPage1
             // 
-            this.id_produtoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource1, "id_produto", true));
-            this.id_produtoTextBox.Location = new System.Drawing.Point(107, 65);
-            this.id_produtoTextBox.Name = "id_produtoTextBox";
-            this.id_produtoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.id_produtoTextBox.TabIndex = 1;
-            // 
-            // nome_produtoLabel
-            // 
-            nome_produtoLabel.AutoSize = true;
-            nome_produtoLabel.Location = new System.Drawing.Point(26, 94);
-            nome_produtoLabel.Name = "nome_produtoLabel";
-            nome_produtoLabel.Size = new System.Drawing.Size(75, 13);
-            nome_produtoLabel.TabIndex = 2;
-            nome_produtoLabel.Text = "nome produto:";
-            // 
-            // nome_produtoTextBox
-            // 
-            this.nome_produtoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource1, "nome_produto", true));
-            this.nome_produtoTextBox.Location = new System.Drawing.Point(107, 91);
-            this.nome_produtoTextBox.Name = "nome_produtoTextBox";
-            this.nome_produtoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.nome_produtoTextBox.TabIndex = 3;
-            // 
-            // valor_produtoLabel
-            // 
-            valor_produtoLabel.AutoSize = true;
-            valor_produtoLabel.Location = new System.Drawing.Point(26, 120);
-            valor_produtoLabel.Name = "valor_produtoLabel";
-            valor_produtoLabel.Size = new System.Drawing.Size(72, 13);
-            valor_produtoLabel.TabIndex = 4;
-            valor_produtoLabel.Text = "valor produto:";
+            this.tabPage1.AutoScroll = true;
+            this.tabPage1.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
+            this.tabPage1.Controls.Add(id_produtoLabel);
+            this.tabPage1.Controls.Add(this.id_produtoTextBox);
+            this.tabPage1.Controls.Add(this.nome_produtoTextBox);
+            this.tabPage1.Controls.Add(this.valor_produtoTextBox);
+            this.tabPage1.Controls.Add(nome_produtoLabel);
+            this.tabPage1.Controls.Add(valor_produtoLabel);
+            this.tabPage1.Location = new System.Drawing.Point(4, 45);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(544, 335);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Cadastrar";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // valor_produtoTextBox
             // 
             this.valor_produtoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource1, "valor_produto", true));
-            this.valor_produtoTextBox.Location = new System.Drawing.Point(107, 117);
+            this.valor_produtoTextBox.Location = new System.Drawing.Point(289, 152);
             this.valor_produtoTextBox.Name = "valor_produtoTextBox";
-            this.valor_produtoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.valor_produtoTextBox.Size = new System.Drawing.Size(174, 44);
             this.valor_produtoTextBox.TabIndex = 5;
             // 
-            // img_produtoLabel
+            // valor_produtoLabel
             // 
-            img_produtoLabel.AutoSize = true;
-            img_produtoLabel.Location = new System.Drawing.Point(26, 146);
-            img_produtoLabel.Name = "img_produtoLabel";
-            img_produtoLabel.Size = new System.Drawing.Size(65, 13);
-            img_produtoLabel.TabIndex = 6;
-            img_produtoLabel.Text = "img produto:";
+            valor_produtoLabel.AutoSize = true;
+            valor_produtoLabel.Location = new System.Drawing.Point(26, 160);
+            valor_produtoLabel.Name = "valor_produtoLabel";
+            valor_produtoLabel.Size = new System.Drawing.Size(206, 36);
+            valor_produtoLabel.TabIndex = 4;
+            valor_produtoLabel.Text = "valor produto:";
             // 
-            // img_produtoTextBox1
+            // nome_produtoTextBox
             // 
-            this.img_produtoTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource1, "img_produto", true));
-            this.img_produtoTextBox1.Location = new System.Drawing.Point(107, 143);
-            this.img_produtoTextBox1.Name = "img_produtoTextBox1";
-            this.img_produtoTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.img_produtoTextBox1.TabIndex = 7;
+            this.nome_produtoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource1, "nome_produto", true));
+            this.nome_produtoTextBox.Location = new System.Drawing.Point(289, 94);
+            this.nome_produtoTextBox.Name = "nome_produtoTextBox";
+            this.nome_produtoTextBox.Size = new System.Drawing.Size(174, 44);
+            this.nome_produtoTextBox.TabIndex = 3;
+            // 
+            // nome_produtoLabel
+            // 
+            nome_produtoLabel.AutoSize = true;
+            nome_produtoLabel.Location = new System.Drawing.Point(26, 102);
+            nome_produtoLabel.Name = "nome_produtoLabel";
+            nome_produtoLabel.Size = new System.Drawing.Size(218, 36);
+            nome_produtoLabel.TabIndex = 2;
+            nome_produtoLabel.Text = "nome produto:";
+            // 
+            // id_produtoTextBox
+            // 
+            this.id_produtoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource1, "id_produto", true));
+            this.id_produtoTextBox.Location = new System.Drawing.Point(289, 36);
+            this.id_produtoTextBox.Name = "id_produtoTextBox";
+            this.id_produtoTextBox.Size = new System.Drawing.Size(174, 44);
+            this.id_produtoTextBox.TabIndex = 1;
+            this.id_produtoTextBox.TextChanged += new System.EventHandler(this.id_produtoTextBox_TextChanged);
+            // 
+            // id_produtoLabel
+            // 
+            id_produtoLabel.AutoSize = true;
+            id_produtoLabel.Location = new System.Drawing.Point(26, 44);
+            id_produtoLabel.Name = "id_produtoLabel";
+            id_produtoLabel.Size = new System.Drawing.Size(163, 36);
+            id_produtoLabel.TabIndex = 0;
+            id_produtoLabel.Text = "id produto:";
+            // 
+            // tabProduto
+            // 
+            this.tabProduto.Controls.Add(this.tabPage1);
+            this.tabProduto.Controls.Add(this.tabPage3);
+            this.tabProduto.Font = new System.Drawing.Font("Arial", 24F);
+            this.tabProduto.Location = new System.Drawing.Point(12, 57);
+            this.tabProduto.Name = "tabProduto";
+            this.tabProduto.SelectedIndex = 0;
+            this.tabProduto.Size = new System.Drawing.Size(552, 384);
+            this.tabProduto.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::PANDOKS_V1._0.Properties.Resources.CLIENTES_2;
+            this.pictureBox1.Location = new System.Drawing.Point(621, 57);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(685, 384);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 81;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btndeletar
+            // 
+            this.btndeletar.BackColor = System.Drawing.Color.Transparent;
+            this.btndeletar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btndeletar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndeletar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndeletar.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.btndeletar.Image = global::PANDOKS_V1._0.Properties.Resources.Folder_Delete256_24851;
+            this.btndeletar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btndeletar.Location = new System.Drawing.Point(512, 477);
+            this.btndeletar.Name = "btndeletar";
+            this.btndeletar.Size = new System.Drawing.Size(109, 62);
+            this.btndeletar.TabIndex = 87;
+            this.btndeletar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btndeletar.UseVisualStyleBackColor = false;
+            // 
+            // btnanterior
+            // 
+            this.btnanterior.BackColor = System.Drawing.Color.Transparent;
+            this.btnanterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnanterior.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnanterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnanterior.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.btnanterior.Image = global::PANDOKS_V1._0.Properties.Resources.navigate_left256_24869;
+            this.btnanterior.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnanterior.Location = new System.Drawing.Point(627, 477);
+            this.btnanterior.Name = "btnanterior";
+            this.btnanterior.Size = new System.Drawing.Size(109, 62);
+            this.btnanterior.TabIndex = 86;
+            this.btnanterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnanterior.UseVisualStyleBackColor = false;
+            // 
+            // btnproximo
+            // 
+            this.btnproximo.BackColor = System.Drawing.Color.Transparent;
+            this.btnproximo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnproximo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnproximo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnproximo.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.btnproximo.Image = global::PANDOKS_V1._0.Properties.Resources.navigate_right256_24872;
+            this.btnproximo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnproximo.Location = new System.Drawing.Point(742, 477);
+            this.btnproximo.Name = "btnproximo";
+            this.btnproximo.Size = new System.Drawing.Size(109, 62);
+            this.btnproximo.TabIndex = 85;
+            this.btnproximo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnproximo.UseVisualStyleBackColor = false;
+            // 
+            // btnsalvar
+            // 
+            this.btnsalvar.BackColor = System.Drawing.Color.Transparent;
+            this.btnsalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnsalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsalvar.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.btnsalvar.Image = global::PANDOKS_V1._0.Properties.Resources.Folder_Accept256_24860;
+            this.btnsalvar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnsalvar.Location = new System.Drawing.Point(397, 477);
+            this.btnsalvar.Name = "btnsalvar";
+            this.btnsalvar.Size = new System.Drawing.Size(109, 62);
+            this.btnsalvar.TabIndex = 84;
+            this.btnsalvar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnsalvar.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.button1.Image = global::PANDOKS_V1._0.Properties.Resources.undo256_24848;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(857, 477);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 62);
+            this.button1.TabIndex = 83;
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnnovo
+            // 
+            this.btnnovo.BackColor = System.Drawing.Color.Transparent;
+            this.btnnovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnnovo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnnovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnnovo.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
+            this.btnnovo.Image = global::PANDOKS_V1._0.Properties.Resources.Folder_Add256_24876;
+            this.btnnovo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnnovo.Location = new System.Drawing.Point(282, 477);
+            this.btnnovo.Name = "btnnovo";
+            this.btnnovo.Size = new System.Drawing.Size(109, 62);
+            this.btnnovo.TabIndex = 82;
+            this.btnnovo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnnovo.UseVisualStyleBackColor = false;
             // 
             // Cadastrarprodutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1318, 561);
+            this.Controls.Add(this.btndeletar);
+            this.Controls.Add(this.btnanterior);
+            this.Controls.Add(this.btnproximo);
+            this.Controls.Add(this.btnsalvar);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnnovo);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tabProduto);
             this.Name = "Cadastrarprodutos";
             this.Text = "Cadastrarprodutos";
             this.Load += new System.EventHandler(this.Cadastrarprodutos_Load);
-            this.tabProduto.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabProduto.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tabProduto;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
         private database_padariaDataSet database_padariaDataSet;
         private System.Windows.Forms.BindingSource produtoBindingSource;
         private database_padariaDataSetTableAdapters.produtoTableAdapter produtoTableAdapter;
         private database_padariaDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.TextBox img_produtoTextBox;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
         private database_padarianovoDataSet database_padarianovoDataSet;
         private System.Windows.Forms.BindingSource produtoBindingSource1;
         private database_padarianovoDataSetTableAdapters.produtoTableAdapter produtoTableAdapter1;
         private database_padarianovoDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox id_produtoTextBox;
         private System.Windows.Forms.TextBox nome_produtoTextBox;
         private System.Windows.Forms.TextBox valor_produtoTextBox;
-        private System.Windows.Forms.TextBox img_produtoTextBox1;
+        private System.Windows.Forms.TabControl tabProduto;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btndeletar;
+        private System.Windows.Forms.Button btnanterior;
+        private System.Windows.Forms.Button btnproximo;
+        private System.Windows.Forms.Button btnsalvar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnnovo;
     }
 }
