@@ -22,7 +22,7 @@ namespace PANDOKS_V1._0
             login tela = new login();
             if(progressBar1.Value < 100)
             {
-                progressBar1.Value += 2;
+                progressBar1.Value += 10;
             }
             else
             {
@@ -30,6 +30,11 @@ namespace PANDOKS_V1._0
                 tela.Show();
                 this.Visible = false;
             }
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

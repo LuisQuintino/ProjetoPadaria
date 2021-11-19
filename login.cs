@@ -12,9 +12,15 @@ namespace PANDOKS_V1._0
 {
     public partial class login : Form
     {
+
         public login()
         {
             InitializeComponent();
+        }
+        public string LoginTxtNome
+        {
+            get { return this.txtNome.Text; }
+            set { this.txtNome.Text = value; }
         }
 
         private void btnCANCELAR_Click(object sender, EventArgs e)
@@ -42,6 +48,8 @@ namespace PANDOKS_V1._0
             if (result == 1)
             {
                 MenuPrincipal menu = new MenuPrincipal();
+                TelaCaixa tela = new TelaCaixa(this);
+                tela.Show();
                 menu.Show();
                 this.Visible = false;
             }
@@ -60,6 +68,16 @@ namespace PANDOKS_V1._0
             {
                 btnENTRAR_Click_1(sender, e);
             }
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void login_KeyUp(object sender, KeyEventArgs e)
+        {
+
         }
     }
 }

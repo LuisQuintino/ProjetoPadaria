@@ -44,6 +44,8 @@ namespace PANDOKS_V1._0
             this.colaboradorBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.colaboradorTableAdapter1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.colaboradorTableAdapter();
             this.tableAdapterManager1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).BeginInit();
@@ -171,12 +173,30 @@ namespace PANDOKS_V1._0
             this.tableAdapterManager1.tipo_pedidoTableAdapter = null;
             this.tableAdapterManager1.UpdateOrder = PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // txtNome
+            // 
+            this.txtNome.BackColor = System.Drawing.Color.Moccasin;
+            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNome.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource1, "nome_colaborador", true));
+            this.txtNome.ForeColor = System.Drawing.Color.Moccasin;
+            this.txtNome.Location = new System.Drawing.Point(-34, -1);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(33, 13);
+            this.txtNome.TabIndex = 11;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Panific_System__5_;
             this.ClientSize = new System.Drawing.Size(1838, 860);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.mxtLOGIN);
             this.Controls.Add(this.btnCANCELAR);
             this.Controls.Add(this.btnENTRAR);
@@ -184,11 +204,13 @@ namespace PANDOKS_V1._0
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.login_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.login_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).EndInit();
@@ -213,5 +235,7 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.BindingSource colaboradorBindingSource1;
         private database_padarianovoDataSetTableAdapters.colaboradorTableAdapter colaboradorTableAdapter1;
         private database_padarianovoDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

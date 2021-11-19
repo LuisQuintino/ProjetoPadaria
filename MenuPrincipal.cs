@@ -40,8 +40,8 @@ namespace PANDOKS_V1._0
 
         private void button2_Click(object sender, EventArgs e)
         {
-            TelaCaixa Caixa = new TelaCaixa();
-            Caixa.Show();
+            /*TelaCaixa Caixa = new TelaCaixa();
+            Caixa.Show();*/
             this.Visible = false;
         }
 
@@ -68,6 +68,11 @@ namespace PANDOKS_V1._0
         {
             Cadastrarprodutos cadastroprodutos = new Cadastrarprodutos();
             cadastroprodutos.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Aguardando Atualização","Aviso", MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
         }
     }
 }

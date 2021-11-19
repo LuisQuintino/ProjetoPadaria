@@ -226,7 +226,7 @@ namespace PANDOKS_V1._0
             this.pictureBox1.Size = new System.Drawing.Size(685, 384);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 81;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Enabled = false;
             // 
             // btndeletar
             // 

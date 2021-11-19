@@ -14,9 +14,15 @@ namespace PANDOKS_V1._0
     {
         float valortotal = 0, valorunittotal = 0;
         Timer t = new Timer();
+        login logincompartilhado = null;
         
         public TelaCaixa()
         {
+            InitializeComponent();
+        }
+        public TelaCaixa(login teste)
+        {
+            logincompartilhado = teste;
             InitializeComponent();
         }
 
@@ -30,6 +36,8 @@ namespace PANDOKS_V1._0
             t.Interval = 1000;
             t.Tick += new EventHandler(this.t_Tick);
             t.Start();
+            txtNomeOperador.Text = logincompartilhado.LoginTxtNome;
+            
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -44,12 +52,14 @@ namespace PANDOKS_V1._0
 
         private void button23_Click(object sender, EventArgs e)
         {
+            button23.Enabled = false;
             Application.Exit();
             Close();
         }
 
         private void button26_Click(object sender, EventArgs e)
         {
+            button26.Enabled = false;
             this.Dispose();
             MenuPrincipal menu = new MenuPrincipal();
             menu.Show();
@@ -57,6 +67,7 @@ namespace PANDOKS_V1._0
 
         private void button25_Click(object sender, EventArgs e)
         {
+            button25.Enabled = false;
             MenuPrincipal menu = new MenuPrincipal();
             menu.Show();
         }
@@ -144,6 +155,7 @@ namespace PANDOKS_V1._0
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
+            txtValorUnit.Enabled = false;
             txtValorUnit.ReadOnly = true;
             if (textBox1.Text == "")
             {
@@ -153,7 +165,8 @@ namespace PANDOKS_V1._0
 
         private void txtValorTotal_TextChanged(object sender, EventArgs e)
         {
-
+            txtValorTotal.Enabled = false;
+            txtValorTotal.ReadOnly = true;
         }
 
         private void txtQtd_TextChanged(object sender, EventArgs e)
@@ -175,6 +188,8 @@ namespace PANDOKS_V1._0
 
         private void txtnmproduto_TextChanged(object sender, EventArgs e)
         {
+            txtnmproduto.Enabled = false;
+            txtnmproduto.ReadOnly = true;
             if (textBox1.Text == "")
             {
                 txtnmproduto.Text = "";
@@ -183,12 +198,14 @@ namespace PANDOKS_V1._0
 
         private void btnfecharvenda_Click(object sender, EventArgs e)
         {
+            btnfecharvenda.Enabled = false;
             txtValorFinal.Text = Convert.ToString(valortotal);
             lbcupom.Items.Add("A sua compra fechou em R$" + txtValorTotal.Text + " Reais");
         }
 
         private void txtcancelarvenda_Click(object sender, EventArgs e)
         {
+            txtcancelarvenda.Enabled = false;
             lbcupom.Items.Clear();
             txtValorTotal.Text = "";
             txtnmproduto.Text = "";
@@ -200,25 +217,89 @@ namespace PANDOKS_V1._0
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == 13)
-            {
-                btnadcproduto_Click(sender, e);
-            }
+
         }
 
         private void cancelaritem_Click(object sender, EventArgs e)
         {
+            cancelaritem.Enabled = false;
             lbcupom.Items.Remove(lbcupom.SelectedItem);
         }
 
         private void pesqproduto_Click(object sender, EventArgs e)
         {
+            pesqproduto.Enabled = false;
             PesquisarProduto pesq = new PesquisarProduto();
             pesq.Show();
         }
 
+        private void TelaCaixa_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F9)
+            {
+                pesqproduto_Click(sender, e);
+            }
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnadcproduto_Click(sender, e);
+            }
+            if (e.KeyCode == Keys.F8)
+            {
+                cancelaritem_Click(sender, e);
+            }
+            if (e.KeyCode == Keys.F11)
+            {
+                txtcancelarvenda_Click(sender, e);
+            }
+            if(e.KeyCode == Keys.F10)
+            {
+                btnfecharvenda_Click(sender, e);
+            }
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            button19.Enabled = false;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            textBox2.Enabled = false;
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            button22.Enabled = false;
+        }
+
+        private void txtValorFinal_TextChanged(object sender, EventArgs e)
+        {
+            txtValorFinal.Enabled = false;
+        }
+
+        private void lbcupom_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lbcupom.Enabled = false;
+        }
+
+        private void txtNomeOperador_TextChanged(object sender, EventArgs e)
+        {
+            txtNomeOperador.Enabled = false;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Enabled = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnadcproduto_Click(object sender, EventArgs e)
         {
+            btnadcproduto.Enabled = false;
             float qtd, valorunit;
             if (txtQtd.Text == "")
             {

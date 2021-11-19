@@ -58,7 +58,7 @@ namespace PANDOKS_V1._0
             this.pictureBox1.Size = new System.Drawing.Size(616, 406);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Enabled = false;
             // 
             // progressBar1
             // 
@@ -66,6 +66,7 @@ namespace PANDOKS_V1._0
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(678, 12);
             this.progressBar1.TabIndex = 1;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // timer1
             // 
