@@ -36,5 +36,10 @@ namespace PANDOKS_V1._0
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

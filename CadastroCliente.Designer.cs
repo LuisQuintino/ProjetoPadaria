@@ -188,8 +188,8 @@ namespace PANDOKS_V1._0
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
             // 
             // bindingNavigatorDeleteItem
@@ -453,7 +453,7 @@ namespace PANDOKS_V1._0
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
-            this.clienteDataGridView.DataSource = this.clienteBindingSource;
+            this.clienteDataGridView.DataSource = this.clienteBindingSource1;
             this.clienteDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.clienteDataGridView.Location = new System.Drawing.Point(3, 3);
             this.clienteDataGridView.Name = "clienteDataGridView";
@@ -607,13 +607,14 @@ namespace PANDOKS_V1._0
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::PANDOKS_V1._0.Properties.Resources.CLIENTES_2;
+            this.pictureBox1.Enabled = false;
+            this.pictureBox1.Image = global::PANDOKS_V1._0.Properties.Resources.CLIENTE_3;
             this.pictureBox1.Location = new System.Drawing.Point(617, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(680, 384);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 80;
-            this.pictureBox1.Enabled = false;
+            this.pictureBox1.TabStop = false;
             // 
             // clienteTableAdapter
             // 

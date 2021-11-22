@@ -33,6 +33,8 @@ namespace PANDOKS_V1._0
             this.colaboradorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database_padariaDataSet = new PANDOKS_V1._0.database_padariaDataSet();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.colaboradorBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.database_padarianovoDataSet = new PANDOKS_V1._0.database_padarianovoDataSet();
             this.label4 = new System.Windows.Forms.Label();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,37 +55,13 @@ namespace PANDOKS_V1._0
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.cargoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cargoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.txtconfirmarsenha = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtsenha = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.colaboradorTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.colaboradorTableAdapter();
-            this.tableAdapterManager = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager();
-            this.btnsalvar = new System.Windows.Forms.Button();
-            this.btnproximo = new System.Windows.Forms.Button();
-            this.btnanterior = new System.Windows.Forms.Button();
-            this.btndeletar = new System.Windows.Forms.Button();
-            this.cargoTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.cargoTableAdapter();
-            this.cargocolaboradorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clienteTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.clienteTableAdapter();
-            this.database_padarianovoDataSet = new PANDOKS_V1._0.database_padarianovoDataSet();
-            this.colaboradorBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.colaboradorTableAdapter1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.colaboradorTableAdapter();
-            this.tableAdapterManager1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager();
             this.colaboradorDataGridView = new System.Windows.Forms.DataGridView();
-            this.idcolaboradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomecolaboradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cpfcolaboradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nsccolaboradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fonecolaboradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salariocolaboradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtadmissaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtdemissaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.senhacolaboradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idcargoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -94,21 +72,43 @@ namespace PANDOKS_V1._0
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cargoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.cargoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.colaboradorTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.colaboradorTableAdapter();
+            this.tableAdapterManager = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.TableAdapterManager();
+            this.btnsalvar = new System.Windows.Forms.Button();
+            this.btnproximo = new System.Windows.Forms.Button();
+            this.btnanterior = new System.Windows.Forms.Button();
+            this.btndeletar = new System.Windows.Forms.Button();
+            this.cargoTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.cargoTableAdapter();
+            this.cargocolaboradorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clienteTableAdapter = new PANDOKS_V1._0.database_padariaDataSetTableAdapters.clienteTableAdapter();
+            this.colaboradorTableAdapter1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.colaboradorTableAdapter();
+            this.tableAdapterManager1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager();
             this.cargoTableAdapter1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.cargoTableAdapter();
+            this.idcolaboradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomecolaboradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cpfcolaboradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nsccolaboradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fonecolaboradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salariocolaboradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtadmissaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtdemissaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.senhacolaboradorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idcargoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cargoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cargoBindingSource1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.colaboradorDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cargoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cargocolaboradorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colaboradorDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cargoBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // colaboradorBindingSource
@@ -131,6 +131,16 @@ namespace PANDOKS_V1._0
             this.maskedTextBox1.Size = new System.Drawing.Size(262, 44);
             this.maskedTextBox1.TabIndex = 28;
             this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // colaboradorBindingSource1
+            // 
+            this.colaboradorBindingSource1.DataMember = "colaborador";
+            this.colaboradorBindingSource1.DataSource = this.database_padarianovoDataSet;
+            // 
+            // database_padarianovoDataSet
+            // 
+            this.database_padarianovoDataSet.DataSetName = "database_padarianovoDataSet";
+            this.database_padarianovoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label4
             // 
@@ -298,13 +308,14 @@ namespace PANDOKS_V1._0
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Enabled = false;
             this.pictureBox1.Image = global::PANDOKS_V1._0.Properties.Resources.Untitled;
             this.pictureBox1.Location = new System.Drawing.Point(618, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(680, 384);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 43;
-            this.pictureBox1.Enabled = false;
+            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -371,13 +382,13 @@ namespace PANDOKS_V1._0
             // maskedTextBox6
             // 
             this.maskedTextBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource1, "salario_colaborador", true));
-            this.maskedTextBox6.Location = new System.Drawing.Point(169, 462);
-            this.maskedTextBox6.Mask = "$0000000";
+            this.maskedTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox6.Location = new System.Drawing.Point(169, 459);
+            this.maskedTextBox6.Mask = "$00.000";
             this.maskedTextBox6.Name = "maskedTextBox6";
-            this.maskedTextBox6.Size = new System.Drawing.Size(100, 26);
+            this.maskedTextBox6.Size = new System.Drawing.Size(153, 44);
             this.maskedTextBox6.TabIndex = 72;
             this.maskedTextBox6.ValidatingType = typeof(int);
-            this.maskedTextBox6.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox6_MaskInputRejected_1);
             // 
             // comboBox1
             // 
@@ -392,10 +403,10 @@ namespace PANDOKS_V1._0
             this.comboBox1.TabIndex = 71;
             this.comboBox1.ValueMember = "id_cargo";
             // 
-            // cargoBindingSource
+            // cargoBindingSource1
             // 
-            this.cargoBindingSource.DataMember = "cargo";
-            this.cargoBindingSource.DataSource = this.database_padariaDataSet;
+            this.cargoBindingSource1.DataMember = "cargo";
+            this.cargoBindingSource1.DataSource = this.database_padarianovoDataSet;
             // 
             // txtconfirmarsenha
             // 
@@ -450,6 +461,93 @@ namespace PANDOKS_V1._0
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consulta";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // colaboradorDataGridView
+            // 
+            this.colaboradorDataGridView.AutoGenerateColumns = false;
+            this.colaboradorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.colaboradorDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10});
+            this.colaboradorDataGridView.DataSource = this.colaboradorBindingSource1;
+            this.colaboradorDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colaboradorDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.colaboradorDataGridView.Name = "colaboradorDataGridView";
+            this.colaboradorDataGridView.Size = new System.Drawing.Size(598, 696);
+            this.colaboradorDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_colaborador";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id_colaborador";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "nome_colaborador";
+            this.dataGridViewTextBoxColumn2.HeaderText = "nome_colaborador";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "cpf_colaborador";
+            this.dataGridViewTextBoxColumn3.HeaderText = "cpf_colaborador";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "nsc_colaborador";
+            this.dataGridViewTextBoxColumn4.HeaderText = "nsc_colaborador";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "fone_colaborador";
+            this.dataGridViewTextBoxColumn5.HeaderText = "fone_colaborador";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "salario_colaborador";
+            this.dataGridViewTextBoxColumn6.HeaderText = "salario_colaborador";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "dt_admissao";
+            this.dataGridViewTextBoxColumn7.HeaderText = "dt_admissao";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "dt_demissao";
+            this.dataGridViewTextBoxColumn8.HeaderText = "dt_demissao";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "senha_colaborador";
+            this.dataGridViewTextBoxColumn9.HeaderText = "senha_colaborador";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "id_cargo";
+            this.dataGridViewTextBoxColumn10.HeaderText = "id_cargo";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // cargoBindingSource
+            // 
+            this.cargoBindingSource.DataMember = "cargo";
+            this.cargoBindingSource.DataSource = this.database_padariaDataSet;
             // 
             // colaboradorTableAdapter
             // 
@@ -554,16 +652,6 @@ namespace PANDOKS_V1._0
             // 
             this.clienteTableAdapter.ClearBeforeFill = true;
             // 
-            // database_padarianovoDataSet
-            // 
-            this.database_padarianovoDataSet.DataSetName = "database_padarianovoDataSet";
-            this.database_padarianovoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // colaboradorBindingSource1
-            // 
-            this.colaboradorBindingSource1.DataMember = "colaborador";
-            this.colaboradorBindingSource1.DataSource = this.database_padarianovoDataSet;
-            // 
             // colaboradorTableAdapter1
             // 
             this.colaboradorTableAdapter1.ClearBeforeFill = true;
@@ -581,26 +669,9 @@ namespace PANDOKS_V1._0
             this.tableAdapterManager1.tipo_pedidoTableAdapter = null;
             this.tableAdapterManager1.UpdateOrder = PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // colaboradorDataGridView
+            // cargoTableAdapter1
             // 
-            this.colaboradorDataGridView.AutoGenerateColumns = false;
-            this.colaboradorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.colaboradorDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
-            this.colaboradorDataGridView.DataSource = this.colaboradorBindingSource1;
-            this.colaboradorDataGridView.Location = new System.Drawing.Point(0, 0);
-            this.colaboradorDataGridView.Name = "colaboradorDataGridView";
-            this.colaboradorDataGridView.Size = new System.Drawing.Size(601, 531);
-            this.colaboradorDataGridView.TabIndex = 0;
+            this.cargoTableAdapter1.ClearBeforeFill = true;
             // 
             // idcolaboradorDataGridViewTextBoxColumn
             // 
@@ -662,75 +733,6 @@ namespace PANDOKS_V1._0
             this.idcargoDataGridViewTextBoxColumn.HeaderText = "id_cargo";
             this.idcargoDataGridViewTextBoxColumn.Name = "idcargoDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_colaborador";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id_colaborador";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "nome_colaborador";
-            this.dataGridViewTextBoxColumn2.HeaderText = "nome_colaborador";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "cpf_colaborador";
-            this.dataGridViewTextBoxColumn3.HeaderText = "cpf_colaborador";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "nsc_colaborador";
-            this.dataGridViewTextBoxColumn4.HeaderText = "nsc_colaborador";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "fone_colaborador";
-            this.dataGridViewTextBoxColumn5.HeaderText = "fone_colaborador";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "salario_colaborador";
-            this.dataGridViewTextBoxColumn6.HeaderText = "salario_colaborador";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "dt_admissao";
-            this.dataGridViewTextBoxColumn7.HeaderText = "dt_admissao";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "dt_demissao";
-            this.dataGridViewTextBoxColumn8.HeaderText = "dt_demissao";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "senha_colaborador";
-            this.dataGridViewTextBoxColumn9.HeaderText = "senha_colaborador";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "id_cargo";
-            this.dataGridViewTextBoxColumn10.HeaderText = "id_cargo";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // cargoBindingSource1
-            // 
-            this.cargoBindingSource1.DataMember = "cargo";
-            this.cargoBindingSource1.DataSource = this.database_padarianovoDataSet;
-            // 
-            // cargoTableAdapter1
-            // 
-            this.cargoTableAdapter1.ClearBeforeFill = true;
-            // 
             // Cadastrocolaborador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -752,18 +754,18 @@ namespace PANDOKS_V1._0
             this.Load += new System.EventHandler(this.Form9_Load);
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cargoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cargoBindingSource1)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.colaboradorDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cargoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cargocolaboradorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colaboradorDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cargoBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }

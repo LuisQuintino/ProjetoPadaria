@@ -102,11 +102,6 @@ namespace PANDOKS_V1._0
             colaboradorBindingSource1.AddNew();
         }
 
-        private void maskedTextBox6_MaskInputRejected_1(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 32)

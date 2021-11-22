@@ -20,12 +20,15 @@ namespace PANDOKS_V1._0
         private void button22_Click(object sender, EventArgs e)
         {
             this.Close();
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.Show();
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
-            MenuPrincipal menu = new MenuPrincipal();
-            menu.Show();
+            this.Close();
+            login Inicio = new login();
+            Inicio.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

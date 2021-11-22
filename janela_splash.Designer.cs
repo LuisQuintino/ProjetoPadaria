@@ -52,19 +52,21 @@ namespace PANDOKS_V1._0
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Enabled = false;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(616, 406);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.Enabled = false;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(-1, 405);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(678, 12);
+            this.progressBar1.Size = new System.Drawing.Size(1084, 12);
             this.progressBar1.TabIndex = 1;
             this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 

@@ -53,6 +53,7 @@ namespace PANDOKS_V1._0
             this.produtoTableAdapter1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.produtoTableAdapter();
             this.tableAdapterManager1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager();
             this.Caixa = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtNomeOperador = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -82,7 +83,6 @@ namespace PANDOKS_V1._0
             this.cancelaritem = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtnmproduto = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
@@ -90,8 +90,8 @@ namespace PANDOKS_V1._0
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingNavigator)).BeginInit();
             this.produtoBindingNavigator.SuspendLayout();
             this.Caixa.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // produtoBindingSource1
@@ -156,8 +156,8 @@ namespace PANDOKS_V1._0
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
             // 
             // bindingNavigatorDeleteItem
@@ -316,6 +316,18 @@ namespace PANDOKS_V1._0
             this.Caixa.Size = new System.Drawing.Size(1467, 836);
             this.Caixa.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Enabled = false;
+            this.pictureBox1.Image = global::PANDOKS_V1._0.Properties.Resources._3440920_bag_basket_cart_ecommerce_shop_shopping_store_107540;
+            this.pictureBox1.Location = new System.Drawing.Point(62, 223);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(380, 205);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 51;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // txtNomeOperador
             // 
             this.txtNomeOperador.BackColor = System.Drawing.Color.Black;
@@ -430,6 +442,7 @@ namespace PANDOKS_V1._0
             this.btnadcproduto.Name = "btnadcproduto";
             this.btnadcproduto.Size = new System.Drawing.Size(72, 62);
             this.btnadcproduto.TabIndex = 3;
+            this.btnadcproduto.Text = "OK";
             this.btnadcproduto.UseVisualStyleBackColor = false;
             this.btnadcproduto.Click += new System.EventHandler(this.btnadcproduto_Click);
             // 
@@ -654,18 +667,6 @@ namespace PANDOKS_V1._0
             this.txtnmproduto.TabIndex = 44;
             this.txtnmproduto.TextChanged += new System.EventHandler(this.txtnmproduto_TextChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Enabled = false;
-            this.pictureBox1.Image = global::PANDOKS_V1._0.Properties.Resources._3440920_bag_basket_cart_ecommerce_shop_shopping_store_107540;
-            this.pictureBox1.Location = new System.Drawing.Point(62, 223);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(380, 205);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 51;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // TelaCaixa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -689,8 +690,8 @@ namespace PANDOKS_V1._0
             this.produtoBindingNavigator.PerformLayout();
             this.Caixa.ResumeLayout(false);
             this.Caixa.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

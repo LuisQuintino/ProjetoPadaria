@@ -60,16 +60,15 @@ namespace PANDOKS_V1._0
         private void button26_Click(object sender, EventArgs e)
         {
             button26.Enabled = false;
-            this.Dispose();
             MenuPrincipal menu = new MenuPrincipal();
             menu.Show();
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
-            button25.Enabled = false;
-            MenuPrincipal menu = new MenuPrincipal();
-            menu.Show();
+            this.Close();
+            login Inicio = new login();
+            Inicio.Show();
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -198,14 +197,12 @@ namespace PANDOKS_V1._0
 
         private void btnfecharvenda_Click(object sender, EventArgs e)
         {
-            btnfecharvenda.Enabled = false;
             txtValorFinal.Text = Convert.ToString(valortotal);
             lbcupom.Items.Add("A sua compra fechou em R$" + txtValorTotal.Text + " Reais");
         }
 
         private void txtcancelarvenda_Click(object sender, EventArgs e)
         {
-            txtcancelarvenda.Enabled = false;
             lbcupom.Items.Clear();
             txtValorTotal.Text = "";
             txtnmproduto.Text = "";
@@ -222,13 +219,11 @@ namespace PANDOKS_V1._0
 
         private void cancelaritem_Click(object sender, EventArgs e)
         {
-            cancelaritem.Enabled = false;
             lbcupom.Items.Remove(lbcupom.SelectedItem);
         }
 
         private void pesqproduto_Click(object sender, EventArgs e)
         {
-            pesqproduto.Enabled = false;
             PesquisarProduto pesq = new PesquisarProduto();
             pesq.Show();
         }
@@ -259,7 +254,6 @@ namespace PANDOKS_V1._0
 
         private void button19_Click(object sender, EventArgs e)
         {
-            button19.Enabled = false;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -269,7 +263,6 @@ namespace PANDOKS_V1._0
 
         private void button22_Click(object sender, EventArgs e)
         {
-            button22.Enabled = false;
         }
 
         private void txtValorFinal_TextChanged(object sender, EventArgs e)
@@ -299,7 +292,6 @@ namespace PANDOKS_V1._0
 
         private void btnadcproduto_Click(object sender, EventArgs e)
         {
-            btnadcproduto.Enabled = false;
             float qtd, valorunit;
             if (txtQtd.Text == "")
             {

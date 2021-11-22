@@ -34,6 +34,7 @@ namespace PANDOKS_V1._0
 
         private void button7_Click(object sender, EventArgs e)
         {
+            this.Close();
             StatusdeProdução Status = new StatusdeProdução();
             Status.Show();
         }
@@ -42,7 +43,7 @@ namespace PANDOKS_V1._0
         {
             /*TelaCaixa Caixa = new TelaCaixa();
             Caixa.Show();*/
-            this.Visible = false;
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)

@@ -44,5 +44,42 @@ namespace PANDOKS_V1._0
         {
             id_produtoTextBox.ReadOnly = true;
         }
+
+        private void nome_produtoTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void btnproximo_Click(object sender, EventArgs e)
+        {
+            produtoBindingSource1.MoveNext();
+        }
+
+        private void btnanterior_Click(object sender, EventArgs e)
+        {
+            produtoBindingSource1.MoveLast();
+        }
+
+        private void btndeletar_Click(object sender, EventArgs e)
+        {
+            produtoBindingSource1.RemoveCurrent();
+        }
+
+        private void btnsalvar_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.produtoBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.database_padariaDataSet);
+        }
+
+        private void btnnovo_Click(object sender, EventArgs e)
+        {
+            this.produtoBindingSource1.AddNew();
+        }
     }
 }
