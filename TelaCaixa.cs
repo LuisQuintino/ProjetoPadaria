@@ -32,7 +32,6 @@ namespace PANDOKS_V1._0
             this.produtoTableAdapter1.Fill(this.database_padarianovoDataSet.produto);
             // TODO: esta linha de código carrega dados na tabela 'database_padariaDataSet.produto'. Você pode movê-la ou removê-la conforme necessário.
             this.produtoTableAdapter.Fill(this.database_padariaDataSet.produto);
-            lbcupom.Items.Add("CNPJ\n\n");
             t.Interval = 1000;
             t.Tick += new EventHandler(this.t_Tick);
             t.Start();

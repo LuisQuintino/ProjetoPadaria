@@ -83,6 +83,7 @@ namespace PANDOKS_V1._0
                     this.Validate();
                     this.colaboradorBindingSource1.EndEdit();
                     colaboradorTableAdapter1.Update(database_padarianovoDataSet);
+                    this.colaboradorTableAdapter1.Fill(this.database_padarianovoDataSet.colaborador);
                 } else
                 {
                     MessageBox.Show("As senhas não coincidem", "Aviso");

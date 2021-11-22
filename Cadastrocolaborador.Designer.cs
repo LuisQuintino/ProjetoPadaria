@@ -384,7 +384,6 @@ namespace PANDOKS_V1._0
             this.maskedTextBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.colaboradorBindingSource1, "salario_colaborador", true));
             this.maskedTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox6.Location = new System.Drawing.Point(169, 459);
-            this.maskedTextBox6.Mask = "$00.000";
             this.maskedTextBox6.Name = "maskedTextBox6";
             this.maskedTextBox6.Size = new System.Drawing.Size(153, 44);
             this.maskedTextBox6.TabIndex = 72;

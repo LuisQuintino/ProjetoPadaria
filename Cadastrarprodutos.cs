@@ -73,8 +73,9 @@ namespace PANDOKS_V1._0
         private void btnsalvar_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.produtoBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.database_padariaDataSet);
+            produtoBindingSource1.EndEdit();
+            this.tableAdapterManager1.UpdateAll(database_padarianovoDataSet);
+            this.produtoTableAdapter1.Fill(this.database_padarianovoDataSet.produto);
         }
 
         private void btnnovo_Click(object sender, EventArgs e)

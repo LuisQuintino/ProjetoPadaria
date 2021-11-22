@@ -48,6 +48,7 @@ namespace PANDOKS_V1._0
             this.Validate();
             this.clienteBindingSource1.EndEdit();
             this.tableAdapterManager1.UpdateAll(this.database_padarianovoDataSet);
+            this.clienteTableAdapter1.Fill(this.database_padarianovoDataSet.cliente);
         }
 
         private void btndeletar_Click(object sender, EventArgs e)
@@ -57,7 +58,7 @@ namespace PANDOKS_V1._0
 
         private void btnanterior_Click(object sender, EventArgs e)
         {
-            clienteBindingSource1.MoveLast();
+            clienteBindingSource1.MovePrevious();
         }
 
         private void btnproximo_Click(object sender, EventArgs e)

@@ -43,10 +43,14 @@ namespace PANDOKS_V1._0
             this.produtoTableAdapter1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.produtoTableAdapter();
             this.tableAdapterManager1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.produtoDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.id_produtoTextBox = new System.Windows.Forms.TextBox();
             this.nome_produtoTextBox = new System.Windows.Forms.TextBox();
-            this.valor_produtoTextBox = new System.Windows.Forms.TextBox();
             this.tabProduto = new System.Windows.Forms.TabControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btndeletar = new System.Windows.Forms.Button();
@@ -55,11 +59,7 @@ namespace PANDOKS_V1._0
             this.btnsalvar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnnovo = new System.Windows.Forms.Button();
-            this.produtoDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             valor_produtoLabel = new System.Windows.Forms.Label();
             nome_produtoLabel = new System.Windows.Forms.Label();
             id_produtoLabel = new System.Windows.Forms.Label();
@@ -68,10 +68,10 @@ namespace PANDOKS_V1._0
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoDataGridView)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.tabProduto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.produtoDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // valor_produtoLabel
@@ -173,14 +173,58 @@ namespace PANDOKS_V1._0
             this.tabPage3.Text = "Consulta";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // produtoDataGridView
+            // 
+            this.produtoDataGridView.AutoGenerateColumns = false;
+            this.produtoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.produtoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.produtoDataGridView.DataSource = this.produtoBindingSource1;
+            this.produtoDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.produtoDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.produtoDataGridView.Name = "produtoDataGridView";
+            this.produtoDataGridView.Size = new System.Drawing.Size(538, 329);
+            this.produtoDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_produto";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id_produto";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "nome_produto";
+            this.dataGridViewTextBoxColumn2.HeaderText = "nome_produto";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "valor_produto";
+            this.dataGridViewTextBoxColumn3.HeaderText = "valor_produto";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "img_produto";
+            this.dataGridViewTextBoxColumn4.HeaderText = "img_produto";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 150;
+            // 
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
             this.tabPage1.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
+            this.tabPage1.Controls.Add(this.maskedTextBox1);
             this.tabPage1.Controls.Add(id_produtoLabel);
             this.tabPage1.Controls.Add(this.id_produtoTextBox);
             this.tabPage1.Controls.Add(this.nome_produtoTextBox);
-            this.tabPage1.Controls.Add(this.valor_produtoTextBox);
             this.tabPage1.Controls.Add(nome_produtoLabel);
             this.tabPage1.Controls.Add(valor_produtoLabel);
             this.tabPage1.Location = new System.Drawing.Point(4, 45);
@@ -208,14 +252,6 @@ namespace PANDOKS_V1._0
             this.nome_produtoTextBox.Size = new System.Drawing.Size(174, 44);
             this.nome_produtoTextBox.TabIndex = 3;
             this.nome_produtoTextBox.TextChanged += new System.EventHandler(this.nome_produtoTextBox_TextChanged);
-            // 
-            // valor_produtoTextBox
-            // 
-            this.valor_produtoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource1, "valor_produto", true));
-            this.valor_produtoTextBox.Location = new System.Drawing.Point(289, 152);
-            this.valor_produtoTextBox.Name = "valor_produtoTextBox";
-            this.valor_produtoTextBox.Size = new System.Drawing.Size(174, 44);
-            this.valor_produtoTextBox.TabIndex = 5;
             // 
             // tabProduto
             // 
@@ -342,49 +378,14 @@ namespace PANDOKS_V1._0
             this.btnnovo.UseVisualStyleBackColor = false;
             this.btnnovo.Click += new System.EventHandler(this.btnnovo_Click);
             // 
-            // produtoDataGridView
+            // maskedTextBox1
             // 
-            this.produtoDataGridView.AutoGenerateColumns = false;
-            this.produtoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.produtoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            this.produtoDataGridView.DataSource = this.produtoBindingSource1;
-            this.produtoDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.produtoDataGridView.Location = new System.Drawing.Point(3, 3);
-            this.produtoDataGridView.Name = "produtoDataGridView";
-            this.produtoDataGridView.Size = new System.Drawing.Size(538, 329);
-            this.produtoDataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_produto";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id_produto";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "nome_produto";
-            this.dataGridViewTextBoxColumn2.HeaderText = "nome_produto";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "valor_produto";
-            this.dataGridViewTextBoxColumn3.HeaderText = "valor_produto";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "img_produto";
-            this.dataGridViewTextBoxColumn4.HeaderText = "img_produto";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 150;
+            this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource1, "valor_produto", true));
+            this.maskedTextBox1.Location = new System.Drawing.Point(289, 157);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(174, 44);
+            this.maskedTextBox1.TabIndex = 6;
+            this.maskedTextBox1.ValidatingType = typeof(int);
             // 
             // Cadastrarprodutos
             // 
@@ -410,11 +411,11 @@ namespace PANDOKS_V1._0
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).EndInit();
             this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.produtoDataGridView)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabProduto.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.produtoDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -433,7 +434,6 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox id_produtoTextBox;
         private System.Windows.Forms.TextBox nome_produtoTextBox;
-        private System.Windows.Forms.TextBox valor_produtoTextBox;
         private System.Windows.Forms.TabControl tabProduto;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btndeletar;
@@ -447,5 +447,6 @@ namespace PANDOKS_V1._0
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }
