@@ -58,7 +58,6 @@ namespace PANDOKS_V1._0
 
         private void button26_Click(object sender, EventArgs e)
         {
-            button26.Enabled = false;
             MenuPrincipal menu = new MenuPrincipal();
             menu.Show();
         }
@@ -210,6 +209,7 @@ namespace PANDOKS_V1._0
             txtValorUnit.Text = "";
             txtValorFinal.Text = "";
             textBox1.Text = "";
+            txtTotalQtd.Text = "";
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -293,6 +293,8 @@ namespace PANDOKS_V1._0
         private void btnadcproduto_Click(object sender, EventArgs e)
         {
             float qtd, valorunit;
+            try
+            {
             if (txtQtd.Text == "")
             {
                 txtQtd.Text = "1";
@@ -315,6 +317,12 @@ namespace PANDOKS_V1._0
                 txtValorTotal.Text = valorunittotal.ToString();
                 lbcupom.Items.Add("* " + txtnmproduto.Text + " Quantidade -> " + txtQtd.Text + "; Valor unitario total ->" + valorunittotal.ToString());
             }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insira um código de barras  válido", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
         }
     }
 }
