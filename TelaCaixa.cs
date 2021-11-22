@@ -285,6 +285,11 @@ namespace PANDOKS_V1._0
             pictureBox2.Enabled = false;
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -320,7 +325,7 @@ namespace PANDOKS_V1._0
             }
             catch (Exception)
             {
-                MessageBox.Show("Insira um código de barras  válido", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Insira um código de barras  válido.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             
         }

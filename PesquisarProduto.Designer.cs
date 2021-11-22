@@ -267,10 +267,10 @@ namespace PANDOKS_V1._0
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.textBox1.Location = new System.Drawing.Point(12, 93);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(697, 38);
+            this.textBox1.Size = new System.Drawing.Size(697, 40);
             this.textBox1.TabIndex = 2;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -278,10 +278,10 @@ namespace PANDOKS_V1._0
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 20F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.label1.Location = new System.Drawing.Point(12, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 32);
+            this.label1.Size = new System.Drawing.Size(349, 33);
             this.label1.TabIndex = 10;
             this.label1.Text = "Digite o nome do produto:";
             // 

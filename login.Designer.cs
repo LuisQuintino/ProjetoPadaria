@@ -46,10 +46,12 @@ namespace PANDOKS_V1._0
             this.tableAdapterManager1 = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // colaboradorBindingSource
@@ -81,21 +83,21 @@ namespace PANDOKS_V1._0
             // 
             // mxtLOGIN
             // 
-            this.mxtLOGIN.Font = new System.Drawing.Font("Arial", 28F);
-            this.mxtLOGIN.Location = new System.Drawing.Point(826, 403);
+            this.mxtLOGIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.mxtLOGIN.Location = new System.Drawing.Point(963, 597);
             this.mxtLOGIN.Mask = "000\\.000\\.000-00";
             this.mxtLOGIN.Name = "mxtLOGIN";
-            this.mxtLOGIN.Size = new System.Drawing.Size(274, 50);
+            this.mxtLOGIN.Size = new System.Drawing.Size(214, 40);
             this.mxtLOGIN.TabIndex = 0;
             this.mxtLOGIN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnCANCELAR
             // 
             this.btnCANCELAR.BackColor = System.Drawing.Color.Wheat;
-            this.btnCANCELAR.Font = new System.Drawing.Font("Arial", 28F);
-            this.btnCANCELAR.Location = new System.Drawing.Point(921, 585);
+            this.btnCANCELAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCANCELAR.Location = new System.Drawing.Point(1028, 756);
             this.btnCANCELAR.Name = "btnCANCELAR";
-            this.btnCANCELAR.Size = new System.Drawing.Size(179, 50);
+            this.btnCANCELAR.Size = new System.Drawing.Size(149, 50);
             this.btnCANCELAR.TabIndex = 3;
             this.btnCANCELAR.Text = "Cancelar";
             this.btnCANCELAR.UseVisualStyleBackColor = false;
@@ -104,10 +106,10 @@ namespace PANDOKS_V1._0
             // btnENTRAR
             // 
             this.btnENTRAR.BackColor = System.Drawing.Color.Wheat;
-            this.btnENTRAR.Font = new System.Drawing.Font("Arial", 28F);
-            this.btnENTRAR.Location = new System.Drawing.Point(720, 585);
+            this.btnENTRAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnENTRAR.Location = new System.Drawing.Point(826, 756);
             this.btnENTRAR.Name = "btnENTRAR";
-            this.btnENTRAR.Size = new System.Drawing.Size(170, 50);
+            this.btnENTRAR.Size = new System.Drawing.Size(149, 50);
             this.btnENTRAR.TabIndex = 2;
             this.btnENTRAR.Text = "Entrar";
             this.btnENTRAR.UseVisualStyleBackColor = false;
@@ -115,10 +117,10 @@ namespace PANDOKS_V1._0
             // 
             // txbSENHA
             // 
-            this.txbSENHA.Font = new System.Drawing.Font("Arial", 28F);
-            this.txbSENHA.Location = new System.Drawing.Point(826, 488);
+            this.txbSENHA.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.txbSENHA.Location = new System.Drawing.Point(963, 660);
             this.txbSENHA.Name = "txbSENHA";
-            this.txbSENHA.Size = new System.Drawing.Size(274, 50);
+            this.txbSENHA.Size = new System.Drawing.Size(214, 40);
             this.txbSENHA.TabIndex = 1;
             this.txbSENHA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txbSENHA.UseSystemPasswordChar = true;
@@ -128,10 +130,10 @@ namespace PANDOKS_V1._0
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 28F);
-            this.label2.Location = new System.Drawing.Point(668, 496);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.label2.Location = new System.Drawing.Point(820, 667);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 43);
+            this.label2.Size = new System.Drawing.Size(114, 33);
             this.label2.TabIndex = 10;
             this.label2.Text = "Senha :";
             // 
@@ -139,10 +141,10 @@ namespace PANDOKS_V1._0
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 28F);
-            this.label1.Location = new System.Drawing.Point(683, 406);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.label1.Location = new System.Drawing.Point(820, 600);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 43);
+            this.label1.Size = new System.Drawing.Size(102, 33);
             this.label1.TabIndex = 9;
             this.label1.Text = "Login :";
             // 
@@ -190,12 +192,24 @@ namespace PANDOKS_V1._0
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Enabled = false;
+            this.pictureBox2.Image = global::PANDOKS_V1._0.Properties.Resources.PanificSystemPadrão;
+            this.pictureBox2.Location = new System.Drawing.Point(806, 347);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(380, 205);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 48;
+            this.pictureBox2.TabStop = false;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Panific_System__5_;
+            this.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
             this.ClientSize = new System.Drawing.Size(1838, 860);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.mxtLOGIN);
             this.Controls.Add(this.btnCANCELAR);
@@ -215,6 +229,7 @@ namespace PANDOKS_V1._0
             ((System.ComponentModel.ISupportInitialize)(this.database_padariaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database_padarianovoDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradorBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,5 +252,6 @@ namespace PANDOKS_V1._0
         private database_padarianovoDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

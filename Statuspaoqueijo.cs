@@ -50,10 +50,5 @@ namespace PANDOKS_V1._0
            
 
         }
-
-        private void id_produtoTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

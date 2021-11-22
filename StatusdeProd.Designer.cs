@@ -56,11 +56,11 @@ namespace PANDOKS_V1._0
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackColor = System.Drawing.Color.Wheat;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 24F);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button1.Image = global::PANDOKS_V1._0.Properties.Resources.pao_frances;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.Location = new System.Drawing.Point(83, 42);
@@ -74,11 +74,11 @@ namespace PANDOKS_V1._0
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackColor = System.Drawing.Color.Wheat;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 24F);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button2.Image = global::PANDOKS_V1._0.Properties.Resources.kisspng_chocolate_cake_birthday_cake_black_forest_gateau_w_indian_sweets_5b0d24439f4f89_7050587015275879076526;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button2.Location = new System.Drawing.Point(83, 529);
@@ -92,11 +92,11 @@ namespace PANDOKS_V1._0
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackColor = System.Drawing.Color.Wheat;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 24F);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button3.Image = global::PANDOKS_V1._0.Properties.Resources.kisspng_po_de_queijo_cheese_roll_bread_food_delicious_5b08d308a13592_0391309215273049686603__1_;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button3.Location = new System.Drawing.Point(83, 296);
@@ -110,11 +110,11 @@ namespace PANDOKS_V1._0
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackColor = System.Drawing.Color.Wheat;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 24F);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button4.Image = global::PANDOKS_V1._0.Properties.Resources.kisspng_cupcake_chocolate_cake_ganache_chocolate_brownie_m_chocolate_cupcakes_5a6c91d4206183_8008177915170646601326;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button4.Location = new System.Drawing.Point(329, 296);
@@ -124,14 +124,15 @@ namespace PANDOKS_V1._0
             this.button4.Text = "Cupcake";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackColor = System.Drawing.Color.Wheat;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Arial", 24F);
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button5.Image = global::PANDOKS_V1._0.Properties.Resources.Brownie;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button5.Location = new System.Drawing.Point(329, 529);
@@ -141,14 +142,15 @@ namespace PANDOKS_V1._0
             this.button5.Text = "Brownie";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.BackColor = System.Drawing.Color.Wheat;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Arial", 24F);
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button6.Image = global::PANDOKS_V1._0.Properties.Resources.Bolo_de_cenoura;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button6.Location = new System.Drawing.Point(329, 42);
@@ -158,14 +160,15 @@ namespace PANDOKS_V1._0
             this.button6.Text = "Bolo De Cenoura";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.BackColor = System.Drawing.Color.Wheat;
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Arial", 24F);
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button7.Image = global::PANDOKS_V1._0.Properties.Resources.Panetone;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button7.Location = new System.Drawing.Point(811, 296);
@@ -175,14 +178,15 @@ namespace PANDOKS_V1._0
             this.button7.Text = "Panetone";
             this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.BackColor = System.Drawing.Color.Wheat;
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Arial", 24F);
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button8.Image = global::PANDOKS_V1._0.Properties.Resources.Pão_de_banana;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button8.Location = new System.Drawing.Point(811, 529);
@@ -192,14 +196,15 @@ namespace PANDOKS_V1._0
             this.button8.Text = "Pão De Banana";
             this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
-            this.button9.BackColor = System.Drawing.Color.Transparent;
+            this.button9.BackColor = System.Drawing.Color.Wheat;
             this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Arial", 24F);
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button9.Image = global::PANDOKS_V1._0.Properties.Resources.Pão_de_centeio;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button9.Location = new System.Drawing.Point(811, 42);
@@ -209,14 +214,15 @@ namespace PANDOKS_V1._0
             this.button9.Text = "Pão De Centeio";
             this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
-            this.button10.BackColor = System.Drawing.Color.Transparent;
+            this.button10.BackColor = System.Drawing.Color.Wheat;
             this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Arial", 24F);
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button10.Image = global::PANDOKS_V1._0.Properties.Resources.Empadão;
             this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button10.Location = new System.Drawing.Point(569, 296);
@@ -226,14 +232,15 @@ namespace PANDOKS_V1._0
             this.button10.Text = "Empadão";
             this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
-            this.button11.BackColor = System.Drawing.Color.Transparent;
+            this.button11.BackColor = System.Drawing.Color.Wheat;
             this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Arial", 24F);
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button11.Image = global::PANDOKS_V1._0.Properties.Resources.Pastel;
             this.button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button11.Location = new System.Drawing.Point(569, 529);
@@ -243,14 +250,15 @@ namespace PANDOKS_V1._0
             this.button11.Text = "Pastel";
             this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
-            this.button12.BackColor = System.Drawing.Color.Transparent;
+            this.button12.BackColor = System.Drawing.Color.Wheat;
             this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Arial", 24F);
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button12.Image = global::PANDOKS_V1._0.Properties.Resources.Coxinha;
             this.button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button12.Location = new System.Drawing.Point(569, 42);
@@ -260,14 +268,15 @@ namespace PANDOKS_V1._0
             this.button12.Text = "Coxinha";
             this.button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
-            this.button13.BackColor = System.Drawing.Color.Transparent;
+            this.button13.BackColor = System.Drawing.Color.Wheat;
             this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Arial", 24F);
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button13.Image = global::PANDOKS_V1._0.Properties.Resources.Torta_de_Creme;
             this.button13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button13.Location = new System.Drawing.Point(1053, 296);
@@ -277,14 +286,15 @@ namespace PANDOKS_V1._0
             this.button13.Text = "Torta De Creme";
             this.button13.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button14
             // 
-            this.button14.BackColor = System.Drawing.Color.Transparent;
+            this.button14.BackColor = System.Drawing.Color.Wheat;
             this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Arial", 24F);
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button14.Image = global::PANDOKS_V1._0.Properties.Resources.Torta_de_maçã;
             this.button14.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button14.Location = new System.Drawing.Point(1053, 529);
@@ -294,14 +304,15 @@ namespace PANDOKS_V1._0
             this.button14.Text = "Torta De Maçã";
             this.button14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
-            this.button15.BackColor = System.Drawing.Color.Transparent;
+            this.button15.BackColor = System.Drawing.Color.Wheat;
             this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Arial", 24F);
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button15.Image = global::PANDOKS_V1._0.Properties.Resources.croissant;
             this.button15.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button15.Location = new System.Drawing.Point(1053, 42);
@@ -311,10 +322,11 @@ namespace PANDOKS_V1._0
             this.button15.Text = "Croissant";
             this.button15.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
-            this.button16.BackColor = System.Drawing.Color.Transparent;
+            this.button16.BackColor = System.Drawing.Color.Wheat;
             this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -328,14 +340,15 @@ namespace PANDOKS_V1._0
             this.button16.Text = "Pizza";
             this.button16.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button17
             // 
-            this.button17.BackColor = System.Drawing.Color.Transparent;
+            this.button17.BackColor = System.Drawing.Color.Wheat;
             this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Arial", 24F);
+            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button17.Image = global::PANDOKS_V1._0.Properties.Resources.Enroladinho_de_Salsicha;
             this.button17.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button17.Location = new System.Drawing.Point(1302, 296);
@@ -345,10 +358,11 @@ namespace PANDOKS_V1._0
             this.button17.Text = "Enrolado de Salsicha";
             this.button17.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
-            this.button18.BackColor = System.Drawing.Color.Transparent;
+            this.button18.BackColor = System.Drawing.Color.Wheat;
             this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -362,10 +376,11 @@ namespace PANDOKS_V1._0
             this.button18.Text = "Sanduíche";
             this.button18.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 
-            this.button19.BackColor = System.Drawing.Color.Transparent;
+            this.button19.BackColor = System.Drawing.Color.Wheat;
             this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -383,11 +398,11 @@ namespace PANDOKS_V1._0
             // 
             // button20
             // 
-            this.button20.BackColor = System.Drawing.Color.Transparent;
+            this.button20.BackColor = System.Drawing.Color.Wheat;
             this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Arial", 24F);
+            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button20.Image = global::PANDOKS_V1._0.Properties.Resources.Pão_Sirio;
             this.button20.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button20.Location = new System.Drawing.Point(1302, 529);
@@ -397,14 +412,15 @@ namespace PANDOKS_V1._0
             this.button20.Text = "Pão Sirio";
             this.button20.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button21
             // 
-            this.button21.BackColor = System.Drawing.Color.Transparent;
+            this.button21.BackColor = System.Drawing.Color.Wheat;
             this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Arial", 24F);
+            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button21.Image = global::PANDOKS_V1._0.Properties.Resources.Kib;
             this.button21.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button21.Location = new System.Drawing.Point(1302, 42);
@@ -414,10 +430,11 @@ namespace PANDOKS_V1._0
             this.button21.Text = "Kib";
             this.button21.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
-            this.button22.BackColor = System.Drawing.Color.Transparent;
+            this.button22.BackColor = System.Drawing.Color.Wheat;
             this.button22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -434,7 +451,7 @@ namespace PANDOKS_V1._0
             // 
             // button23
             // 
-            this.button23.BackColor = System.Drawing.Color.Transparent;
+            this.button23.BackColor = System.Drawing.Color.Wheat;
             this.button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -453,7 +470,8 @@ namespace PANDOKS_V1._0
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Panific_System__5_;
+            this.BackColor = System.Drawing.Color.Wheat;
+            this.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1822, 821);
             this.Controls.Add(this.button23);
@@ -483,6 +501,7 @@ namespace PANDOKS_V1._0
             this.Name = "StatusdeProdução";
             this.Text = "Form4";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.StatusdeProdução_Load);
             this.ResumeLayout(false);
 
         }

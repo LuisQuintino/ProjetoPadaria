@@ -101,12 +101,11 @@ namespace PANDOKS_V1._0
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tabControl1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(611, 760);
+            this.tabControl1.Size = new System.Drawing.Size(611, 493);
             this.tabControl1.TabIndex = 73;
             // 
             // tabPage1
@@ -128,10 +127,10 @@ namespace PANDOKS_V1._0
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 45);
+            this.tabPage1.Location = new System.Drawing.Point(4, 42);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(603, 711);
+            this.tabPage1.Size = new System.Drawing.Size(603, 447);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Cadastro";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -188,8 +187,8 @@ namespace PANDOKS_V1._0
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
             // 
             // bindingNavigatorDeleteItem
@@ -273,30 +272,30 @@ namespace PANDOKS_V1._0
             // 
             // textBox4
             // 
-            this.textBox4.Font = new System.Drawing.Font("Arial", 24F);
-            this.textBox4.Location = new System.Drawing.Point(266, 535);
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.textBox4.Location = new System.Drawing.Point(277, 397);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(271, 44);
+            this.textBox4.Size = new System.Drawing.Size(271, 40);
             this.textBox4.TabIndex = 85;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(9, 543);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.label11.Location = new System.Drawing.Point(20, 405);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(256, 36);
+            this.label11.Size = new System.Drawing.Size(235, 33);
             this.label11.TabIndex = 84;
             this.label11.Text = "Confirmar Senha";
             // 
             // textBox3
             // 
             this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource1, "senha_cliente", true));
-            this.textBox3.Font = new System.Drawing.Font("Arial", 24F);
-            this.textBox3.Location = new System.Drawing.Point(121, 456);
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.textBox3.Location = new System.Drawing.Point(133, 339);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(416, 44);
+            this.textBox3.Size = new System.Drawing.Size(416, 40);
             this.textBox3.TabIndex = 83;
             // 
             // clienteBindingSource1
@@ -312,20 +311,20 @@ namespace PANDOKS_V1._0
             // textBox2
             // 
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource1, "email_cliente", true));
-            this.textBox2.Font = new System.Drawing.Font("Arial", 24F);
-            this.textBox2.Location = new System.Drawing.Point(121, 366);
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.textBox2.Location = new System.Drawing.Point(132, 285);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(416, 44);
+            this.textBox2.Size = new System.Drawing.Size(416, 40);
             this.textBox2.TabIndex = 82;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Arial", 24F);
-            this.label6.Location = new System.Drawing.Point(9, 470);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.label6.Location = new System.Drawing.Point(20, 342);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 36);
+            this.label6.Size = new System.Drawing.Size(98, 33);
             this.label6.TabIndex = 81;
             this.label6.Text = "Senha";
             // 
@@ -333,21 +332,21 @@ namespace PANDOKS_V1._0
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial", 24F);
-            this.label5.Location = new System.Drawing.Point(9, 380);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.label5.Location = new System.Drawing.Point(19, 288);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 36);
+            this.label5.Size = new System.Drawing.Size(99, 33);
             this.label5.TabIndex = 80;
             this.label5.Text = "E-mail";
             // 
             // maskedTextBox1
             // 
             this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource1, "fone_cliente", true));
-            this.maskedTextBox1.Font = new System.Drawing.Font("Arial", 24F);
-            this.maskedTextBox1.Location = new System.Drawing.Point(157, 275);
+            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.maskedTextBox1.Location = new System.Drawing.Point(146, 219);
             this.maskedTextBox1.Mask = "(00) 00000-0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(257, 44);
+            this.maskedTextBox1.Size = new System.Drawing.Size(257, 40);
             this.maskedTextBox1.TabIndex = 79;
             this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -355,21 +354,21 @@ namespace PANDOKS_V1._0
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial", 24F);
-            this.label4.Location = new System.Drawing.Point(9, 289);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.label4.Location = new System.Drawing.Point(12, 222);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 36);
+            this.label4.Size = new System.Drawing.Size(128, 33);
             this.label4.TabIndex = 78;
             this.label4.Text = "Telefone";
             // 
             // maskedTextBox3
             // 
             this.maskedTextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource1, "nsc_cliente", true));
-            this.maskedTextBox3.Font = new System.Drawing.Font("Arial", 24F);
-            this.maskedTextBox3.Location = new System.Drawing.Point(341, 185);
+            this.maskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.maskedTextBox3.Location = new System.Drawing.Point(309, 162);
             this.maskedTextBox3.Mask = "00/00/0000";
             this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(196, 44);
+            this.maskedTextBox3.Size = new System.Drawing.Size(196, 40);
             this.maskedTextBox3.TabIndex = 77;
             this.maskedTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.maskedTextBox3.ValidatingType = typeof(System.DateTime);
@@ -378,21 +377,21 @@ namespace PANDOKS_V1._0
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial", 24F);
-            this.label3.Location = new System.Drawing.Point(9, 199);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.label3.Location = new System.Drawing.Point(9, 163);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(300, 36);
+            this.label3.Size = new System.Drawing.Size(279, 33);
             this.label3.TabIndex = 76;
             this.label3.Text = "Data de Nascimento";
             // 
             // maskedTextBox2
             // 
             this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource1, "cpf_cliente", true));
-            this.maskedTextBox2.Font = new System.Drawing.Font("Arial", 24F);
-            this.maskedTextBox2.Location = new System.Drawing.Point(121, 113);
+            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.maskedTextBox2.Location = new System.Drawing.Point(121, 98);
             this.maskedTextBox2.Mask = "000\\.000\\.000-00";
             this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(245, 44);
+            this.maskedTextBox2.Size = new System.Drawing.Size(245, 40);
             this.maskedTextBox2.TabIndex = 75;
             this.maskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -400,10 +399,10 @@ namespace PANDOKS_V1._0
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 24F);
-            this.label2.Location = new System.Drawing.Point(9, 127);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.label2.Location = new System.Drawing.Point(9, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 36);
+            this.label2.Size = new System.Drawing.Size(73, 33);
             this.label2.TabIndex = 74;
             this.label2.Text = "CPF";
             // 
@@ -411,20 +410,20 @@ namespace PANDOKS_V1._0
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 24F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.label1.Location = new System.Drawing.Point(9, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 36);
+            this.label1.Size = new System.Drawing.Size(93, 33);
             this.label1.TabIndex = 73;
             this.label1.Text = "Nome";
             // 
             // textBox1
             // 
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource1, "nome_cliente", true));
-            this.textBox1.Font = new System.Drawing.Font("Arial", 24F);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.textBox1.Location = new System.Drawing.Point(121, 41);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(416, 44);
+            this.textBox1.Size = new System.Drawing.Size(416, 40);
             this.textBox1.TabIndex = 72;
             // 
             // tabPage2
@@ -433,10 +432,10 @@ namespace PANDOKS_V1._0
             this.tabPage2.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
             this.tabPage2.Controls.Add(this.clienteDataGridView);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 45);
+            this.tabPage2.Location = new System.Drawing.Point(4, 42);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(603, 711);
+            this.tabPage2.Size = new System.Drawing.Size(603, 714);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consulta";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -457,7 +456,7 @@ namespace PANDOKS_V1._0
             this.clienteDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.clienteDataGridView.Location = new System.Drawing.Point(3, 3);
             this.clienteDataGridView.Name = "clienteDataGridView";
-            this.clienteDataGridView.Size = new System.Drawing.Size(597, 705);
+            this.clienteDataGridView.Size = new System.Drawing.Size(597, 708);
             this.clienteDataGridView.TabIndex = 80;
             // 
             // dataGridViewTextBoxColumn1
@@ -511,7 +510,7 @@ namespace PANDOKS_V1._0
             this.btndeletar.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.btndeletar.Image = global::PANDOKS_V1._0.Properties.Resources.Folder_Delete256_24851;
             this.btndeletar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btndeletar.Location = new System.Drawing.Point(847, 412);
+            this.btndeletar.Location = new System.Drawing.Point(546, 538);
             this.btndeletar.Name = "btndeletar";
             this.btndeletar.Size = new System.Drawing.Size(109, 62);
             this.btndeletar.TabIndex = 79;
@@ -528,7 +527,7 @@ namespace PANDOKS_V1._0
             this.btnanterior.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.btnanterior.Image = global::PANDOKS_V1._0.Properties.Resources.navigate_left256_24869;
             this.btnanterior.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnanterior.Location = new System.Drawing.Point(962, 412);
+            this.btnanterior.Location = new System.Drawing.Point(661, 538);
             this.btnanterior.Name = "btnanterior";
             this.btnanterior.Size = new System.Drawing.Size(109, 62);
             this.btnanterior.TabIndex = 78;
@@ -545,7 +544,7 @@ namespace PANDOKS_V1._0
             this.btnproximo.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.btnproximo.Image = global::PANDOKS_V1._0.Properties.Resources.navigate_right256_24872;
             this.btnproximo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnproximo.Location = new System.Drawing.Point(1077, 412);
+            this.btnproximo.Location = new System.Drawing.Point(776, 538);
             this.btnproximo.Name = "btnproximo";
             this.btnproximo.Size = new System.Drawing.Size(109, 62);
             this.btnproximo.TabIndex = 77;
@@ -562,7 +561,7 @@ namespace PANDOKS_V1._0
             this.btnsalvar.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.btnsalvar.Image = global::PANDOKS_V1._0.Properties.Resources.Folder_Accept256_24860;
             this.btnsalvar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnsalvar.Location = new System.Drawing.Point(732, 412);
+            this.btnsalvar.Location = new System.Drawing.Point(431, 538);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(109, 62);
             this.btnsalvar.TabIndex = 76;
@@ -579,7 +578,7 @@ namespace PANDOKS_V1._0
             this.button1.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.button1.Image = global::PANDOKS_V1._0.Properties.Resources.undo256_24848;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(1192, 412);
+            this.button1.Location = new System.Drawing.Point(891, 538);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 62);
             this.button1.TabIndex = 75;
@@ -596,7 +595,7 @@ namespace PANDOKS_V1._0
             this.btnnovo.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.btnnovo.Image = global::PANDOKS_V1._0.Properties.Resources.Folder_Add256_24876;
             this.btnnovo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnnovo.Location = new System.Drawing.Point(617, 412);
+            this.btnnovo.Location = new System.Drawing.Point(316, 538);
             this.btnnovo.Name = "btnnovo";
             this.btnnovo.Size = new System.Drawing.Size(109, 62);
             this.btnnovo.TabIndex = 74;
@@ -609,7 +608,7 @@ namespace PANDOKS_V1._0
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Enabled = false;
             this.pictureBox1.Image = global::PANDOKS_V1._0.Properties.Resources.CLIENTE_3;
-            this.pictureBox1.Location = new System.Drawing.Point(617, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(629, 79);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(680, 384);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -655,7 +654,7 @@ namespace PANDOKS_V1._0
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
-            this.ClientSize = new System.Drawing.Size(1318, 760);
+            this.ClientSize = new System.Drawing.Size(1318, 621);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btndeletar);
             this.Controls.Add(this.btnanterior);

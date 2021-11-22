@@ -73,7 +73,17 @@ namespace PANDOKS_V1._0
 
         private void button5_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Aguardando Atualização","Aviso", MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+            MessageBox.Show("Aguardando Atualização.","Aviso", MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+        }
+
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -56,5 +56,30 @@ namespace PANDOKS_V1._0
         {
 
         }
+
+        private void id_produtoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void id_colaboradorLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void id_colaboradorTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void time_producaoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void qtd_producaoTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

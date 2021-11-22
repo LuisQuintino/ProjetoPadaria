@@ -384,38 +384,38 @@ namespace PANDOKS_V1._0
             // 
             // txtValorTotal
             // 
-            this.txtValorTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.txtValorTotal.Location = new System.Drawing.Point(538, 480);
             this.txtValorTotal.Name = "txtValorTotal";
-            this.txtValorTotal.Size = new System.Drawing.Size(325, 62);
+            this.txtValorTotal.Size = new System.Drawing.Size(325, 40);
             this.txtValorTotal.TabIndex = 43;
             this.txtValorTotal.TextChanged += new System.EventHandler(this.txtValorTotal_TextChanged);
             // 
             // txtValorUnit
             // 
             this.txtValorUnit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource1, "valor_produto", true));
-            this.txtValorUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.txtValorUnit.Location = new System.Drawing.Point(538, 366);
             this.txtValorUnit.Name = "txtValorUnit";
-            this.txtValorUnit.Size = new System.Drawing.Size(325, 62);
+            this.txtValorUnit.Size = new System.Drawing.Size(325, 40);
             this.txtValorUnit.TabIndex = 42;
             this.txtValorUnit.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // txtQtd
             // 
-            this.txtQtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.txtQtd.Location = new System.Drawing.Point(538, 242);
             this.txtQtd.Name = "txtQtd";
-            this.txtQtd.Size = new System.Drawing.Size(325, 62);
+            this.txtQtd.Size = new System.Drawing.Size(325, 40);
             this.txtQtd.TabIndex = 1;
             this.txtQtd.TextChanged += new System.EventHandler(this.txtQtd_TextChanged);
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.textBox1.Location = new System.Drawing.Point(24, 140);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(761, 62);
+            this.textBox1.Size = new System.Drawing.Size(761, 40);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
@@ -436,11 +436,12 @@ namespace PANDOKS_V1._0
             // btnadcproduto
             // 
             this.btnadcproduto.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnadcproduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.btnadcproduto.ForeColor = System.Drawing.Color.Black;
             this.btnadcproduto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnadcproduto.Location = new System.Drawing.Point(791, 140);
             this.btnadcproduto.Name = "btnadcproduto";
-            this.btnadcproduto.Size = new System.Drawing.Size(72, 62);
+            this.btnadcproduto.Size = new System.Drawing.Size(72, 40);
             this.btnadcproduto.TabIndex = 3;
             this.btnadcproduto.Text = "OK";
             this.btnadcproduto.UseVisualStyleBackColor = false;
@@ -483,12 +484,12 @@ namespace PANDOKS_V1._0
             // lbcupom
             // 
             this.lbcupom.BackColor = System.Drawing.Color.Wheat;
-            this.lbcupom.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbcupom.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.lbcupom.FormattingEnabled = true;
-            this.lbcupom.ItemHeight = 16;
+            this.lbcupom.ItemHeight = 33;
             this.lbcupom.Location = new System.Drawing.Point(889, 141);
             this.lbcupom.Name = "lbcupom";
-            this.lbcupom.Size = new System.Drawing.Size(529, 404);
+            this.lbcupom.Size = new System.Drawing.Size(529, 400);
             this.lbcupom.TabIndex = 11;
             this.lbcupom.SelectedIndexChanged += new System.EventHandler(this.lbcupom_SelectedIndexChanged);
             // 
@@ -518,7 +519,7 @@ namespace PANDOKS_V1._0
             // button22
             // 
             this.button22.BackColor = System.Drawing.Color.SeaGreen;
-            this.button22.Font = new System.Drawing.Font("Arial", 24F);
+            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button22.Location = new System.Drawing.Point(791, 631);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(259, 56);
@@ -531,7 +532,7 @@ namespace PANDOKS_V1._0
             // 
             this.button19.BackColor = System.Drawing.Color.Teal;
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Arial", 24F);
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.button19.Location = new System.Drawing.Point(303, 602);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(285, 58);
@@ -543,62 +544,63 @@ namespace PANDOKS_V1._0
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 24F);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(533, 445);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(209, 36);
+            this.label5.Size = new System.Drawing.Size(201, 33);
             this.label5.TabIndex = 22;
             this.label5.Text = "R$ Valor Total";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 24F);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(533, 331);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(254, 36);
+            this.label4.Size = new System.Drawing.Size(237, 33);
             this.label4.TabIndex = 21;
             this.label4.Text = "R$ Valor Unitário";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 24F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(533, 209);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(177, 36);
+            this.label3.Size = new System.Drawing.Size(165, 33);
             this.label3.TabIndex = 13;
             this.label3.Text = "Quantidade";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 24F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(19, 445);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(257, 36);
+            this.label2.Size = new System.Drawing.Size(239, 33);
             this.label2.TabIndex = 16;
             this.label2.Text = "Nome do produto";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 24F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(19, 101);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 36);
+            this.label1.Size = new System.Drawing.Size(241, 33);
             this.label1.TabIndex = 14;
             this.label1.Text = "Código de Barras";
             // 
             // btnfecharvenda
             // 
             this.btnfecharvenda.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnfecharvenda.Font = new System.Drawing.Font("Arial", 24F);
+            this.btnfecharvenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.btnfecharvenda.Location = new System.Drawing.Point(301, 759);
             this.btnfecharvenda.Name = "btnfecharvenda";
             this.btnfecharvenda.Size = new System.Drawing.Size(407, 55);
@@ -611,7 +613,7 @@ namespace PANDOKS_V1._0
             // 
             this.txtcancelarvenda.BackColor = System.Drawing.Color.Red;
             this.txtcancelarvenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtcancelarvenda.Font = new System.Drawing.Font("Arial", 24F);
+            this.txtcancelarvenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.txtcancelarvenda.Location = new System.Drawing.Point(301, 678);
             this.txtcancelarvenda.Name = "txtcancelarvenda";
             this.txtcancelarvenda.Size = new System.Drawing.Size(408, 55);
@@ -624,7 +626,7 @@ namespace PANDOKS_V1._0
             // 
             this.pesqproduto.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.pesqproduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pesqproduto.Font = new System.Drawing.Font("Arial", 24F);
+            this.pesqproduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.pesqproduto.Location = new System.Drawing.Point(25, 575);
             this.pesqproduto.Name = "pesqproduto";
             this.pesqproduto.Size = new System.Drawing.Size(219, 112);
@@ -637,7 +639,7 @@ namespace PANDOKS_V1._0
             // 
             this.cancelaritem.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.cancelaritem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelaritem.Font = new System.Drawing.Font("Arial", 24F);
+            this.cancelaritem.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.cancelaritem.Location = new System.Drawing.Point(25, 702);
             this.cancelaritem.Name = "cancelaritem";
             this.cancelaritem.Size = new System.Drawing.Size(219, 112);
@@ -660,10 +662,10 @@ namespace PANDOKS_V1._0
             // txtnmproduto
             // 
             this.txtnmproduto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource1, "nome_produto", true));
-            this.txtnmproduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnmproduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.txtnmproduto.Location = new System.Drawing.Point(24, 483);
             this.txtnmproduto.Name = "txtnmproduto";
-            this.txtnmproduto.Size = new System.Drawing.Size(496, 62);
+            this.txtnmproduto.Size = new System.Drawing.Size(496, 40);
             this.txtnmproduto.TabIndex = 44;
             this.txtnmproduto.TextChanged += new System.EventHandler(this.txtnmproduto_TextChanged);
             // 

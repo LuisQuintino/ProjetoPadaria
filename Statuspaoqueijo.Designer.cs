@@ -30,13 +30,13 @@ namespace PANDOKS_V1._0
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Statuspaoqueijo));
             System.Windows.Forms.Label id_producaoLabel;
             System.Windows.Forms.Label data_producaoLabel;
             System.Windows.Forms.Label time_producaoLabel;
             System.Windows.Forms.Label qtd_producaoLabel;
             System.Windows.Forms.Label id_produtoLabel;
             System.Windows.Forms.Label id_colaboradorLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Statuspaoqueijo));
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -77,69 +77,6 @@ namespace PANDOKS_V1._0
             this.producaoBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
-            // id_producaoLabel
-            // 
-            id_producaoLabel.AutoSize = true;
-            id_producaoLabel.BackColor = System.Drawing.Color.Transparent;
-            id_producaoLabel.Location = new System.Drawing.Point(411, 151);
-            id_producaoLabel.Name = "id_producaoLabel";
-            id_producaoLabel.Size = new System.Drawing.Size(66, 13);
-            id_producaoLabel.TabIndex = 51;
-            id_producaoLabel.Text = "id producao:";
-            // 
-            // data_producaoLabel
-            // 
-            data_producaoLabel.AutoSize = true;
-            data_producaoLabel.BackColor = System.Drawing.Color.Transparent;
-            data_producaoLabel.Font = new System.Drawing.Font("Arial", 24F);
-            data_producaoLabel.Location = new System.Drawing.Point(182, 202);
-            data_producaoLabel.Name = "data_producaoLabel";
-            data_producaoLabel.Size = new System.Drawing.Size(223, 36);
-            data_producaoLabel.TabIndex = 53;
-            data_producaoLabel.Text = "data producao:";
-            // 
-            // time_producaoLabel
-            // 
-            time_producaoLabel.AutoSize = true;
-            time_producaoLabel.BackColor = System.Drawing.Color.Transparent;
-            time_producaoLabel.Font = new System.Drawing.Font("Arial", 24F);
-            time_producaoLabel.Location = new System.Drawing.Point(189, 296);
-            time_producaoLabel.Name = "time_producaoLabel";
-            time_producaoLabel.Size = new System.Drawing.Size(223, 36);
-            time_producaoLabel.TabIndex = 55;
-            time_producaoLabel.Text = "time producao:";
-            // 
-            // qtd_producaoLabel
-            // 
-            qtd_producaoLabel.AutoSize = true;
-            qtd_producaoLabel.BackColor = System.Drawing.Color.Transparent;
-            qtd_producaoLabel.Font = new System.Drawing.Font("Arial", 24F);
-            qtd_producaoLabel.Location = new System.Drawing.Point(189, 456);
-            qtd_producaoLabel.Name = "qtd_producaoLabel";
-            qtd_producaoLabel.Size = new System.Drawing.Size(206, 36);
-            qtd_producaoLabel.TabIndex = 57;
-            qtd_producaoLabel.Text = "qtd producao:";
-            // 
-            // id_produtoLabel
-            // 
-            id_produtoLabel.AutoSize = true;
-            id_produtoLabel.BackColor = System.Drawing.Color.Transparent;
-            id_produtoLabel.Location = new System.Drawing.Point(411, 97);
-            id_produtoLabel.Name = "id_produtoLabel";
-            id_produtoLabel.Size = new System.Drawing.Size(57, 13);
-            id_produtoLabel.TabIndex = 63;
-            id_produtoLabel.Text = "id produto:";
-            // 
-            // id_colaboradorLabel
-            // 
-            id_colaboradorLabel.AutoSize = true;
-            id_colaboradorLabel.BackColor = System.Drawing.Color.Transparent;
-            id_colaboradorLabel.Location = new System.Drawing.Point(411, 123);
-            id_colaboradorLabel.Name = "id_colaboradorLabel";
-            id_colaboradorLabel.Size = new System.Drawing.Size(77, 13);
-            id_colaboradorLabel.TabIndex = 65;
-            id_colaboradorLabel.Text = "id colaborador:";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
@@ -149,7 +86,7 @@ namespace PANDOKS_V1._0
             this.button1.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.button1.Image = global::PANDOKS_V1._0.Properties.Resources.kisspng_po_de_queijo_cheese_roll_bread_food_delicious_5b08d308a135921;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(153, 36);
+            this.button1.Location = new System.Drawing.Point(55, 59);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(252, 163);
             this.button1.TabIndex = 34;
@@ -165,7 +102,7 @@ namespace PANDOKS_V1._0
             this.button3.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.button3.Image = global::PANDOKS_V1._0.Properties.Resources.undo256_24848;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(296, 554);
+            this.button3.Location = new System.Drawing.Point(430, 517);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 62);
             this.button3.TabIndex = 50;
@@ -182,7 +119,7 @@ namespace PANDOKS_V1._0
             this.button2.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Bold);
             this.button2.Image = global::PANDOKS_V1._0.Properties.Resources.Folder_Accept256_24860;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(153, 554);
+            this.button2.Location = new System.Drawing.Point(287, 517);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 62);
             this.button2.TabIndex = 49;
@@ -243,7 +180,7 @@ namespace PANDOKS_V1._0
             this.producaoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.producaoBindingNavigator.Name = "producaoBindingNavigator";
             this.producaoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.producaoBindingNavigator.Size = new System.Drawing.Size(726, 25);
+            this.producaoBindingNavigator.Size = new System.Drawing.Size(917, 25);
             this.producaoBindingNavigator.TabIndex = 51;
             this.producaoBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -345,36 +282,37 @@ namespace PANDOKS_V1._0
             // id_producaoTextBox
             // 
             this.id_producaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.producaoBindingSource, "id_producao", true));
-            this.id_producaoTextBox.Location = new System.Drawing.Point(496, 148);
+            this.id_producaoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.id_producaoTextBox.Location = new System.Drawing.Point(591, 181);
             this.id_producaoTextBox.Name = "id_producaoTextBox";
-            this.id_producaoTextBox.Size = new System.Drawing.Size(200, 20);
+            this.id_producaoTextBox.Size = new System.Drawing.Size(200, 40);
             this.id_producaoTextBox.TabIndex = 52;
             // 
             // data_producaoDateTimePicker
             // 
             this.data_producaoDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.producaoBindingSource, "data_producao", true));
-            this.data_producaoDateTimePicker.Font = new System.Drawing.Font("Arial", 24F);
-            this.data_producaoDateTimePicker.Location = new System.Drawing.Point(0, 249);
+            this.data_producaoDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.data_producaoDateTimePicker.Location = new System.Drawing.Point(187, 265);
             this.data_producaoDateTimePicker.Name = "data_producaoDateTimePicker";
-            this.data_producaoDateTimePicker.Size = new System.Drawing.Size(624, 44);
+            this.data_producaoDateTimePicker.Size = new System.Drawing.Size(604, 40);
             this.data_producaoDateTimePicker.TabIndex = 54;
             // 
             // time_producaoDateTimePicker
             // 
             this.time_producaoDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.producaoBindingSource, "time_producao", true));
-            this.time_producaoDateTimePicker.Font = new System.Drawing.Font("Arial", 24F);
-            this.time_producaoDateTimePicker.Location = new System.Drawing.Point(195, 350);
+            this.time_producaoDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.time_producaoDateTimePicker.Location = new System.Drawing.Point(187, 336);
             this.time_producaoDateTimePicker.Name = "time_producaoDateTimePicker";
-            this.time_producaoDateTimePicker.Size = new System.Drawing.Size(200, 44);
+            this.time_producaoDateTimePicker.Size = new System.Drawing.Size(604, 40);
             this.time_producaoDateTimePicker.TabIndex = 56;
             // 
             // qtd_producaoTextBox
             // 
             this.qtd_producaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.producaoBindingSource, "qtd_producao", true));
-            this.qtd_producaoTextBox.Font = new System.Drawing.Font("Arial", 24F);
-            this.qtd_producaoTextBox.Location = new System.Drawing.Point(195, 495);
+            this.qtd_producaoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.qtd_producaoTextBox.Location = new System.Drawing.Point(394, 438);
             this.qtd_producaoTextBox.Name = "qtd_producaoTextBox";
-            this.qtd_producaoTextBox.Size = new System.Drawing.Size(200, 44);
+            this.qtd_producaoTextBox.Size = new System.Drawing.Size(200, 40);
             this.qtd_producaoTextBox.TabIndex = 58;
             this.qtd_producaoTextBox.TextChanged += new System.EventHandler(this.qtd_producaoTextBox_TextChanged);
             // 
@@ -382,8 +320,8 @@ namespace PANDOKS_V1._0
             // 
             this.kg_producaoCheckBox.BackColor = System.Drawing.Color.Transparent;
             this.kg_producaoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.producaoBindingSource, "kg_producao", true));
-            this.kg_producaoCheckBox.Font = new System.Drawing.Font("Arial", 24F);
-            this.kg_producaoCheckBox.Location = new System.Drawing.Point(181, 405);
+            this.kg_producaoCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.kg_producaoCheckBox.Location = new System.Drawing.Point(287, 387);
             this.kg_producaoCheckBox.Name = "kg_producaoCheckBox";
             this.kg_producaoCheckBox.Size = new System.Drawing.Size(81, 48);
             this.kg_producaoCheckBox.TabIndex = 60;
@@ -394,8 +332,8 @@ namespace PANDOKS_V1._0
             // 
             this.un_producaoCheckBox.BackColor = System.Drawing.Color.Transparent;
             this.un_producaoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.producaoBindingSource, "un_producao", true));
-            this.un_producaoCheckBox.Font = new System.Drawing.Font("Arial", 24F);
-            this.un_producaoCheckBox.Location = new System.Drawing.Point(276, 406);
+            this.un_producaoCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.un_producaoCheckBox.Location = new System.Drawing.Point(382, 388);
             this.un_producaoCheckBox.Name = "un_producaoCheckBox";
             this.un_producaoCheckBox.Size = new System.Drawing.Size(200, 47);
             this.un_producaoCheckBox.TabIndex = 62;
@@ -405,39 +343,106 @@ namespace PANDOKS_V1._0
             // id_produtoTextBox
             // 
             this.id_produtoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.producaoBindingSource, "id_produto", true));
-            this.id_produtoTextBox.Location = new System.Drawing.Point(496, 94);
+            this.id_produtoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.id_produtoTextBox.Location = new System.Drawing.Point(591, 59);
             this.id_produtoTextBox.Name = "id_produtoTextBox";
-            this.id_produtoTextBox.Size = new System.Drawing.Size(200, 20);
+            this.id_produtoTextBox.Size = new System.Drawing.Size(200, 40);
             this.id_produtoTextBox.TabIndex = 64;
-            this.id_produtoTextBox.TextChanged += new System.EventHandler(this.id_produtoTextBox_TextChanged);
             // 
             // id_colaboradorTextBox
             // 
             this.id_colaboradorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.producaoBindingSource, "id_colaborador", true));
-            this.id_colaboradorTextBox.Location = new System.Drawing.Point(496, 120);
+            this.id_colaboradorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.id_colaboradorTextBox.Location = new System.Drawing.Point(591, 120);
             this.id_colaboradorTextBox.Name = "id_colaboradorTextBox";
-            this.id_colaboradorTextBox.Size = new System.Drawing.Size(200, 20);
+            this.id_colaboradorTextBox.Size = new System.Drawing.Size(200, 40);
             this.id_colaboradorTextBox.TabIndex = 66;
+            // 
+            // id_producaoLabel
+            // 
+            id_producaoLabel.AutoSize = true;
+            id_producaoLabel.BackColor = System.Drawing.Color.Transparent;
+            id_producaoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            id_producaoLabel.Location = new System.Drawing.Point(358, 59);
+            id_producaoLabel.Name = "id_producaoLabel";
+            id_producaoLabel.Size = new System.Drawing.Size(181, 33);
+            id_producaoLabel.TabIndex = 67;
+            id_producaoLabel.Text = "ID produção:";
+            // 
+            // data_producaoLabel
+            // 
+            data_producaoLabel.AutoSize = true;
+            data_producaoLabel.BackColor = System.Drawing.Color.Transparent;
+            data_producaoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            data_producaoLabel.Location = new System.Drawing.Point(59, 265);
+            data_producaoLabel.Name = "data_producaoLabel";
+            data_producaoLabel.Size = new System.Drawing.Size(84, 33);
+            data_producaoLabel.TabIndex = 68;
+            data_producaoLabel.Text = "Data:";
+            // 
+            // time_producaoLabel
+            // 
+            time_producaoLabel.AutoSize = true;
+            time_producaoLabel.BackColor = System.Drawing.Color.Transparent;
+            time_producaoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            time_producaoLabel.Location = new System.Drawing.Point(59, 343);
+            time_producaoLabel.Name = "time_producaoLabel";
+            time_producaoLabel.Size = new System.Drawing.Size(111, 33);
+            time_producaoLabel.TabIndex = 69;
+            time_producaoLabel.Text = "Horário";
+            // 
+            // qtd_producaoLabel
+            // 
+            qtd_producaoLabel.AutoSize = true;
+            qtd_producaoLabel.BackColor = System.Drawing.Color.Transparent;
+            qtd_producaoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            qtd_producaoLabel.Location = new System.Drawing.Point(215, 438);
+            qtd_producaoLabel.Name = "qtd_producaoLabel";
+            qtd_producaoLabel.Size = new System.Drawing.Size(173, 33);
+            qtd_producaoLabel.TabIndex = 70;
+            qtd_producaoLabel.Text = "Quantidade:";
+            // 
+            // id_produtoLabel
+            // 
+            id_produtoLabel.AutoSize = true;
+            id_produtoLabel.BackColor = System.Drawing.Color.Transparent;
+            id_produtoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            id_produtoLabel.Location = new System.Drawing.Point(358, 123);
+            id_produtoLabel.Name = "id_produtoLabel";
+            id_produtoLabel.Size = new System.Drawing.Size(158, 33);
+            id_produtoLabel.TabIndex = 71;
+            id_produtoLabel.Text = "ID produto:";
+            // 
+            // id_colaboradorLabel
+            // 
+            id_colaboradorLabel.AutoSize = true;
+            id_colaboradorLabel.BackColor = System.Drawing.Color.Transparent;
+            id_colaboradorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            id_colaboradorLabel.Location = new System.Drawing.Point(358, 189);
+            id_colaboradorLabel.Name = "id_colaboradorLabel";
+            id_colaboradorLabel.Size = new System.Drawing.Size(214, 33);
+            id_colaboradorLabel.TabIndex = 72;
+            id_colaboradorLabel.Text = "ID colaborador:";
             // 
             // Statuspaoqueijo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PANDOKS_V1._0.Properties.Resources.Design_sem_nome;
-            this.ClientSize = new System.Drawing.Size(726, 636);
+            this.ClientSize = new System.Drawing.Size(917, 614);
             this.Controls.Add(id_producaoLabel);
-            this.Controls.Add(this.id_producaoTextBox);
             this.Controls.Add(data_producaoLabel);
-            this.Controls.Add(this.data_producaoDateTimePicker);
             this.Controls.Add(time_producaoLabel);
-            this.Controls.Add(this.time_producaoDateTimePicker);
             this.Controls.Add(qtd_producaoLabel);
+            this.Controls.Add(id_produtoLabel);
+            this.Controls.Add(id_colaboradorLabel);
+            this.Controls.Add(this.id_producaoTextBox);
+            this.Controls.Add(this.data_producaoDateTimePicker);
+            this.Controls.Add(this.time_producaoDateTimePicker);
             this.Controls.Add(this.qtd_producaoTextBox);
             this.Controls.Add(this.kg_producaoCheckBox);
             this.Controls.Add(this.un_producaoCheckBox);
-            this.Controls.Add(id_produtoLabel);
             this.Controls.Add(this.id_produtoTextBox);
-            this.Controls.Add(id_colaboradorLabel);
             this.Controls.Add(this.id_colaboradorTextBox);
             this.Controls.Add(this.producaoBindingNavigator);
             this.Controls.Add(this.button3);
