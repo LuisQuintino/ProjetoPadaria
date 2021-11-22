@@ -28,7 +28,7 @@ namespace PANDOKS_V1._0
         private void TesteStatusDeProducaoUnificado_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'database_padarianovoDataSet.produto'. Você pode movê-la ou removê-la conforme necessário.
-            //this.produtoTableAdapter.Fill(this.database_padarianovoDataSet.produto);
+            this.produtoTableAdapter.Fill(this.database_padarianovoDataSet.produto);
             // TODO: esta linha de código carrega dados na tabela 'database_padarianovoDataSet.produto'. Você pode movê-la ou removê-la conforme necessário.
             this.produtoTableAdapter.Fill(this.database_padarianovoDataSet.produto);
             // TODO: esta linha de código carrega dados na tabela 'database_padarianovoDataSet.producao'. Você pode movê-la ou removê-la conforme necessário.
@@ -73,12 +73,8 @@ namespace PANDOKS_V1._0
 
         private void id_produtoTextBox_TextChanged(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(id_producaoTextBox.Text) > 2)
-            {
-                this.produtoTableAdapter.FillByIdProduto(this.database_padarianovoDataSet.produto, Convert.ToInt32(id_produtoTextBox.Text));
-            }
-            
-           
+            this.produtoTableAdapter.FillByIdProduto(this.database_padarianovoDataSet.produto, Convert.ToInt32(id_produtoTextBox.Text));
+
         }
 
         private void qtd_producaoLabel_Click(object sender, EventArgs e)
@@ -88,6 +84,7 @@ namespace PANDOKS_V1._0
 
         private void nome_produtoTextBox_TextChanged(object sender, EventArgs e)
         {
+        
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -107,7 +104,7 @@ namespace PANDOKS_V1._0
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.producaoTableAdapter.UpdateQueryPaoFrances(data_producaoDateTimePicker.Value, time_producaoDateTimePicker.Value, Convert.ToInt32(qtd_producaoTextBox.Text), kg_producaoCheckBox.Checked, un_producaoCheckBox.Checked, Convert.ToInt32(id_colaboradorTextBox.Text), Convert.ToInt32(id_produtoTextBox.Text));
+            this.producaoTableAdapter.UpdateQueryStatusDeProdu(data_producaoDateTimePicker.Value, time_producaoDateTimePicker.Value, Convert.ToInt32(qtd_producaoTextBox.Text), kg_producaoCheckBox.Checked, un_producaoCheckBox.Checked, Convert.ToInt32(id_colaboradorTextBox.Text), Convert.ToInt32(id_produtoTextBox.Text));
 
         }
 

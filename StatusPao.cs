@@ -44,7 +44,7 @@ namespace PANDOKS_V1._0
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.producaoTableAdapter.UpdateQueryPaoFrances(data_producaoDateTimePicker.Value, time_producaoDateTimePicker.Value, Convert.ToInt32(qtd_producaoTextBox.Text), kg_producaoCheckBox.Checked, un_producaoCheckBox.Checked, Convert.ToInt32(id_colaboradorTextBox.Text), Convert.ToInt32(id_produtoTextBox.Text));
+            //this.producaoTableAdapter.UpdateQueryPaoFrances(data_producaoDateTimePicker.Value, time_producaoDateTimePicker.Value, Convert.ToInt32(qtd_producaoTextBox.Text), kg_producaoCheckBox.Checked, un_producaoCheckBox.Checked, Convert.ToInt32(id_colaboradorTextBox.Text), Convert.ToInt32(id_produtoTextBox.Text));
         }
 
         private void id_producaoTextBox_TextChanged(object sender, EventArgs e)

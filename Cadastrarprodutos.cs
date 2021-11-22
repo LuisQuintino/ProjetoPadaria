@@ -62,7 +62,7 @@ namespace PANDOKS_V1._0
 
         private void btnanterior_Click(object sender, EventArgs e)
         {
-            produtoBindingSource1.MoveLast();
+            produtoBindingSource1.MovePrevious();
         }
 
         private void btndeletar_Click(object sender, EventArgs e)

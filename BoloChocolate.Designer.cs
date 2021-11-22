@@ -348,6 +348,7 @@ namespace PANDOKS_V1._0
             this.id_producaoTextBox.Name = "id_producaoTextBox";
             this.id_producaoTextBox.Size = new System.Drawing.Size(200, 20);
             this.id_producaoTextBox.TabIndex = 50;
+            this.id_producaoTextBox.TextChanged += new System.EventHandler(this.id_producaoTextBox_TextChanged);
             // 
             // data_producaoDateTimePicker
             // 

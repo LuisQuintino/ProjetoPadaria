@@ -12,7 +12,7 @@ namespace PANDOKS_V1._0
 {
     public partial class TelaCaixa : Form
     {
-        float valortotal = 0, valorunittotal = 0;
+        float valortotal = 0, valorunittotal = 0, qtdtotal = 0;
         Timer t = new Timer();
         login logincompartilhado = null;
         
@@ -197,6 +197,7 @@ namespace PANDOKS_V1._0
         private void btnfecharvenda_Click(object sender, EventArgs e)
         {
             txtValorFinal.Text = Convert.ToString(valortotal);
+            txtTotalQtd.Text = qtdtotal.ToString();
             lbcupom.Items.Add("A sua compra fechou em R$" + txtValorTotal.Text + " Reais");
         }
 
@@ -257,7 +258,7 @@ namespace PANDOKS_V1._0
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            textBox2.Enabled = false;
+            txtTotalQtd.Enabled = false;
         }
 
         private void button22_Click(object sender, EventArgs e)
@@ -299,8 +300,10 @@ namespace PANDOKS_V1._0
                 valorunit = float.Parse(txtValorUnit.Text);
                 valortotal += ( valorunit * qtd);
                 valorunittotal = (valorunit * qtd);
+                qtdtotal++;
                 txtValorTotal.Text = valorunittotal.ToString();
                 lbcupom.Items.Add("* " + txtnmproduto.Text + " Quantidade -> " + txtQtd.Text + "; Valor unitario total ->" + valorunittotal.ToString());
+                
             }
             else
             {
@@ -308,6 +311,7 @@ namespace PANDOKS_V1._0
                 valorunit = float.Parse(txtValorUnit.Text);
                 valortotal += (valorunit * qtd);
                 valorunittotal = (valorunit * qtd);
+                qtdtotal = qtdtotal + qtd;
                 txtValorTotal.Text = valorunittotal.ToString();
                 lbcupom.Items.Add("* " + txtnmproduto.Text + " Quantidade -> " + txtQtd.Text + "; Valor unitario total ->" + valorunittotal.ToString());
             }

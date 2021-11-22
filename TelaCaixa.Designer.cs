@@ -57,7 +57,7 @@ namespace PANDOKS_V1._0
             this.txtNomeOperador = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTotalQtd = new System.Windows.Forms.TextBox();
             this.txtValorFinal = new System.Windows.Forms.TextBox();
             this.txtValorTotal = new System.Windows.Forms.TextBox();
             this.txtValorUnit = new System.Windows.Forms.TextBox();
@@ -156,8 +156,8 @@ namespace PANDOKS_V1._0
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
             // 
             // bindingNavigatorDeleteItem
@@ -283,7 +283,7 @@ namespace PANDOKS_V1._0
             this.Caixa.Controls.Add(this.txtNomeOperador);
             this.Caixa.Controls.Add(this.textBox3);
             this.Caixa.Controls.Add(this.pictureBox2);
-            this.Caixa.Controls.Add(this.textBox2);
+            this.Caixa.Controls.Add(this.txtTotalQtd);
             this.Caixa.Controls.Add(this.txtValorFinal);
             this.Caixa.Controls.Add(this.txtValorTotal);
             this.Caixa.Controls.Add(this.txtValorUnit);
@@ -360,22 +360,22 @@ namespace PANDOKS_V1._0
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // textBox2
+            // txtTotalQtd
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Teal;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 33F);
-            this.textBox2.Location = new System.Drawing.Point(603, 602);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(107, 58);
-            this.textBox2.TabIndex = 46;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtTotalQtd.BackColor = System.Drawing.Color.Teal;
+            this.txtTotalQtd.Font = new System.Drawing.Font("Arial", 33F);
+            this.txtTotalQtd.Location = new System.Drawing.Point(603, 602);
+            this.txtTotalQtd.Name = "txtTotalQtd";
+            this.txtTotalQtd.Size = new System.Drawing.Size(107, 58);
+            this.txtTotalQtd.TabIndex = 46;
+            this.txtTotalQtd.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtValorFinal
             // 
             this.txtValorFinal.BackColor = System.Drawing.Color.SeaGreen;
             this.txtValorFinal.Font = new System.Drawing.Font("Arial", 64F);
             this.txtValorFinal.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtValorFinal.Location = new System.Drawing.Point(791, 708);
+            this.txtValorFinal.Location = new System.Drawing.Point(791, 702);
             this.txtValorFinal.Name = "txtValorFinal";
             this.txtValorFinal.Size = new System.Drawing.Size(259, 106);
             this.txtValorFinal.TabIndex = 45;
@@ -747,7 +747,7 @@ namespace PANDOKS_V1._0
         private database_padarianovoDataSetTableAdapters.produtoTableAdapter produtoTableAdapter1;
         private database_padarianovoDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTotalQtd;
         private System.Windows.Forms.TextBox txtNomeOperador;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.PictureBox pictureBox1;

@@ -7478,16 +7478,16 @@ WHERE        (cpf_colaborador = ?) AND (senha_colaborador = ?)";
             this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("id_produto", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id_produto", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "UPDATE `producao` SET `data_producao` = ?, `time_producao` = ?, `qtd_producao` = " +
-                "?, `kg_producao` = ?, `un_producao` = ?, `id_produto` = 3, `id_colaborador` = ? " +
-                "WHERE id_produto = ?";
+            this._commandCollection[2].CommandText = "UPDATE       producao\r\nSET                data_producao = ?, time_producao = ?, q" +
+                "td_producao = ?, kg_producao = ?, un_producao = ?, id_produto = ?, id_colaborado" +
+                "r = 3\r\nWHERE        (id_produto = ?)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("data_producao", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "data_producao", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("time_producao", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "time_producao", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("qtd_producao", global::System.Data.OleDb.OleDbType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(0)), "qtd_producao", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("kg_producao", global::System.Data.OleDb.OleDbType.Boolean, 2, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "kg_producao", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("un_producao", global::System.Data.OleDb.OleDbType.Boolean, 2, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "un_producao", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("id_colaborador", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id_colaborador", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("id_produto", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id_produto", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_id_produto", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id_produto", global::System.Data.DataRowVersion.Original, false, null));
         }
         
@@ -7801,7 +7801,7 @@ WHERE        (cpf_colaborador = ?) AND (senha_colaborador = ?)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
-        public virtual int UpdateQueryPaoFrances(global::System.Nullable<global::System.DateTime> data_producao, global::System.Nullable<global::System.DateTime> time_producao, global::System.Nullable<decimal> qtd_producao, bool kg_producao, bool un_producao, global::System.Nullable<int> id_colaborador, global::System.Nullable<int> Original_id_produto) {
+        public virtual int UpdateQueryStatusDeProdu(global::System.Nullable<global::System.DateTime> data_producao, global::System.Nullable<global::System.DateTime> time_producao, global::System.Nullable<decimal> qtd_producao, bool kg_producao, bool un_producao, global::System.Nullable<int> id_produto, global::System.Nullable<int> Original_id_produto) {
             global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[2];
             if ((data_producao.HasValue == true)) {
                 command.Parameters[0].Value = ((System.DateTime)(data_producao.Value));
@@ -7823,8 +7823,8 @@ WHERE        (cpf_colaborador = ?) AND (senha_colaborador = ?)";
             }
             command.Parameters[3].Value = ((bool)(kg_producao));
             command.Parameters[4].Value = ((bool)(un_producao));
-            if ((id_colaborador.HasValue == true)) {
-                command.Parameters[5].Value = ((int)(id_colaborador.Value));
+            if ((id_produto.HasValue == true)) {
+                command.Parameters[5].Value = ((int)(id_produto.Value));
             }
             else {
                 command.Parameters[5].Value = global::System.DBNull.Value;

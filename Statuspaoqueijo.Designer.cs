@@ -30,13 +30,13 @@ namespace PANDOKS_V1._0
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Statuspaoqueijo));
             System.Windows.Forms.Label id_producaoLabel;
             System.Windows.Forms.Label data_producaoLabel;
             System.Windows.Forms.Label time_producaoLabel;
             System.Windows.Forms.Label qtd_producaoLabel;
             System.Windows.Forms.Label id_produtoLabel;
             System.Windows.Forms.Label id_colaboradorLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Statuspaoqueijo));
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -45,17 +45,17 @@ namespace PANDOKS_V1._0
             this.producaoTableAdapter = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.producaoTableAdapter();
             this.tableAdapterManager = new PANDOKS_V1._0.database_padarianovoDataSetTableAdapters.TableAdapterManager();
             this.producaoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.producaoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.id_producaoTextBox = new System.Windows.Forms.TextBox();
             this.data_producaoDateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -76,6 +76,69 @@ namespace PANDOKS_V1._0
             ((System.ComponentModel.ISupportInitialize)(this.producaoBindingNavigator)).BeginInit();
             this.producaoBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // id_producaoLabel
+            // 
+            id_producaoLabel.AutoSize = true;
+            id_producaoLabel.BackColor = System.Drawing.Color.Transparent;
+            id_producaoLabel.Location = new System.Drawing.Point(411, 151);
+            id_producaoLabel.Name = "id_producaoLabel";
+            id_producaoLabel.Size = new System.Drawing.Size(66, 13);
+            id_producaoLabel.TabIndex = 51;
+            id_producaoLabel.Text = "id producao:";
+            // 
+            // data_producaoLabel
+            // 
+            data_producaoLabel.AutoSize = true;
+            data_producaoLabel.BackColor = System.Drawing.Color.Transparent;
+            data_producaoLabel.Font = new System.Drawing.Font("Arial", 24F);
+            data_producaoLabel.Location = new System.Drawing.Point(182, 202);
+            data_producaoLabel.Name = "data_producaoLabel";
+            data_producaoLabel.Size = new System.Drawing.Size(223, 36);
+            data_producaoLabel.TabIndex = 53;
+            data_producaoLabel.Text = "data producao:";
+            // 
+            // time_producaoLabel
+            // 
+            time_producaoLabel.AutoSize = true;
+            time_producaoLabel.BackColor = System.Drawing.Color.Transparent;
+            time_producaoLabel.Font = new System.Drawing.Font("Arial", 24F);
+            time_producaoLabel.Location = new System.Drawing.Point(189, 296);
+            time_producaoLabel.Name = "time_producaoLabel";
+            time_producaoLabel.Size = new System.Drawing.Size(223, 36);
+            time_producaoLabel.TabIndex = 55;
+            time_producaoLabel.Text = "time producao:";
+            // 
+            // qtd_producaoLabel
+            // 
+            qtd_producaoLabel.AutoSize = true;
+            qtd_producaoLabel.BackColor = System.Drawing.Color.Transparent;
+            qtd_producaoLabel.Font = new System.Drawing.Font("Arial", 24F);
+            qtd_producaoLabel.Location = new System.Drawing.Point(189, 456);
+            qtd_producaoLabel.Name = "qtd_producaoLabel";
+            qtd_producaoLabel.Size = new System.Drawing.Size(206, 36);
+            qtd_producaoLabel.TabIndex = 57;
+            qtd_producaoLabel.Text = "qtd producao:";
+            // 
+            // id_produtoLabel
+            // 
+            id_produtoLabel.AutoSize = true;
+            id_produtoLabel.BackColor = System.Drawing.Color.Transparent;
+            id_produtoLabel.Location = new System.Drawing.Point(411, 97);
+            id_produtoLabel.Name = "id_produtoLabel";
+            id_produtoLabel.Size = new System.Drawing.Size(57, 13);
+            id_produtoLabel.TabIndex = 63;
+            id_produtoLabel.Text = "id produto:";
+            // 
+            // id_colaboradorLabel
+            // 
+            id_colaboradorLabel.AutoSize = true;
+            id_colaboradorLabel.BackColor = System.Drawing.Color.Transparent;
+            id_colaboradorLabel.Location = new System.Drawing.Point(411, 123);
+            id_colaboradorLabel.Name = "id_colaboradorLabel";
+            id_colaboradorLabel.Size = new System.Drawing.Size(77, 13);
+            id_colaboradorLabel.TabIndex = 65;
+            id_colaboradorLabel.Text = "id colaborador:";
             // 
             // button1
             // 
@@ -184,6 +247,31 @@ namespace PANDOKS_V1._0
             this.producaoBindingNavigator.TabIndex = 51;
             this.producaoBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Excluir";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -217,16 +305,9 @@ namespace PANDOKS_V1._0
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -249,26 +330,8 @@ namespace PANDOKS_V1._0
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Excluir";
             // 
             // producaoBindingNavigatorSaveItem
             // 
@@ -279,16 +342,6 @@ namespace PANDOKS_V1._0
             this.producaoBindingNavigatorSaveItem.Text = "Salvar Dados";
             this.producaoBindingNavigatorSaveItem.Click += new System.EventHandler(this.producaoBindingNavigatorSaveItem_Click);
             // 
-            // id_producaoLabel
-            // 
-            id_producaoLabel.AutoSize = true;
-            id_producaoLabel.BackColor = System.Drawing.Color.Transparent;
-            id_producaoLabel.Location = new System.Drawing.Point(411, 151);
-            id_producaoLabel.Name = "id_producaoLabel";
-            id_producaoLabel.Size = new System.Drawing.Size(66, 13);
-            id_producaoLabel.TabIndex = 51;
-            id_producaoLabel.Text = "id producao:";
-            // 
             // id_producaoTextBox
             // 
             this.id_producaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.producaoBindingSource, "id_producao", true));
@@ -296,17 +349,6 @@ namespace PANDOKS_V1._0
             this.id_producaoTextBox.Name = "id_producaoTextBox";
             this.id_producaoTextBox.Size = new System.Drawing.Size(200, 20);
             this.id_producaoTextBox.TabIndex = 52;
-            // 
-            // data_producaoLabel
-            // 
-            data_producaoLabel.AutoSize = true;
-            data_producaoLabel.BackColor = System.Drawing.Color.Transparent;
-            data_producaoLabel.Font = new System.Drawing.Font("Arial", 24F);
-            data_producaoLabel.Location = new System.Drawing.Point(182, 202);
-            data_producaoLabel.Name = "data_producaoLabel";
-            data_producaoLabel.Size = new System.Drawing.Size(223, 36);
-            data_producaoLabel.TabIndex = 53;
-            data_producaoLabel.Text = "data producao:";
             // 
             // data_producaoDateTimePicker
             // 
@@ -317,17 +359,6 @@ namespace PANDOKS_V1._0
             this.data_producaoDateTimePicker.Size = new System.Drawing.Size(624, 44);
             this.data_producaoDateTimePicker.TabIndex = 54;
             // 
-            // time_producaoLabel
-            // 
-            time_producaoLabel.AutoSize = true;
-            time_producaoLabel.BackColor = System.Drawing.Color.Transparent;
-            time_producaoLabel.Font = new System.Drawing.Font("Arial", 24F);
-            time_producaoLabel.Location = new System.Drawing.Point(189, 296);
-            time_producaoLabel.Name = "time_producaoLabel";
-            time_producaoLabel.Size = new System.Drawing.Size(223, 36);
-            time_producaoLabel.TabIndex = 55;
-            time_producaoLabel.Text = "time producao:";
-            // 
             // time_producaoDateTimePicker
             // 
             this.time_producaoDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.producaoBindingSource, "time_producao", true));
@@ -336,17 +367,6 @@ namespace PANDOKS_V1._0
             this.time_producaoDateTimePicker.Name = "time_producaoDateTimePicker";
             this.time_producaoDateTimePicker.Size = new System.Drawing.Size(200, 44);
             this.time_producaoDateTimePicker.TabIndex = 56;
-            // 
-            // qtd_producaoLabel
-            // 
-            qtd_producaoLabel.AutoSize = true;
-            qtd_producaoLabel.BackColor = System.Drawing.Color.Transparent;
-            qtd_producaoLabel.Font = new System.Drawing.Font("Arial", 24F);
-            qtd_producaoLabel.Location = new System.Drawing.Point(189, 456);
-            qtd_producaoLabel.Name = "qtd_producaoLabel";
-            qtd_producaoLabel.Size = new System.Drawing.Size(206, 36);
-            qtd_producaoLabel.TabIndex = 57;
-            qtd_producaoLabel.Text = "qtd producao:";
             // 
             // qtd_producaoTextBox
             // 
@@ -382,16 +402,6 @@ namespace PANDOKS_V1._0
             this.un_producaoCheckBox.Text = "Unitário";
             this.un_producaoCheckBox.UseVisualStyleBackColor = false;
             // 
-            // id_produtoLabel
-            // 
-            id_produtoLabel.AutoSize = true;
-            id_produtoLabel.BackColor = System.Drawing.Color.Transparent;
-            id_produtoLabel.Location = new System.Drawing.Point(411, 97);
-            id_produtoLabel.Name = "id_produtoLabel";
-            id_produtoLabel.Size = new System.Drawing.Size(57, 13);
-            id_produtoLabel.TabIndex = 63;
-            id_produtoLabel.Text = "id produto:";
-            // 
             // id_produtoTextBox
             // 
             this.id_produtoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.producaoBindingSource, "id_produto", true));
@@ -399,16 +409,7 @@ namespace PANDOKS_V1._0
             this.id_produtoTextBox.Name = "id_produtoTextBox";
             this.id_produtoTextBox.Size = new System.Drawing.Size(200, 20);
             this.id_produtoTextBox.TabIndex = 64;
-            // 
-            // id_colaboradorLabel
-            // 
-            id_colaboradorLabel.AutoSize = true;
-            id_colaboradorLabel.BackColor = System.Drawing.Color.Transparent;
-            id_colaboradorLabel.Location = new System.Drawing.Point(411, 123);
-            id_colaboradorLabel.Name = "id_colaboradorLabel";
-            id_colaboradorLabel.Size = new System.Drawing.Size(77, 13);
-            id_colaboradorLabel.TabIndex = 65;
-            id_colaboradorLabel.Text = "id colaborador:";
+            this.id_produtoTextBox.TextChanged += new System.EventHandler(this.id_produtoTextBox_TextChanged);
             // 
             // id_colaboradorTextBox
             // 
