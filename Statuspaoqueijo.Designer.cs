@@ -356,6 +356,7 @@ namespace PANDOKS_V1._0
             this.qtd_producaoTextBox.Name = "qtd_producaoTextBox";
             this.qtd_producaoTextBox.Size = new System.Drawing.Size(200, 44);
             this.qtd_producaoTextBox.TabIndex = 58;
+            this.qtd_producaoTextBox.TextChanged += new System.EventHandler(this.qtd_producaoTextBox_TextChanged);
             // 
             // kg_producaoCheckBox
             // 

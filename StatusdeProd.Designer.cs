@@ -338,7 +338,7 @@ namespace PANDOKS_V1._0
             this.button17.Font = new System.Drawing.Font("Arial", 24F);
             this.button17.Image = global::PANDOKS_V1._0.Properties.Resources.Enroladinho_de_Salsicha;
             this.button17.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button17.Location = new System.Drawing.Point(1549, 529);
+            this.button17.Location = new System.Drawing.Point(1302, 296);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(176, 211);
             this.button17.TabIndex = 21;
@@ -370,15 +370,16 @@ namespace PANDOKS_V1._0
             this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button19.Font = new System.Drawing.Font("Arial", 24F);
-            this.button19.Image = global::PANDOKS_V1._0.Properties.Resources.Calzone;
+            this.button19.Image = global::PANDOKS_V1._0.Properties.Resources.Save_as_37111__2_;
             this.button19.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button19.Location = new System.Drawing.Point(1302, 296);
+            this.button19.Location = new System.Drawing.Point(1549, 529);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(176, 211);
             this.button19.TabIndex = 19;
-            this.button19.Text = "Calzone";
+            this.button19.Text = "Status Geral";
             this.button19.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button20
             // 

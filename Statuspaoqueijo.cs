@@ -31,6 +31,8 @@ namespace PANDOKS_V1._0
             this.producaoTableAdapter.Fill(this.database_padarianovoDataSet.producao);
             id_produtoTextBox.Text = "5";
             this.producaoTableAdapter.FillByIdProdutoStatusProducao(this.database_padarianovoDataSet.producao, Convert.ToInt32(id_produtoTextBox.Text));
+            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -41,6 +43,12 @@ namespace PANDOKS_V1._0
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void qtd_producaoTextBox_TextChanged(object sender, EventArgs e)
+        {
+           
+
         }
     }
 }
