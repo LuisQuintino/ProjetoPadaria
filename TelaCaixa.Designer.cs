@@ -484,12 +484,12 @@ namespace PANDOKS_V1._0
             // lbcupom
             // 
             this.lbcupom.BackColor = System.Drawing.Color.Wheat;
-            this.lbcupom.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
+            this.lbcupom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbcupom.FormattingEnabled = true;
-            this.lbcupom.ItemHeight = 33;
+            this.lbcupom.ItemHeight = 20;
             this.lbcupom.Location = new System.Drawing.Point(889, 141);
             this.lbcupom.Name = "lbcupom";
-            this.lbcupom.Size = new System.Drawing.Size(529, 400);
+            this.lbcupom.Size = new System.Drawing.Size(529, 384);
             this.lbcupom.TabIndex = 11;
             this.lbcupom.SelectedIndexChanged += new System.EventHandler(this.lbcupom_SelectedIndexChanged);
             // 

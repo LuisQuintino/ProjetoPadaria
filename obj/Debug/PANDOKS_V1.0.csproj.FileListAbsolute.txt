@@ -21,7 +21,6 @@ C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1.0.csproj.Core
 C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1.0.exe
 C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1.0.pdb
 C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.PanificSystem.resources
-C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.Form3.resources
 C:\Users\1513 IRON\Pictures\padaria+banco\bin\Debug\PANDOKS_V1.0.exe.config
 C:\Users\1513 IRON\Pictures\padaria+banco\bin\Debug\PANDOKS_V1.0.exe
 C:\Users\1513 IRON\Pictures\padaria+banco\bin\Debug\PANDOKS_V1.0.pdb
@@ -40,11 +39,6 @@ C:\Users\1513 IRON\Pictures\padaria+banco\obj\Debug\PANDOKS_V1._0.MenuPrincipal.
 C:\Users\willian.reis\Documents\PanificSystem\bin\Debug\database_padaria.mdb
 C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.MenuPrincipal.resources
 C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.StatusdeProdução.resources
-C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.Form5.resources
-C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.Form6.resources
-C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.Form7.resources
-C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.Form8.resources
-C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.Form9.resources
 C:\Users\1513 IRON\Downloads\padaria_att_1.2\bin\Debug\database_padaria.mdb
 C:\Users\1513 IRON\Downloads\padaria_att_1.2\bin\Debug\PANDOKS_V1.0.exe.config
 C:\Users\1513 IRON\Downloads\padaria_att_1.2\bin\Debug\PANDOKS_V1.0.exe
@@ -276,3 +270,13 @@ C:\Users\marcos.leandro\Documents\22-11-21\obj\Debug\PANDOKS_V1.0.csproj.Generat
 C:\Users\marcos.leandro\Documents\22-11-21\obj\Debug\PANDOKS_V1.0.csproj.CoreCompileInputs.cache
 C:\Users\marcos.leandro\Documents\22-11-21\obj\Debug\PANDOKS_V1.0.exe
 C:\Users\marcos.leandro\Documents\22-11-21\obj\Debug\PANDOKS_V1.0.pdb
+C:\Users\willian.reis\Documents\PanificSystem\bin\Debug\database_padarianovo.mdb
+C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.Cadastrarprodutos.resources
+C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.PesquisarProduto.resources
+C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.TelaCaixa.resources
+C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.StatusPao.resources
+C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.Statuspaoqueijo.resources
+C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.BoloChocolate.resources
+C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.CadastroCliente.resources
+C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.Cadastrocolaborador.resources
+C:\Users\willian.reis\Documents\PanificSystem\obj\Debug\PANDOKS_V1._0.TesteStatusDeProducaoUnificado.resources

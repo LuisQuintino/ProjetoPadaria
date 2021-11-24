@@ -36,7 +36,14 @@ namespace PANDOKS_V1._0
             t.Tick += new EventHandler(this.t_Tick);
             t.Start();
             txtNomeOperador.Text = logincompartilhado.LoginTxtNome;
-            
+            lbcupom.Items.Add("                                           PANIFICADORA PADOKS");
+            lbcupom.Items.Add("                               R.VISC. DE TAUNAY - 730 - ATIRADORES");
+            lbcupom.Items.Add("                                      JOINVILLE - SANTA CATARINA");
+            lbcupom.Items.Add("                                        CNPJ: 12.345.678/9012-34");
+            lbcupom.Items.Add("                                                                                                        ");
+            lbcupom.Items.Add("                                               CUPOM FISCAL");
+            lbcupom.Items.Add("________________________________________________________________________________________________________");
+
         }
 
         private void button12_Click(object sender, EventArgs e)
